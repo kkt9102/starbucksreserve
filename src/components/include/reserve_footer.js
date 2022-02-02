@@ -32,7 +32,7 @@ function RFooter() {
                         <div className="comp_tel">TEL : 1522-3232</div>
                         <div className="prvt_responsive">개인정보 책임자 : 하익성</div>
                     </div>
-                    <div className="copyright flex flex_jc_c`">ⓒ 2022 Starbucks Coffee Company. All Rights Reserved.</div>
+                    <div className="copyright flex flex_jc_c">ⓒ 2022 Starbucks Coffee Company. All Rights Reserved.</div>
                 </div>
             </footer>
         </>

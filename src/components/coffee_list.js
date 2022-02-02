@@ -1,13 +1,13 @@
 import { Link } from "react-scroll";
-import reserve from "../resource/css/Reserve.module.css";
+import '../resources/css/style.css';
 
 const CoffeeList = () => {
 
     return (
         <>
-            <li className={reserve.coffee_item}>
+            <li className="coffee_item">
                 <Link to="">
-                    <div className={reserve.img_box}>
+                    <div className="img_box">
                         <img></img>
                     </div>
                 </Link>
