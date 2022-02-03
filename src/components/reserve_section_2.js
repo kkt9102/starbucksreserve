@@ -23,6 +23,14 @@ const ReserveSC2 = () => {
                             <li className="flex flex_jc_c">남부 탄자니아의 고지대부터 자메이카의 블루 마운틴까지, 여러분을 새로운 커피 여정으로 초대합니다.</li>
                         </ul>
                     </div>
+                    <div className="cont_3">
+                        <ul className="flex flex_jc_c flex_wrap_wrap">
+                            <li className="flex flex_jc_c">스타벅스 커피팀은 고객에게  최고품질의 커피를 제공하기 위해 매년 25만잔의 커피를 테스트 합니다 </li>
+                            <li className="flex flex_jc_c">스타벅스 커피 전문가들은 커피농가와 돈독한 인연을 이여오며, 세계 최고급 커피 원두중에서도 상위 3%를 찾기위해 세계 각지를 여행하고,</li>
+                            <li className="flex flex_jc_c">그 여정 속에서 이국적이고 희귀하며 가치가 있는 매우 특별한 원두를 발견하고 있습니다. </li>
+                            <li className="flex flex_jc_c">단일 원산지에서 극소량만 재배되어 한정된 기간에만 만나볼 수 있는 진귀한 고품질의 원두를 스타벅스 리저브™에서 만나보세요.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </>

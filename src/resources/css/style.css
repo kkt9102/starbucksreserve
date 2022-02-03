@@ -1,3 +1,4 @@
+@import url('../font/NotoSansCJKkr.css');
 
 * {color:#ffffff; font-family: 'NotoKr'; letter-spacing: -0.05rem;}
 .con {max-width:120rem; margin:0 auto; padding-top:8rem;}
@@ -27,32 +28,33 @@
 #section_1 .cont_1 .sub_tit {font-size:4.5rem; font-weight: 600; letter-spacing: -0.2rem;}
 
 /* section_02 */
-#section_2::after {content:''; position: absolute; background:url(../img/section_back_img_2.png); width:100%; height:40rem; bottom:0; left:0; background-size: cover; opacity: 0.3; z-index: -1;}
+#section_2::after {content:''; position: absolute; background:url(../img/section_back_img_2.png); width:100%; height:35rem; bottom:0; left:0; background-size: cover; opacity: 0.3; z-index: -1;}
 #section_2 .cont_1 {margin-top:6rem;}
 #section_2 .cont_1 .sub_txt {font-size:2.4rem; line-height:2.4rem; font-weight: 300; letter-spacing: -0.2rem; margin-bottom:2rem;}
-#section_2 .cont_1 .sub_tit {font-size:3.6rem; line-height:3.4rem; font-weight: 600; letter-spacing: -0.2rem; margin-bottom: 7rem;}
-#section_2 .cont_2 ul li {flex-basis:100%; font-size:1.8rem; line-height: 1.8rem; margin-bottom: 1.6rem;}
+#section_2 .cont_1 .sub_tit {font-size:3.6rem; line-height:3.4rem; font-weight: 600; letter-spacing: -0.2rem; margin-bottom: 5rem;}
+#section_2 .cont_2 ul li {flex-basis:100%; font-size:1.8rem; line-height: 1.8rem; font-weight:500; margin-bottom: 1.6rem;}
+#section_2 .cont_3 ul li {flex-basis: 100%; font-size:1.8rem; line-height:1.8rem; font-weight:300; margin-bottom:1rem;}
 
 /* section_03 */
 #section_3::after {content:''; position: absolute; background:url(../img/section_back_img_3.png); background-position-Y:35%; width:100%; height:35rem; bottom:0; left:0; background-size: cover; opacity: 0.3; z-index: -1;}
     /* extraction_list */
 #section_3 .extraction_list {margin-top:5rem;}
-#section_3 .extraction_list ul li {position:relative; display:flex; justify-content:center; flex-basis:15%; max-width:18rem; padding:1.5rem 1.5rem 3rem 1.5rem; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;}
-#section_3 .extraction_list ul li * {transition: transform 0.1s;}
+#section_3 .extraction_list ul li {position:relative; display:flex; justify-content:center; flex-basis:15%; max-width:18rem; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;}
+#section_3 .extraction_list ul li:nth-child(2n + 2) {top:14rem;}
+/* #section_3 .extraction_list ul li * {transition: transform 0.1s;} */
+#section_3 .extraction_list ul li > div {position:relative; padding:1.5rem 1.5rem 3rem 1.5rem; transition: box-shadow 0.3s; transition-duration: 0.2s;}
+#section_3 .extraction_list ul li > div::after {content:'';}
 #section_3 .extraction_list ul li .img_box {max-height: 7rem; margin-top:1.8rem; margin-bottom:0.8rem;}
-#section_3 .extraction_list ul li:hover,
-#section_3 .extraction_list ul li:active,
-#section_3 .extraction_list ul li:focus {transform: scale(0.98) translate(0.1rem ,0.1rem); box-shadow: -0.1rem -0.1rem 0.5rem #976d3f;}
-#section_3 .extraction_list ul li:hover *,
-#section_3 .extraction_list ul li:active *,
-#section_3 .extraction_list ul li:focus * {transform: scale(0.99);}
+#section_3 .extraction_list ul li:hover > div,
+#section_3 .extraction_list ul li:active > div,
+#section_3 .extraction_list ul li:focus  > div {box-shadow: -0.1rem -0.1rem 0.5rem #976d3f;}
 #section_3 .extraction_list ul li::after {content:''; position: absolute; width:90%; height: 0.5rem; top:calc(50% - 1.4rem); left:5%; background: #976d3f;}
 #section_3 .extraction_list ul li img {height:7rem;}
 #section_3 .extraction_list ul li .txt_box .sub_tit {margin-bottom:1.5rem; flex-basis:100%; font-size:2.2rem; font-weight:500; letter-spacing:0.1rem; color:#976d3f; white-space: nowrap;}
 #section_3 .extraction_list ul li .txt_box .sub_txt {display:flex; align-items:center; height:4.5em; font-size:1.3rem; word-break:keep-all; text-align: center; line-height: 2rem;}
 
 /* section_04 */
-#section_4 .section_tit .sub_tit {flex-basis:100%; margin-top:1.5rem; font-size:2.4rem;}
+#section_4 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem;}
 #section_4 .cont_1 {margin-top:8rem;}
 #section_4 .coffee_item {flex-basis:27.5rem; border:1px solid #ffffff;}
 
@@ -60,7 +62,7 @@
 #section_5 .map_box {margin-top:3rem; border:0.3rem solid #976d3f; border-radius: 0.2rem;}
 
 /* Footer */
-#reserve_footer {border-top:0.1rem solid #976d3f;}
+#reserve_footer {border-top:0.1rem solid #976d3f; background:#222222;}
 #reserve_footer .con {max-width:140rem; margin:0 auto; padding-top:2.5rem;}
 #reserve_footer .con .footer_menu_1 ul li {color:#976d3f;}
 #reserve_footer .con .footer_menu_2 {margin-top:6.5rem;}
