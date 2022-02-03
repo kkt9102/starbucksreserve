@@ -24,16 +24,17 @@
 #section_1 .cont_1 {flex-wrap: wrap;}
 #section_1 .cont_1 * {flex-basis: 100%;}
 #section_1 .cont_1 .main_logo {max-width:30rem; height:37rem; margin-top:10%; margin-bottom:8rem;}
-#section_1 .cont_1 .sub_txt {font-size:2.5rem; letter-spacing: -0.2rem; margin-bottom:2rem;}
+#section_1 .cont_1 .sub_txt {font-size:2.5rem; font-weight:500; letter-spacing: -0.2rem; margin-bottom:2rem;}
 #section_1 .cont_1 .sub_tit {font-size:4.5rem; font-weight: 600; letter-spacing: -0.2rem;}
 
 /* section_02 */
 #section_2::after {content:''; position: absolute; background:url(../img/section_back_img_2.png); width:100%; height:35rem; bottom:0; left:0; background-size: cover; opacity: 0.3; z-index: -1;}
 #section_2 .cont_1 {margin-top:6rem;}
-#section_2 .cont_1 .sub_txt {font-size:2.4rem; line-height:2.4rem; font-weight: 300; letter-spacing: -0.2rem; margin-bottom:2rem;}
+#section_2 .cont_1 .sub_txt {font-size:2.4rem; line-height:2.4rem; font-weight: 500; letter-spacing: -0.2rem; margin-bottom:2rem;}
 #section_2 .cont_1 .sub_tit {font-size:3.6rem; line-height:3.4rem; font-weight: 600; letter-spacing: -0.2rem; margin-bottom: 5rem;}
 #section_2 .cont_2 ul li {flex-basis:100%; font-size:1.8rem; line-height: 1.8rem; font-weight:500; margin-bottom: 1.6rem;}
-#section_2 .cont_3 ul li {flex-basis: 100%; font-size:1.8rem; line-height:1.8rem; font-weight:300; margin-bottom:1rem;}
+#section_2 .cont_3 {margin-top:1.4rem;}
+#section_2 .cont_3 ul li {flex-basis: 100%; font-size:1.7rem; line-height:1.7rem; font-weight:300; margin-bottom:1rem;}
 
 /* section_03 */
 #section_3::after {content:''; position: absolute; background:url(../img/section_back_img_3.png); background-position-Y:35%; width:100%; height:35rem; bottom:0; left:0; background-size: cover; opacity: 0.3; z-index: -1;}
@@ -54,13 +55,15 @@
 #section_3 .extraction_list ul li .txt_box .sub_txt {display:flex; align-items:center; height:4.5em; font-size:1.3rem; word-break:keep-all; text-align: center; line-height: 2rem;}
 
 /* section_04 */
-#section_4 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem;}
+#section_4 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}
 #section_4 .cont_1 {margin-top:8rem;}
-#section_4 .coffee_item {flex-basis:27.5rem; border:1px solid #ffffff;}
-
+#section_4 .coffee_item {flex-basis:28rem;}
+#section_4 .coffee_item .img_box img {width:21.6rem;}
+#section_4 .coffee_item .logo img {width:2.1rem; height:2.7rem;}
 /* section_05 */
 #section_5 .map_box {margin-top:3rem; border:0.3rem solid #976d3f; border-radius: 0.2rem;}
-
+#section_5 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}
+#section_5 .section_tit .sub_tit .marker_count {font-size:1.7rem; font-weight: 500;}
 /* Footer */
 #reserve_footer {border-top:0.1rem solid #976d3f; background:#222222;}
 #reserve_footer .con {max-width:140rem; margin:0 auto; padding-top:2.5rem;}

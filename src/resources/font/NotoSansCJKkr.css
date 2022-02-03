@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'NotoKr';
-    src: url('./NotoSansCJKkr/NotoSansCJKkr-DemiLight.otf') format('opentype'),
-        url('./NotoSansCJKkr/NotoSansCJKkr-DemiLight.woff') format('woff');
+    src: url('./NotoSansCJKkr/NotoSansCJKkr-Light.otf') format('opentype'),
+        url('./NotoSansCJKkr/NotoSansCJKkr-Light.woff') format('woff');
     font-weight:300;
 }
 @font-face {
     font-family:'NotoKr';
-    src: url('./NotoSansCJKkr/NotoSansCJKkr-Light.otf') format('opentype'),
-        url('./NotoSansCJKkr/NotoSansCJKkr-Light.woff') format('woff');
+    src: url('./NotoSansCJKkr/NotoSansCJKkr-DemiLight.otf') format('opentype'),
+        url('./NotoSansCJKkr/NotoSansCJKkr-DemiLight.woff') format('woff');
     font-weight:400;
 }
 @font-face {
