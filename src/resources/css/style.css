@@ -1,7 +1,7 @@
 
-* {background:#222222; color:#ffffff; font-family: 'NotoKr'; letter-spacing: -0.05rem;}
+* {color:#ffffff; font-family: 'NotoKr'; letter-spacing: -0.05rem;}
 .con {max-width:120rem; margin:0 auto; padding-top:8rem;}
-.section {position:relative; width: 100%; height: 100vh; z-index: 2;}
+.section {position:relative; width: 100%; height: 100vh; z-index: 2; background:#222222;}
 .font_P {color:#976d3f;}
 .border_b {border:0.2rem solid #976d3f; border-radius: 1rem;}
 
