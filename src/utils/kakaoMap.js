@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { CustomMarker, MapMark } from "../components/map_mark";
 import ReserveMarker from '../resources/img/map_mark.png';
-const Map=()=>{
+const KaKaoMap=()=>{
 
   useEffect(()=>{
     const container = document.getElementById('map');
@@ -40,4 +40,4 @@ const Map=()=>{
     )
 }
 
-    export default Map;
+    export default KaKaoMap;

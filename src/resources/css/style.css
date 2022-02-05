@@ -58,8 +58,11 @@
 #section_4 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}
 #section_4 .cont_1 {margin-top:8rem;}
 #section_4 .coffee_item {flex-basis:28rem;}
-#section_4 .coffee_item .img_box img {width:21.6rem;}
-#section_4 .coffee_item .logo img {width:2.1rem; height:2.7rem;}
+#section_4 .coffee_item .img_box {position: relative;}
+#section_4 .coffee_item .img_box > img {width:21.6rem;}
+#section_4 .coffee_item .img_box .logo {position: absolute; left:21.6rem; bottom:3rem;}
+#section_4 .coffee_item .img_box .logo img {width:2.1rem; height:2.7rem;}
+#section_4 .coffee_item .img_box .coffee_name {position:absolute; font-size:1.1rem; font-weight: 300; color:#976d3f; right:3rem; bottom:0.1rem;}
 /* section_05 */
 #section_5 .map_box {margin-top:3rem; border:0.3rem solid #976d3f; border-radius: 0.2rem;}
 #section_5 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}

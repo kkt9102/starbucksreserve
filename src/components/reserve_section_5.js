@@ -1,5 +1,5 @@
 import React from "react";
-import Map from "../utils/kakaoMap";
+import KaKaoMap from "../utils/kakaoMap";
 import '../resources/css/style.css';
 
 
@@ -16,7 +16,7 @@ const ReserveSC5 = () => {
                         <div className="sub_tit flex flex_jc_c">전국의 스타벅스 리저브™ 매장 <span className="mark_count"></span> 곳을 확인하세요</div>
                     </div>
                     <div className="map_box">
-                        <Map/>
+                        <KaKaoMap/>
                     </div>
                 </div>
             </section>
