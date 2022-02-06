@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { BrowserRouter, Link } from "react-router-dom";
 import '../resources/css/style.css';
 
 // img
@@ -10,14 +10,16 @@ const CoffeeList = () => {
     return (
         <>
             <li className="coffee_item">
-                <Link to="">
+                <Link to="/Panama">
                     <div className="img_box">
                         <img src={panama} alt=""></img>
-                        <div className="logo">
-                            <img src={miniLogo} alt="리저브 로고"></img>
-                        </div>
-                        <div className="coffee_name">
-                            파나마 보케테
+                        <div className="coffee_target">
+                            <div className="logo">
+                                <img src={miniLogo} alt="리저브 로고"></img>
+                            </div>
+                            <div className="coffee_name">
+                                파나마 보케테
+                            </div>
                         </div>
                     </div>
                 </Link>

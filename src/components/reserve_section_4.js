@@ -14,7 +14,11 @@ const ReserveSC4 = () => {
                         <div className="sub_tit flex flex_jc_c">스타벅스 리저브™에서 느끼는 전세계의 특별한 커피</div>
                     </div>
                     <div className="cont_1">
-                        <ul className="flex flex_jc_sb">
+                        <ul className="flex flex_jc_sb flex_wrap_wrap">
+                            <CoffeeList />
+                            <CoffeeList />
+                            <CoffeeList />
+                            <CoffeeList />
                             <CoffeeList />
                             <CoffeeList />
                             <CoffeeList />

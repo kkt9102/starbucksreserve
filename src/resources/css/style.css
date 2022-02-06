@@ -1,5 +1,6 @@
 @import url('../font/NotoSansCJKkr.css');
 
+#root {background: #222222;}
 * {color:#ffffff; font-family: 'NotoKr'; letter-spacing: -0.05rem;}
 .con {max-width:120rem; margin:0 auto; padding-top:8rem;}
 .section {position:relative; width: 100%; height: 100vh; z-index: 2; background:#222222;}
@@ -56,25 +57,50 @@
 #section_3 .extraction_list ul li .txt_box .sub_txt {display:flex; align-items:center; height:4.5em; font-size:1.3rem; word-break:keep-all; text-align: center; line-height: 2rem;}
 
 /* section_04 */
+#section_4 {min-width:100vh;}
 #section_4 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}
 #section_4 .cont_1 {margin-top:8rem;}
-#section_4 .coffee_item {flex-basis:28rem;}
+#section_4 .cont_1 ul li {margin-bottom:8rem;}
+#section_4 .coffee_item {flex-basis:28rem; height: 23rem;}
+#section_4 .coffee_item > a {cursor:pointer;}
 #section_4 .coffee_item .img_box {position: relative;}
-#section_4 .coffee_item .img_box > img {width:21.6rem;}
-#section_4 .coffee_item .img_box .logo {position: absolute; left:21.6rem; bottom:3rem;}
+#section_4 .coffee_item .img_box > img {width:21.6rem; transition: filter 0.3s, width 0.3s;}
+#section_4 .coffee_item .img_box > .coffee_target {position: absolute; width: 10rem; height: 10rem; right:4rem; bottom:0;}
+#section_4 .coffee_item .img_box > .coffee_target::before {content:''; position: absolute; width: 78%; height: 13rem; right:-10rem; bottom:0; background: #222222; transform:rotate(45deg) translate(-4rem, 10rem); transition: height 0.3s;}
+#section_4 .coffee_item .img_box > .coffee_target::after {content:''; position:absolute; width:25rem; height:0.2rem; left:-9rem; bottom:5rem; background: #976d3f; transform: rotate(-45deg); transition:width 0.3s, left 0.3s;}
+#section_4 .coffee_item .img_box .logo {position: absolute; right:0; bottom:3rem;}
 #section_4 .coffee_item .img_box .logo img {width:2.1rem; height:2.7rem;}
-#section_4 .coffee_item .img_box .coffee_name {position:absolute; font-size:1.1rem; font-weight: 300; color:#976d3f; right:3rem; bottom:0.1rem;}
+#section_4 .coffee_item .img_box .coffee_name {position:absolute; font-size:1.1rem; font-weight: 300; color:#976d3f; right:0rem; bottom:0.1rem;}
+    /* hover effect */
+#section_4 .coffee_item:hover .img_box {overflow: hidden;}
+#section_4 .coffee_item:hover .img_box > img {width:100%; filter:opacity(0.1) grayscale(0.8);}
+#section_4 .coffee_item:hover .img_box > .coffee_target::before {opacity:0; height: 0;}
+#section_4 .coffee_item:hover .img_box > .coffee_target::after {width:0; left:0;}
+#section_4 .coffee_item:hover .img_box .logo {width:100%; height: 100%; bottom:40%; right:50%; text-align:center;}
+#section_4 .coffee_item:hover .img_box .logo > img {width:4.2rem; height:4.9rem;}
+#section_4 .coffee_item:hover .img_box .coffee_name {width:100%; height:100%; bottom:100%; right:50%; font-size:1.8rem; font-weight: 700;}
+
 /* section_05 */
 #section_5 .map_box {margin-top:3rem; border:0.3rem solid #976d3f; border-radius: 0.2rem;}
 #section_5 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}
 #section_5 .section_tit .sub_tit .marker_count {font-size:1.7rem; font-weight: 500;}
+
 /* Footer */
 #reserve_footer {border-top:0.1rem solid #976d3f; background:#222222;}
-#reserve_footer .con {max-width:140rem; margin:0 auto; padding-top:2.5rem;}
+#reserve_footer .con {max-width:140rem; margin:0 auto; padding-top:2.5rem; padding-bottom:2rem;}
 #reserve_footer .con .footer_menu_1 ul li {color:#976d3f;}
-#reserve_footer .con .footer_menu_2 {margin-top:6.5rem;}
+#reserve_footer .con .footer_menu_2 {margin-top:3rem;}
 #reserve_footer .con .footer_menu_2 ul li {display:flex; justify-content:center; align-items:center; width:16rem; height:3.6rem; font-size:1.6rem; font-weight:400; color:#ffffff; border:0.2rem solid #ffffff; border-radius:0.3rem; cursor:pointer; transition: color 0.3s, border 0.3s;}
 #reserve_footer .con .footer_menu_2 ul li:hover {border-color:#976d3f; color:#976d3f}
 #reserve_footer .con .address {margin-top:6.5rem; margin-bottom:1.5rem; justify-content:center;}
-#reserve_footer .con .address div {font-size:1.4rem;}
-#reserve_footer .con .copyright {font-size:1.4rem;}
+#reserve_footer .con .address div {font-size:1.3rem; margin:0 0.5rem;}
+#reserve_footer .con .copyright {font-size:1.2rem; font-weight: 300;}
+
+/* sub_header */
+.sub_header, .sub_header * {background:#222222;}
+.sub_header .coffee_name {padding-top:6rem; font-size:4.2rem;}
+.sub_header .menu_nav ul {width:40%; margin-left:60%; justify-content:flex-start;}
+.sub_header .menu_nav ul li, .sub_header .menu_nav ul li a {font-size:1.3rem; transition: color 0.3s;}
+.sub_header .menu_nav ul li a:hover {color:#976d3f;}
+/* sub_section */
+.sub_section {max-width:140rem; height: 100%; margin:0 auto; background:#222222;}
