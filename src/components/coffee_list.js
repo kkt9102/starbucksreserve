@@ -18,7 +18,7 @@ const CoffeeList = () => {
                                 <img src={miniLogo} alt="리저브 로고"></img>
                             </div>
                             <div className="coffee_name">
-                                파나마 보케테
+                                {/* {coffee_k_nmae} */}
                             </div>
                         </div>
                     </div>
