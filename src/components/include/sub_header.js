@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import '../../resources/css/common.css';
 import '../../resources/css/style.css';
 
 const SHeader = () => {
+    const arrow ={
+        height: 2 +'rem'
+    }
     return(
         <>
             <div className="sub_header">
@@ -11,7 +15,9 @@ const SHeader = () => {
                 <nav className="menu_nav">
                     <ul className="flex">
                         <li className="history_back"><Link to="/">HOME</Link></li>
+                        <MdKeyboardArrowRight/>
                         <li>COFFEE</li>
+                        <MdKeyboardArrowRight/>
                         <li><Link to="">Panama</Link></li>
                     </ul>
                 </nav>

@@ -106,3 +106,6 @@
 .sub_header .menu_nav ul li a:hover {color:#976d3f;}
 /* sub_section */
 .sub_section {max-width:140rem; height: 100%; margin:0 auto; background:#222222;}
+
+.sub_section .cont_1 .img_box {flex-basis: 55rem;}
+.sub_section .cont_1 .img_box img {max-width: 100%; border:0.2rem solid #976d3f;}

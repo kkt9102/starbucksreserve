@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-/*
+//img
+import panama from '../../resources/img/coffee_list/Panama Boquete.jpg';
+
+
+const Coffee_names = (props) => {
 const [coffee, setCoffee] = useState([
         {
             id: 1,
             coffee_k_nmae: '파나마 보케테',
             coffee_e_name: 'Panama Boquete',
-            image: '',
+            image: {panama},
         },
         {
             id: 2,
@@ -51,4 +55,6 @@ const [coffee, setCoffee] = useState([
             image: '',
         }
     ])
-*/
+}
+
+export default Coffee_names;
