@@ -6,7 +6,7 @@ import CoffeeNames from './coffee-list/name';
 import miniLogo from '../resources/img/coffee_list_logo.svg';
 import panama from '../resources/img/coffee_list/Panama Boquete.jpg';
 
-const CoffeeList = () => {
+const CoffeeLists = () => {
     // const panama_name = '파나마 보케테';
     return (
         <>
@@ -30,4 +30,4 @@ const CoffeeList = () => {
     )
 }
 
-export default CoffeeList;
+export default CoffeeLists;

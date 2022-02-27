@@ -1,10 +1,10 @@
 import React from "react";
 import '../resources/css/style.css';
-import CoffeeList from "./coffee_list";
+import CoffeeList from "./coffee-list/name";
 
 import S_4_tit from "../resources/img/section_4_tit.png";
 
-const ReserveSC4 = () => {
+const ReserveSC4 = (props) => {
     return(
         <>
             <section id="section_4" className="section re_sc_4">
@@ -15,13 +15,6 @@ const ReserveSC4 = () => {
                     </div>
                     <div className="cont_1">
                         <ul className="flex flex_jc_sb flex_wrap_wrap">
-                            <CoffeeList />
-                            <CoffeeList />
-                            <CoffeeList />
-                            <CoffeeList />
-                            <CoffeeList />
-                            <CoffeeList />
-                            <CoffeeList />
                             <CoffeeList />
                         </ul>
                     </div>
