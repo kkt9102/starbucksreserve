@@ -13,9 +13,17 @@ import ecuador from '../../resources/img/coffee_list/Ecuador Loja.jpg';
 import miniLogo from '../../resources/img/coffee_list_logo.svg';
 
 const Item = ({item}) => {
+    const url = `${item.links}`
     return (
         <li className="coffee_item">
-            <Link to={item.links} key={item.id}>
+            {/* <Link to={url} key={item.id}> */}
+            <Link to={{
+                pathname: `${url}`,
+                state: {
+                    k_name: `${item.coffee_k_name}`,
+                    e_name: `${item.coffee_e_name}`
+                }
+            }} key={item.id}>
                 <div className="img_box">
                     <img src={item.image} alt=""></img>
                     <div className="coffee_target">
@@ -92,7 +100,7 @@ const Item = ({item}) => {
   
     return (
         <>
-        {items.map(item => (<Item item={item} key={item.id} />))}
+        {items.map((item,index) => (<Item item={item} key={index} />))}
         </>
     )
 }

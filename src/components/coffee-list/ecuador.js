@@ -10,9 +10,9 @@ import RFooter from '../include/reserve_footer';
 
 
 // img
-import panama from '../../resources/img/coffee_list/Panama Boquete.jpg';
+import ecuador from '../../resources/img/coffee_list/Ecuador Loja.jpg';
 
-const Panama = ({match}) => {
+const Ecuador = ({match}) => {
     const username = useLocation();
     console.log(username);
     return (
@@ -21,8 +21,8 @@ const Panama = ({match}) => {
 
             <div className="sub_header">
                 <div className="coffee_name flex flex_jc_c flex_dir_c flex_ai_c">
-                    <span className="k_name">파나마 보케테</span>
-                    <span className="e_name">Panama Boquete</span>  
+                    <span className="k_name">에콰도르 로하</span>
+                    <span className="e_name">Ecuador Loja</span>  
                 </div>
                 <nav className="menu_nav">
                     <ul className="flex">
@@ -34,7 +34,7 @@ const Panama = ({match}) => {
                             <MdKeyboardArrowRight/>
                         <li>
                             <Link to="">
-                                <span>Panama Boquete</span>
+                                <span>Ecuador Loja</span>
                             </Link>
                         </li>
                     </ul>
@@ -44,21 +44,21 @@ const Panama = ({match}) => {
                 <section className="sub_section">
                     <div className="cont_1 flex flex_jc_sb">
                         <div className="img_box">
-                            <img src={panama} alt=""></img>
+                            <img src={ecuador} alt=""></img>
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
                                 <span>원산지 : </span>
-                                <span>라틴 아메리카(파나마)</span>
+                                <span>라틴아메리카(에콰도르)</span>
                             </div>
                             <ul className="info_box">
                                 <li className="tasting_note">
                                     <div className="sub_tit">Tasting Notes</div>
-                                    <div>잘 익은 오렌지의 산미와 카카오닙스, 달콤한 피니시</div>
+                                    <div>싱그러운 허브의 은은한 달콤함과 카카오닙스의 쌉쌀한 피니쉬</div>
                                 </li>
                                 <li className="enjoy_with">
                                     <div className="sub_tit">Enjoy with</div>
-                                    <div>오렌지, 카카오닙스</div>
+                                    <div>시트러스, 캐러멜, 다크 초콜릿</div>
                                 </li>
                                 <li className="processing">
                                     <div className="sub_tit">Processing Method</div>
@@ -84,9 +84,10 @@ const Panama = ({match}) => {
                     <div className="cont_2">
                         <div className="txt_box">
                             <ul>
-                                <li>파나마의 서쪽에 있는 보케테는 작은 마을이지만 전 세계에 파나마 커피를 알린 유명한 커피 원산지입니다. 3개의 화산으로 둘러싸인 이 지역은 미네랄이 풍부한 토양과 커피 재배에 적합한 고도와 기후를 갖추고 있습니다.</li>
-                                <li>이 커피가 재배된 돈 페페 농장에서는 고품질의 커피뿐만 아니라, 환경을 보호하기 위한 노력도 게을리하지 않습니다. 에코 펄퍼로 벗겨낸 커피 과육은 비료로 재활용하고, 물을 절약하고 재사용하여 환경 오염을 최소화합니다.</li>
-                                <li>파나마 보케테는 잘 익은 오렌지처럼 부드러운 산미로 시작해서 쌉쌀한 카카오닙스의 풍미로 이어지며, 견과류를 넣은 쿠키처럼 버터리한 고소함과 달콤함이 부드럽게 마지막을 장식합니다.    </li>
+                                <li>적도 바로 아래에 위치한 에콰도르 로하 지역은 다양한 동식물이 공존할 뿐만 아니라 영양이 풍부한 화산토양, 건기와 우기가 뚜렷한 열대 기후까지 커피 재배를 위한 완벽한 환경을 갖추고 있습니다.</li>
+                                <li>에콰도르 로하의 엽서 디자인은 이러한 환경을 표현할 뿐만 아니라 이 커피가 가진 독특한 매력을 그려내고 있습니다.</li>
+                                <li>들판에 핀 야생화를 닮은 커피의 아로마, 싱그러운 허브에서 느껴지는 은은한 산미와 달콤한 풍미, 야생화와 들풀속에 숨어있는 재규어를 연상시키는 카카오닙스의 쌉쌀한 피니쉬까지.</li>
+                                <li>무더운 여름, 아이스 커피로도 더할 나위 없는 매력을 가진 에콰도르 로하를 만나보세요.</li>
                             </ul>
                         </div>
                     </div> 
@@ -96,4 +97,4 @@ const Panama = ({match}) => {
     )
 }
 
-export default Panama;
+export default Ecuador;

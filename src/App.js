@@ -1,7 +1,14 @@
 import './resources/css/common.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams  } from "react-router-dom";
 import Index from './components';
 import Panama from './components/coffee-list/panama';
+import Aged from './components/coffee-list/aged';
+import Hawail from './components/coffee-list/hawail';
+import Christmas from './components/coffee-list/christmas';
+import Bolivia from './components/coffee-list/bolivia';
+import Zambia from './components/coffee-list/zambia';
+import Rwanda from './components/coffee-list/rwanda';
+import Ecuador from './components/coffee-list/ecuador';
 
 
 function App() {
@@ -21,13 +28,19 @@ function App() {
   //   // Not found routes work as you'd expect
   //   { path: '*', element: <NotFound /> }
   // ]);
-
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route path="/" element={<Index/>}/>
         <Route path="/Panama" element={<Panama/>}/>
+        <Route path="/Aged" element={<Aged/>}/>
+        <Route path="/hawail" element={<Hawail/>}/>
+        <Route path="/christmas" element={<Christmas/>}/>
+        <Route path="/Bolivia" element={<Bolivia/>}/>
+        <Route path="/Zambia" element={<Zambia/>}/>
+        <Route path="/rwanda" element={<Rwanda/>}/>
+        <Route path="/Ecuador" element={<Ecuador/>}/>
       </Routes>
     </BrowserRouter>
     </>

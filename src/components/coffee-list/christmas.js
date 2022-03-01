@@ -10,9 +10,9 @@ import RFooter from '../include/reserve_footer';
 
 
 // img
-import panama from '../../resources/img/coffee_list/Panama Boquete.jpg';
+import christmas from '../../resources/img/coffee_list/Christmas.jpg';
 
-const Panama = ({match}) => {
+const Christmas = ({match}) => {
     const username = useLocation();
     console.log(username);
     return (
@@ -21,8 +21,8 @@ const Panama = ({match}) => {
 
             <div className="sub_header">
                 <div className="coffee_name flex flex_jc_c flex_dir_c flex_ai_c">
-                    <span className="k_name">파나마 보케테</span>
-                    <span className="e_name">Panama Boquete</span>  
+                    <span className="k_name">크리스마스</span>
+                    <span className="e_name">Christmas</span>  
                 </div>
                 <nav className="menu_nav">
                     <ul className="flex">
@@ -34,7 +34,7 @@ const Panama = ({match}) => {
                             <MdKeyboardArrowRight/>
                         <li>
                             <Link to="">
-                                <span>Panama Boquete</span>
+                                <span>Christmas</span>
                             </Link>
                         </li>
                     </ul>
@@ -44,21 +44,21 @@ const Panama = ({match}) => {
                 <section className="sub_section">
                     <div className="cont_1 flex flex_jc_sb">
                         <div className="img_box">
-                            <img src={panama} alt=""></img>
+                            <img src={christmas} alt=""></img>
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
                                 <span>원산지 : </span>
-                                <span>라틴 아메리카(파나마)</span>
+                                <span>아시아/태평양(인도네시아) &amp; 라틴 아메리카(코스타리카)</span>
                             </div>
                             <ul className="info_box">
                                 <li className="tasting_note">
                                     <div className="sub_tit">Tasting Notes</div>
-                                    <div>잘 익은 오렌지의 산미와 카카오닙스, 달콤한 피니시</div>
+                                    <div>따뜻하고 포근한 삼나무향, 설탕에 졸인 생강과 버터스카치의 달콤함</div>
                                 </li>
                                 <li className="enjoy_with">
                                     <div className="sub_tit">Enjoy with</div>
-                                    <div>오렌지, 카카오닙스</div>
+                                    <div>버터스카치</div>
                                 </li>
                                 <li className="processing">
                                     <div className="sub_tit">Processing Method</div>
@@ -84,9 +84,10 @@ const Panama = ({match}) => {
                     <div className="cont_2">
                         <div className="txt_box">
                             <ul>
-                                <li>파나마의 서쪽에 있는 보케테는 작은 마을이지만 전 세계에 파나마 커피를 알린 유명한 커피 원산지입니다. 3개의 화산으로 둘러싸인 이 지역은 미네랄이 풍부한 토양과 커피 재배에 적합한 고도와 기후를 갖추고 있습니다.</li>
-                                <li>이 커피가 재배된 돈 페페 농장에서는 고품질의 커피뿐만 아니라, 환경을 보호하기 위한 노력도 게을리하지 않습니다. 에코 펄퍼로 벗겨낸 커피 과육은 비료로 재활용하고, 물을 절약하고 재사용하여 환경 오염을 최소화합니다.</li>
-                                <li>파나마 보케테는 잘 익은 오렌지처럼 부드러운 산미로 시작해서 쌉쌀한 카카오닙스의 풍미로 이어지며, 견과류를 넣은 쿠키처럼 버터리한 고소함과 달콤함이 부드럽게 마지막을 장식합니다.    </li>
+                                <li>포근한 삼나무향과 다채로운 스파이스, 감칠맛이 매력적인 크리스마스 리저브 블렌드는 행복하고 즐거운 크리스마스의 느낌을 가득 담고 있습니다.</li>
+                                <li> 크리스마스 시즌을 앞두고 신선한 커피 샘플이 도착하면, 우리는 크리스마스 블렌드에 어울리는 가장 완벽한 재료들을 찾아냅니다.</li>
+                                <li>블렌딩은 매년 조금씩 달라지지만, 우리가 사랑하는 크리스마스의 강렬하고 생생한 풍미 프로필은 언제나 똑같습니다.</li>
+                                <li> 올 해는 산미와 달콤함이 조화로운 코스타리카 하시엔다 알사시아, 강렬하고 묵직한 숙성 수마트라와 수마트라 아체가 블렌딩되어 풍부한 삼나무의 향, 다채로운 스파이스의 감칠맛, 버터스카치의 달콤함이 매력적인 크리스마스 커피가 완성되었습니다.</li>
                             </ul>
                         </div>
                     </div> 
@@ -96,4 +97,4 @@ const Panama = ({match}) => {
     )
 }
 
-export default Panama;
+export default Christmas;

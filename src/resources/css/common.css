@@ -57,6 +57,10 @@ p, a, li, ol, div, span {font-size:1.6rem;}
 .flex_ai_str { display:flex; align-items:stretch; -ms-align-items:stretch;}
 .flex_as_c { display:flex; align-self: center;}
 .flex_as_e { display:flex; align-self: flex-end;}
+.flex_dir_c { display: flex; flex-direction: column;}
+.flex_dir_c_r { display: flex; flex-direction: column-reverse;}
+.flex_dir_r { display: flex; flex-direction: row;}
+.flex_dir_r_r { display: flex; flex-direction: row-reverse;}
 
 /* width */
 .width_100p { width:100%;}

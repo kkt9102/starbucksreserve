@@ -4,7 +4,7 @@ import CoffeeList from "./coffee-list/name";
 
 import S_4_tit from "../resources/img/section_4_tit.png";
 
-const ReserveSC4 = (props) => {
+const ReserveSC4 = () => {
     return(
         <>
             <section id="section_4" className="section re_sc_4">
