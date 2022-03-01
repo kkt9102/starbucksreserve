@@ -15,7 +15,7 @@ const ReserveSC4 = (props) => {
                     </div>
                     <div className="cont_1">
                         <ul className="flex flex_jc_sb flex_wrap_wrap">
-                            <CoffeeList />
+                            <CoffeeList/>
                         </ul>
                     </div>
                 </div>

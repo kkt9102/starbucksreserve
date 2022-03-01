@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 //img
@@ -12,11 +12,10 @@ import rwanda from '../../resources/img/coffee_list/Rwanda Sholi.jpg';
 import ecuador from '../../resources/img/coffee_list/Ecuador Loja.jpg';
 import miniLogo from '../../resources/img/coffee_list_logo.svg';
 
-
-function Item({ item }) {
+const Item = ({item}) => {
     return (
         <li className="coffee_item">
-            <Link to={item.links}>
+            <Link to={item.links} key={item.id}>
                 <div className="img_box">
                     <img src={item.image} alt=""></img>
                     <div className="coffee_target">
@@ -31,8 +30,7 @@ function Item({ item }) {
     );
  }
   
- function CoffeeList() {
-  
+ const CoffeeList = () => {
     const items = [
         {
             id: 1,
@@ -93,10 +91,8 @@ function Item({ item }) {
     ];
   
     return (
-       <>
-        {
-           items.map(item => (<Item item={item} />)) 
-        }
+        <>
+        {items.map(item => (<Item item={item} key={item.id} />))}
         </>
     )
 }

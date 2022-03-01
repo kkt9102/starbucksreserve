@@ -107,6 +107,14 @@
 .sub_header .menu_nav ul svg {font-size:3rem;}
 /* sub_section */
 .sub_section {max-width:140rem; height: 100%; margin:0 auto; background:#222222;}
-
-.sub_section .cont_1 .img_box {flex-basis: 55rem;}
+.sub_section .cont_1 {padding-bottom:5rem;}
+.sub_section .cont_1 .img_box {flex-basis: 40%;}
 .sub_section .cont_1 .img_box img {max-width: 100%; border:0.2rem solid #976d3f;}
+.sub_section .cont_1 .coffee_info {flex-basis:30%;}
+.sub_section .cont_1 .coffee_info ul li {padding:2rem; border:0.1rem solid #976d3f;}
+.sub_section .cont_1 .coffee_info ul li .sub_tit {font-size:2rem; font-weight: 800;}
+.sub_section .cont_1 .coffee_info ul li .levels {margin-right:1rem;}
+.sub_section .cont_1 .coffee_info ul li .stars {display: flex; align-items: center;}
+.sub_section .cont_1 .coffee_info ul li .stars svg {margin:0 0.2rem; font-size:2rem; fill:#976d3f;}
+
+.sub_section .cont_2 {padding-top:5rem; border-top:0.1rem solid #976d3f;}

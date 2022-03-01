@@ -16,7 +16,7 @@ const ReserveSC5 = () => {
                         <div className="sub_tit flex flex_jc_c">전국의 스타벅스 리저브™ 매장 <span className="mark_count"></span> 곳을 확인하세요</div>
                     </div>
                     <div className="map_box">
-                        <KaKaoMap/>
+                        {/* <KaKaoMap/> */}
                     </div>
                 </div>
             </section>

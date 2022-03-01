@@ -13,7 +13,11 @@ const ReserveSC3 = () => {
                     <img src={S_3_tit} alt="리저브 추출방식 RESERVE™ EXTRACTION"></img>
                 </div>
                 <div className="cont_1">
-                    <ExtrantionList/>
+                    <nav className="extraction_list extra_list">
+                        <ul className="flex flex_jc_sb">
+                            <ExtrantionList/>
+                        </ul>
+                    </nav>    
                 </div>
             </div>
         </section>

@@ -24,78 +24,59 @@ $(function(){
     popup();
 })
 
-function ExtrantionList(){
+const Item = ({item}) => {
+    return (
+        <li id={item.name}>
+            <div className="border_b">
+                <div className="flex flex_jc_c flex_wrap_wrap">
+                    <div className="img_box">
+                        <img src={item.icon} alt={item.name}></img>
+                    </div>
+                    <div className="txt_box flex flex_jc_c flex_wrap_wrap">
+                        <div className="sub_tit flex flex_jc_c">CLOVER</div>
+                        <div className="sub_txt">{item.txt}</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    );
+}
+
+const ExtrantionList = () => {
+    const items = [{
+        id: 1,
+        name: 'COLVER',
+        icon: `${clover_icon}`,
+        txt: '깊은 풍미에 \n 진하고 강한 맛을 원하면'
+    },
+    {
+        id: 2,
+        name: 'BLACKEAGLE',
+        icon: `${b_e_icon}`,
+        txt: '진하고 깊은 \n 에스프레소 풍미를 \n 다체롭게 즐기고 싶다면'
+    },
+    {
+        id: 3,
+        name: 'POUROVER',
+        icon: `${poc_icon}`,
+        txt: '은은한 커피향에 \n 부드럽고 깔끔한 풍미를 \n 느끼고 싶다면'
+    },
+    {
+        id: 4,
+        name: 'CHEMEX',
+        icon: `${chemex_icon}`,
+        txt: '풍부한 커피향과 \n 균형잡힌 풍미를 \n 느끼고 싶다면'
+    },
+    {
+        id: 5,
+        name: 'COLDBREW',
+        icon: `${c_b_icon}`,
+        txt: '달콤함과 부드러운 풍미를 \n 동시에 느끼고 싶다면'
+    }];
+
     return (
         <>
-            <nav className="extraction_list extra_list">
-                <ul className="flex flex_jc_sb">
-                    <li id="clover">
-                        <div className="border_b">
-                            <div className="flex flex_jc_c flex_wrap_wrap">
-                                <div className="img_box">
-                                    <img src={clover_icon} alt="CLOVER"></img>
-                                </div>
-                                <div className="txt_box flex flex_jc_c flex_wrap_wrap">
-                                    <div className="sub_tit flex flex_jc_c">CLOVER</div>
-                                    <div className="sub_txt">깊은 풍미에<br/>진하고 강한 맛을 원하면</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="blackeagle">
-                        <div className="border_b">
-                            <div className="flex flex_jc_c flex_wrap_wrap">
-                                <div className="img_box">
-                                    <img src={b_e_icon} alt="BLACK EAGLE"></img>
-                                </div>
-                                <div className="txt_box flex flex_jc_c flex_wrap_wrap">
-                                    <div className="sub_tit flex flex_jc_c">BLACK-EAGLE</div>
-                                    <div className="sub_txt">진하고 깊은<br/>에스프레소 풍미를<br/>다체롭게 즐기고 싶다면</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="pourover">
-                        <div className="border_b">
-                            <div className="flex flex_jc_c flex_wrap_wrap">
-                                <div className="img_box">
-                                    <img src={poc_icon} alt="POUR OVER"></img>
-                                </div>
-                                <div className="txt_box flex flex_jc_c flex_wrap_wrap">
-                                    <div className="sub_tit flex flex_jc_c">POUR OVER</div>
-                                    <div className="sub_txt">은은한 커피향에<br/>부드럽고 깔끔한 풍미를<br/>느끼고 싶다면</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="chemex">
-                        <div className="border_b">
-                            <div className="flex flex_jc_c flex_wrap_wrap">
-                                <div className="img_box">
-                                    <img src={chemex_icon} alt="CHEMEX"></img>
-                                </div>
-                                <div className="txt_box flex flex_jc_c flex_wrap_wrap">
-                                    <div className="sub_tit flex flex_jc_c">CHEMEX</div>
-                                    <div className="sub_txt">풍부한 커피향과<br/>균형잡힌 풍미를<br/>느끼고 싶다면</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="coldbrew">
-                        <div className="border_b">
-                            <div className="flex flex_jc_c flex_wrap_wrap">
-                                <div className="img_box">
-                                    <img src={c_b_icon} alt="COLD BREW"></img>
-                                </div>
-                                <div className="txt_box flex flex_jc_c flex_wrap_wrap">
-                                    <div className="sub_tit flex flex_jc_c">COLD BREW</div>
-                                    <div className="sub_txt">달콤함과 부드러운 풍미를<br/>동시에 느끼고 싶다면</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+        {items.map(item => (<Item item={item} key={item.id} />))}
         </>
     )
 }
