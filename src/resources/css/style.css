@@ -1,5 +1,6 @@
 @import url('../font/NotoSansCJKkr.css');
 
+
 #root {background: #222222;}
 * {color:#ffffff; font-family: 'NotoKr'; letter-spacing: -0.05rem;}
 .con {max-width:120rem; margin:0 auto; padding-top:8rem;}

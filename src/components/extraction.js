@@ -33,7 +33,7 @@ const Item = ({item}) => {
                         <img src={item.icon} alt={item.name}></img>
                     </div>
                     <div className="txt_box flex flex_jc_c flex_wrap_wrap">
-                        <div className="sub_tit flex flex_jc_c">CLOVER</div>
+                        <div className="sub_tit flex flex_jc_c">{item.name}</div>
                         <div className="sub_txt">{item.txt}</div>
                     </div>
                 </div>
