@@ -3,6 +3,9 @@ import React from "react";
 import '../../resources/css/style.css';
 
 function RFooter() {
+
+    // const PageWidth = document.documentElement.scrollWidth;
+    
     return(
         <>
             <footer id="reserve_footer">

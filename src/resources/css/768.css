@@ -1,5 +1,6 @@
-@media screen and (max-width:786px) {
+@media screen and (max-width:768px) {
         /* common */
+        /* .section {min-width:100vh;} */
         .con {max-width: 90%;}
         .section .section_tit img {height: 2.5rem;}
 
@@ -29,6 +30,7 @@
         #section_3 .extraction_list ul li .txt_box .sub_txt {font-size: 1.2rem;}
 
         /* section_04 */
+        #section_4 {min-width:100%;}
         #section_4 .cont_1 > ul {justify-content: center;}
         #section_4 .coffee_item {flex-basis:80%; height: auto; text-align: center;}
         #section_4 .coffee_item .img_box > img {width: 80%;}
@@ -37,4 +39,32 @@
     
 
         /* footer */
+        #reserve_footer .con {padding-top:2rem;}
+        #reserve_footer .con .footer_menu_1 ul {flex-wrap: wrap;}
+        #reserve_footer .con .footer_menu_1 ul li {display: flex; justify-content: center; flex-basis:calc(100%/4); height: 3rem;}
+}
+
+@media screen and (max-width:768px) and (height:1024px) {
+        /* section_01 */
+        #section_1 .cont_1 .main_logo {max-width: 30rem; margin-top:20%;}
+        #section_1 .cont_1 .sub_txt {font-size:2.4rem;}
+        #section_1 .cont_1 .sub_tit {font-size:3.8rem;}
+
+        /* section_02 */
+        #section_2::after {height:28rem;}
+        #section_2 .cont_1 {margin-top:2rem;}
+        #section_2 .cont_1 .sub_txt {margin-bottom:1.5rem; font-size:2rem;}
+        #section_2 .cont_1 .sub_tit {font-size:3rem;}
+        #section_2 .cont_2 ul li {justify-content: flex-start; font-size:1.75rem; line-height: 1.8;}
+        #section_2 .cont_3 ul li {font-size:1.75rem; line-height: 1.8;}
+
+        /* section_03 */
+        #section_3::after {height:28rem;}
+        #section_3 .extraction_list ul li::after {top:calc(58% - 1.4rem);}
+        #section_3 .extraction_list ul li:nth-child(2n + 2) {top:25rem;}
+        #section_3 .extraction_list ul li .img_box {max-height: 8rem; margin-bottom:3rem;}
+        #section_3 .extraction_list ul li img {height: 8rem;}
+
+        /* section_04 */
+        #section_4 .coffee_item {flex-basis:40%; margin:2rem;}
 }

@@ -24,7 +24,18 @@
     /* section_05 */
 
     /* footer */
+    #reserve_footer .con .footer_menu_1 {max-width: 90%; margin:0 auto;}
     #reserve_footer .con .footer_menu_1 ul li {font-size:1.4rem;}
     #reserve_footer .con .footer_menu_2 ul li {font-size:1.5rem;}
     #reserve_footer .con .address {margin-top:4rem;}
+
+    /* sub_header */
+    .sub_header .menu_nav ul {max-width: 90%; margin:0 auto;}
+
+    /* sub_section */
+    .sub_section .cont_1 {max-width: 90%; margin:0 auto;}
+    .sub_section .cont_1 .img_box {flex-basis: 50%;}
+    .sub_section .cont_2 {padding-bottom:2rem;}
+    .sub_section .cont_2 .txt_box {max-width: 90%; margin:0 auto;}
+    .sub_section .cont_2 .txt_box ul li {font-size:1.7rem; word-break: keep-all;}
 }

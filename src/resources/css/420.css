@@ -1,0 +1,46 @@
+@media screen and (max-width:420px) {
+    /* common */
+    #root {overflow-x: hidden;}
+    .section .section_tit img {height:1.7rem;}
+
+    /* header */
+
+
+    /* section_01 */
+    #section_1 .cont_1 .main_logo {max-width: 75%;}
+    #section_1 .cont_1 .sub_txt {font-size:3rem; word-break: keep-all; text-align: center;}
+    #section_1 .cont_1 .sub_tit {font-size:3.7rem; font-weight: 700; word-break: keep-all; text-align: center;}
+
+    /* section_02 */
+    #section_2 .cont_1 .sub_tit {word-break: keep-all; text-align: center;}
+    #section_2 .cont_3 ul li {word-break: keep-all;}
+
+    /* section_03 */
+    #section_3::after {height: 20rem;}
+    #section_3 .extraction_list ul {flex-wrap:wrap; justify-content: flex-start;}
+    #section_3 .extraction_list ul li {flex-basis:100%; max-width: 100%; margin-top:2rem;}
+    #section_3 .extraction_list ul li::after {display: none;}
+    #section_3 .extraction_list ul li:nth-child(2n + 2) {top:0;}
+    #section_3 .extraction_list ul li .img_box {flex-basis:30%; text-align: center;}
+    #section_3 .extraction_list ul li .txt_box {flex-basis:60%;}
+    #section_3 .extraction_list ul li > div {width: 100%; padding:0.5rem;}
+    #section_3 .extraction_list ul li > div > div {flex-wrap: nowrap;}
+    
+
+    /* section_04 */
+    
+
+    /* section_05 */
+
+    
+    /* footer */
+    #reserve_footer .con .footer_menu_1 {max-width: 90%; margin:0 auto;}
+    #reserve_footer .con .footer_menu_1 ul {justify-content: flex-start;}
+    #reserve_footer .con .footer_menu_1 ul li {flex-basis:auto; height:2.8rem; margin:0 0.5rem; padding: 0 0.5rem; font-size:1.3rem;}
+    #reserve_footer .con .footer_menu_2 {margin-top:1rem;}
+    #reserve_footer .con .footer_menu_2 ul {align-items:center; flex-direction: column;}
+    #reserve_footer .con .footer_menu_2 ul li {width:80%; height:2.8rem; margin-top:1rem; font-size:1.3rem;}
+    #reserve_footer .con .address {flex-direction: column; max-width:90%; margin:1rem auto 1rem auto;}
+    #reserve_footer .con .address div {margin-top:0.8rem; font-size:1.2rem;}
+    #reserve_footer .con .copyright {font-size:1rem;}
+}

@@ -29,4 +29,12 @@
     /* section_05 */
 
     /* footer */
+
+    /* sub_header */
+    .sub_header .coffee_name {padding-top:3rem; padding-bottom:4rem;}
+
+    /* sub_section */
+    .sub_section .cont_1 .coffee_info ul li {padding:1.5rem;}
+    .sub_section .cont_1 .coffee_info ul li .sub_tit {font-size:1.8rem;}
+    .sub_section .cont_1 .coffee_info ul li div:not(.sub_tit) {font-size:1.5rem;}
 }

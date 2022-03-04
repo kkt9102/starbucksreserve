@@ -1,17 +1,23 @@
-@media screen and (max-width:375) {
+@media screen and (max-width:375px) {
     /* common */
 
     /* header */
 
 
     /* section_01 */
-
+    #section_1 .cont_1 .main_logo {max-width: 60%;}
+    #section_1 .cont_1 .sub_txt {font-size:2.8rem;}
+    #section_1 .cont_1 .sub_tit {font-size:3.4rem;}
 
     /* section_02 */
-
+    #section_2 .cont_2 ul li {font-size:1.5rem;}
 
     /* section_03 */
-    
+    #section_3 .extraction_list {margin-top:1rem;}
+    #section_3 .extraction_list ul li {margin-top:1rem;}
+    #section_3 .extraction_list ul li .img_box {max-height: 5rem;}
+    #section_3 .extraction_list ul li .txt_box .sub_tit {margin-top:0rem; font-size:2rem;}
+    #section_3 .extraction_list ul li .txt_box .sub_txt {display: flex; flex-basis:80%;}
 
     /* section_04 */
 
