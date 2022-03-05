@@ -7,7 +7,8 @@
 .section {position:relative; width: 100%; height: 100vh; z-index: 2; background:#222222;}
 .font_P {color:#976d3f;}
 .border_b {border:0.2rem solid #976d3f; border-radius: 1rem;}
-
+.bullet {position:relative; margin-left:1rem;}
+.bullet::before {content:''; position: absolute; width:0.5rem; height:100%; top:0; left:-1rem; background: #976d3f;}
 
 /* header */
 .top_menu {z-index: 10; height: 6rem; width: 100%;}
@@ -101,14 +102,16 @@
 
 /* sub_header */
 .sub_header, .sub_header * {background:#222222;}
-.sub_header .coffee_name {padding-top:6rem; padding-bottom: 6rem;}
-.sub_header .coffee_name .k_name {font-size:4.2rem; line-height: 4.2rem;}
-.sub_header .coffee_name .e_name  {font-size:1.3rem; line-height: 1.3rem;}
-.sub_header .menu_nav {margin-bottom:3rem;}
-.sub_header .menu_nav ul {width:100%; margin:0 auto; justify-content:flex-start; align-items:center;}
-.sub_header .menu_nav ul li, .sub_header .menu_nav ul li a {font-size:1.3rem; transition: color 0.3s;}
+.sub_header .coffee_name {position:relative; padding-top:6rem; padding-bottom: 6rem;}
+.sub_header .coffee_name::after {content: ''; position:absolute; background:url(../img/sub_header.gif); background-position-Y:60%; width:100%; height:20rem; top:0; left:0; background-size: cover; opacity: 0.3;}
+.sub_header .coffee_name .k_name {font-size:4.2rem; line-height: 4.2rem; z-index: 2; background-color: transparent;}
+.sub_header .coffee_name .e_name {margin-top:0.5rem; font-size:1.3rem; line-height: 1.3rem; z-index: 2; background-color: transparent;}
+.sub_header .menu_nav {margin-top:1.5rem; margin-bottom:3rem;}
+.sub_header .menu_nav ul {width:140rem; margin:0 auto; justify-content:flex-start; align-items:center;}
+.sub_header .menu_nav ul li, .sub_header .menu_nav ul li a, .sub_header .menu_nav ul li span {font-size:1.3rem; transition: color 0.3s;}
 .sub_header .menu_nav ul li a:hover {color:#976d3f;}
 .sub_header .menu_nav ul svg {font-size:3rem;}
+
 /* sub_section */
 .sub_section {max-width:140rem; height: 100%; margin:0 auto; background:#222222;}
 .sub_section .cont_1 {padding-bottom:5rem;}
@@ -123,4 +126,22 @@
 .sub_section .cont_1 .coffee_info ul li .stars {display: flex; align-items: center;}
 .sub_section .cont_1 .coffee_info ul li .stars svg {margin:0 0.2rem; font-size:2rem; fill:#976d3f;}
 
-.sub_section .cont_2 {padding-top:5rem; border-top:0.1rem solid #976d3f;}
+.sub_section .cont_2 {padding-top:5rem; padding-bottom:5rem; border-top:0.1rem solid #976d3f;}
+.sub_section .cont_2 .extra_select .sub_tit {font-size:2rem;}
+.sub_section .cont_2 .extra_select ul {margin-top:3rem;}
+.sub_section .cont_2 .extra_select ul li {position:relative; display:flex; justify-content:center; flex-basis:18rem; max-width:18rem; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;}
+.sub_section .cont_2 .extra_select ul li:first-child {margin-right:4rem;}
+.sub_section .cont_2 .extra_select ul li > div {position:relative; padding:1.5rem 1.5rem 3rem 1.5rem; transition: box-shadow 0.3s; transition-duration: 0.2s;}
+.sub_section .cont_2 .extra_select ul li > div::after {content:'';}
+.sub_section .cont_2 .extra_select ul li .img_box {flex-basis:100%; max-height: 7rem; margin-top:1.8rem; margin-bottom:0.8rem; text-align: center;}
+.sub_section .cont_2 .extra_select ul li:hover > div,
+.sub_section .cont_2 .extra_select ul li:active > div,
+.sub_section .cont_2 .extra_select ul li:focus  > div {box-shadow: -0.1rem -0.1rem 0.5rem #976d3f;}
+.sub_section .cont_2 .extra_select ul li::after {content:''; position: absolute; width:90%; height: 0.5rem; top:calc(50% - 1.4rem); left:5%; background: #976d3f;}
+.sub_section .cont_2 .extra_select ul li img {height:7rem;}
+.sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {margin-bottom:1.5rem; flex-basis:100%; font-size:2.2rem; font-weight:500; letter-spacing:0.1rem; color:#976d3f; white-space: nowrap;}
+.sub_section .cont_2 .extra_select ul li .txt_box .sub_txt {display:flex; align-items:center; height:4.5em; font-size:1.3rem; word-break:keep-all; text-align: center; line-height: 2rem;}
+.sub_section .cont_2 .txt_box {flex-basis:60%;}
+.sub_section .cont_2 .txt_box .sub_tit {margin-bottom:3rem; font-size:2rem;}
+.sub_section .cont_2 .txt_box ul {padding-right:2rem;}
+.sub_section .cont_2 .txt_box ul li {word-break: keep-all;}

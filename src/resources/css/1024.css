@@ -29,12 +29,19 @@
     /* section_05 */
 
     /* footer */
+    #reserve_footer .con .footer_menu_1 ul li {font-size:1.3rem;}
+    #reserve_footer .con .footer_menu_2 ul li {font-size:1.4rem;}
 
     /* sub_header */
     .sub_header .coffee_name {padding-top:3rem; padding-bottom:4rem;}
+    .sub_header .coffee_name::after {height:15rem;}
 
     /* sub_section */
     .sub_section .cont_1 .coffee_info ul li {padding:1.5rem;}
     .sub_section .cont_1 .coffee_info ul li .sub_tit {font-size:1.8rem;}
     .sub_section .cont_1 .coffee_info ul li div:not(.sub_tit) {font-size:1.5rem;}
+    .sub_section .cont_2 {flex-direction: column;}
+    .sub_section .cont_2 .extra_select {display:flex; flex-direction:column; align-items: center;}
+    .sub_section .cont_2 .extra_select .sub_tit {display: flex; align-self: flex-start;}
+    .sub_section .cont_2 .txt_box ul {padding-right:0;}
 }

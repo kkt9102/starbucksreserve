@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import ScrollToTop from "../../utils/scrollTop";
+import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
 import RFooter from '../include/reserve_footer';
 
@@ -17,6 +19,7 @@ const Bolivia = ({match}) => {
     console.log(username);
     return (
         <>
+            <ScrollToTop/>
             {/* <SHeader/> */}
 
             <div className="sub_header">
@@ -48,7 +51,7 @@ const Bolivia = ({match}) => {
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
-                                <span>원산지 : </span>
+                                <span className="bullet">원산지 : </span>
                                 <span>라틴아메리카(볼리비아)</span>
                             </div>
                             <ul className="info_box">
@@ -81,8 +84,16 @@ const Bolivia = ({match}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="cont_2">
+                    <div className="cont_2 flex flex_jc_sb">
+                        <div className="extra_select">
+                            <div className="sub_tit bullet">스타벅스가 추천드리는 추출방식</div>
+                            <ul className="flex">
+                                {ExtrantionList.type().props.children[0]}
+                                {ExtrantionList.type().props.children[2]}
+                            </ul>
+                        </div>
                         <div className="txt_box">
+                            <div className="sub_tit bullet">커피 스토리</div>
                             <ul>
                                 <li>로드리게즈 농장의 솔 데 라 마냐나 프로그램을 통해 재배된 이 커피는 볼리비아 스페셜티 커피를 대표하는 희망의 상징입니다.</li>
                                 <li>페드로 로드리게즈는 지난 30년 동안 볼리비아 커피를 세계에 선보이기 위해 많은 노력을 기울여 왔습니다.</li>

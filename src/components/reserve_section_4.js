@@ -1,10 +1,12 @@
 import React from "react";
+import { useParams, useLocation, Link } from "react-router-dom";
 import '../resources/css/style.css';
 import CoffeeList from "./coffee-list/name";
 
 import S_4_tit from "../resources/img/section_4_tit.png";
 
 const ReserveSC4 = () => {
+    const location = useLocation();
     return(
         <>
             <section id="section_4" className="section re_sc_4">
@@ -16,6 +18,7 @@ const ReserveSC4 = () => {
                     <div className="cont_1">
                         <ul className="flex flex_jc_sb flex_wrap_wrap">
                             <CoffeeList/>
+                            <div><Link to={`${location.search}`}>{location.pathName}</Link></div>
                         </ul>
                     </div>
                 </div>

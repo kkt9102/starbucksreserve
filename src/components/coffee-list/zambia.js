@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import ScrollToTop from "../../utils/scrollTop";
+import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
 import RFooter from '../include/reserve_footer';
 
@@ -17,6 +19,7 @@ const Zambia = ({match}) => {
     console.log(username);
     return (
         <>
+            <ScrollToTop/>
             {/* <SHeader/> */}
 
             <div className="sub_header">
@@ -48,7 +51,7 @@ const Zambia = ({match}) => {
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
-                                <span>원산지 : </span>
+                                <span className="bullet">원산지 : </span>
                                 <span>아프리카(잠비아)</span>
                             </div>
                             <ul className="info_box">
@@ -81,8 +84,16 @@ const Zambia = ({match}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="cont_2">
+                    <div className="cont_2 flex flex_jc_sb">
+                        <div className="extra_select">
+                            <div className="sub_tit bullet">스타벅스가 추천드리는 추출방식</div>
+                            <ul className="flex">
+                                {ExtrantionList.type().props.children[0]}
+                                {ExtrantionList.type().props.children[1]}
+                            </ul>
+                        </div>
                         <div className="txt_box">
+                            <div className="sub_tit bullet">커피 스토리</div>
                             <ul>
                                 <li>많은 커피 애호가들이 아프리카 커피로 케냐와 에티오피아 원두를 떠올리지만 잠비아 커피에도 아프리카 지역만의 독특한 풍미가 살아 있습니다.</li>
                                 <li>아프리카의 작은 나라인 잠비아는 인상적인 떼루아를 품고 있으며, 산악 지대가 많고 운송 인프라가 낙후된 내륙 국가라는 단점을 극복하여 이러한 진귀한 원두를 세상에 내놓고 있습니다.</li>

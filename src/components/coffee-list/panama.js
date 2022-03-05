@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import ScrollToTop from "../../utils/scrollTop";
+import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
 import RFooter from '../include/reserve_footer';
 
@@ -17,6 +19,7 @@ const Panama = ({match}) => {
     console.log(username);
     return (
         <>
+            <ScrollToTop/>
             {/* <SHeader/> */}
 
             <div className="sub_header">
@@ -48,7 +51,7 @@ const Panama = ({match}) => {
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
-                                <span>원산지 : </span>
+                                <span className="bullet">원산지 : </span>
                                 <span>라틴 아메리카(파나마)</span>
                             </div>
                             <ul className="info_box">
@@ -81,8 +84,16 @@ const Panama = ({match}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="cont_2">
+                    <div className="cont_2 flex flex_jc_sb">
+                        <div className="extra_select">
+                            <div className="sub_tit bullet">스타벅스가 추천드리는 추출방식</div>
+                            <ul className="flex">
+                                {ExtrantionList.type().props.children[3]}
+                                {ExtrantionList.type().props.children[4]}
+                            </ul>
+                        </div>
                         <div className="txt_box">
+                            <div className="sub_tit bullet">커피 스토리</div>
                             <ul>
                                 <li>파나마의 서쪽에 있는 보케테는 작은 마을이지만 전 세계에 파나마 커피를 알린 유명한 커피 원산지입니다. 3개의 화산으로 둘러싸인 이 지역은 미네랄이 풍부한 토양과 커피 재배에 적합한 고도와 기후를 갖추고 있습니다.</li>
                                 <li>이 커피가 재배된 돈 페페 농장에서는 고품질의 커피뿐만 아니라, 환경을 보호하기 위한 노력도 게을리하지 않습니다. 에코 펄퍼로 벗겨낸 커피 과육은 비료로 재활용하고, 물을 절약하고 재사용하여 환경 오염을 최소화합니다.</li>

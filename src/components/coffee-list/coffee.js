@@ -1,0 +1,252 @@
+import React from "react";
+
+import { Link, useLocation, useParams } from 'react-router-dom';
+import {BsStarFill, BsStar} from 'react-icons/bs';
+import { MdKeyboardArrowRight } from "react-icons/md";
+
+import ScrollToTop from "../../utils/scrollTop";
+// import SHeader from "./sub_header";
+import RFooter from '../include/reserve_footer';
+
+
+
+//img
+import panama from '../../resources/img/coffee_list/Panama Boquete.jpg';
+import aged from '../../resources/img/coffee_list/Aged Sumatra.jpg';
+import hawail from '../../resources/img/coffee_list/Hawaii Ka’u.jpg';
+import christmas from '../../resources/img/coffee_list/Christmas.jpg';
+import bolivia from '../../resources/img/coffee_list/Bolivia Sol de la Manana.jpg';
+import zambia from '../../resources/img/coffee_list/Zambia Isanya Estate.jpg';
+import rwanda from '../../resources/img/coffee_list/Rwanda Sholi.jpg';
+import ecuador from '../../resources/img/coffee_list/Ecuador Loja.jpg';
+
+const Item = ({item}) => {
+    const data = useParams();
+    return (
+        <>
+            <ScrollToTop/>
+            <div className="sub_header">
+                <div className="coffee_name flex flex_jc_c flex_dir_c flex_ai_c">
+                    <span className="k_name">{item.coffee_k_name}</span>
+                    <span className="e_name">{item.coffee_e_name}</span>  
+                </div>
+                <nav className="menu_nav">
+                    <ul className="flex">
+                        <li className="history_back">
+                            <Link to="/">HOME</Link>
+                        </li>
+                            <MdKeyboardArrowRight/>
+                        <li>COFFEE</li>
+                            <MdKeyboardArrowRight/>
+                        <li>
+                            <Link to="">
+                                <span>{item.coffee_e_name}</span>
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+                <section className="sub_section">
+                    <div className="cont_1 flex flex_jc_sb">
+                        <div className="img_box">
+                            <img src={item.image} alt=""></img>
+                        </div>
+                        <div className="coffee_info">
+                            <div className="coffee_origin">
+                                <span>원산지 : </span>
+                                <span>{item.origin}</span>
+                            </div>
+                            <ul className="info_box">
+                                <li className="tasting_note">
+                                    <div className="sub_tit">Tasting Notes</div>
+                                    <div>{item.tasting}</div>
+                                </li>
+                                <li className="enjoy_with">
+                                    <div className="sub_tit">Enjoy with</div>
+                                    <div>{item.with}</div>
+                                </li>
+                                <li className="processing">
+                                    <div className="sub_tit">Processing Method</div>
+                                    <div>{item.processing}</div>
+                                </li>
+                                <li className="body">
+                                    <div className="sub_tit">Body</div>
+                                    <div className="flex flex_ai_c">
+                                        <span className="levels">{item.body}</span>
+                                        <span className="stars"><BsStarFill/><BsStarFill/><BsStarFill/><BsStarFill/><BsStar/></span>
+                                    </div>
+                                </li>
+                                <li className="acidity">
+                                    <div className="sub_tit">Acidity</div>
+                                    <div className="flex flex_ai_c">
+                                        <span className="levels">{item.acidity}</span>
+                                        <span className="stars"><BsStarFill/><BsStarFill/><BsStar/><BsStar/><BsStar/></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="cont_2">
+                        <div className="txt_box">
+                            <div>
+                                <p>{item.coffee_note}</p>
+                            </div>
+                        </div>
+                    </div> 
+                </section>
+            <RFooter/>
+        </>
+    )
+}
+
+const CoffeeInfo = ({match}) => {
+    const params = useParams();
+    const items = [
+        {
+            id: 1,
+            coffee_k_name: '파나마 보케테',
+            coffee_e_name: 'Panama Boquete',
+            image: `${panama}`,
+            origin: '라틴 아메리카(파나마)',
+            tasting: '잘 익은 오렌지의 산미와 카카오닙스, 달콤한 피니시',
+            with: '오렌지, 카카오닙스',
+            processing: '수세식 가공',
+            body: '보통',
+            acidity: '보통',
+            coffee_note: '파나마의 서쪽에 있는 보케테는 작은 마을이지만 전 세계에 파나마 커피를 알린 유명한 커피 원산지입니다. 3개의 화산으로 둘러싸인 이 지역은 미네랄이 풍부한 토양과 커피 재배에 적합한 고도와 기후를 갖추고 있습니다.'+
+            '\n이 커피가 재배된 돈 페페 농장에서는 고품질의 커피뿐만 아니라, 환경을 보호하기 위한 노력도 게을리하지 않습니다.'+
+            '\n에코 펄퍼로 벗겨낸 커피 과육은 비료로 재활용하고, 물을 절약하고 재사용하여 환경 오염을 최소화합니다.'+
+            '\n파나마 보케테는 잘 익은 오렌지처럼 부드러운 산미로 시작해서 쌉쌀한 카카오닙스의 풍미로 이어지며, 견과류를 넣은 쿠키처럼 버터리한 고소함과 달콤함이 부드럽게 마지막을 장식합니다.',
+            links: 'panama'
+        },
+        {
+            id: 2,
+            coffee_k_name: '에이지드 수마트라',
+            coffee_e_name: 'Aged Sumatra',
+            image: `${aged}`,
+            origin: '아시아/태평양(인도네시아)',
+            tasting: '비가 그친 숲속의 나무 향, 다채로운 스파이스의 풍미',
+            with: '스파이스',
+            processing:'반수세식 가공',
+            body: '무거움',
+            acidity:'낮음',
+            coffee_note:'에이지드 커피의 시작은 오랜 커피 역사 속에서 찾아볼 수 있습니다. 오래전, 인도네시아 섬에서 수확한 커피를 싣고 유럽으로 향하던 무역선 안에서 커피 생두는 오랜 항해 기간 동안 풍미가 달라졌습니다.'+
+            '\n독특한 삼나무 향과 흙 내음이 매력적인 수마트라 커피는 무역선이 유럽에 다다를 때쯤 더욱 강렬하고 이국적인 풍미로 변해있었습니다.'+
+            '\n우리는 이 독특한 풍미를 재현하기 위해서, 최고의 수마트라 커피만을 엄선한 뒤 별도의 숙성 창고에서 최소 3년에서 길게는 5년의 숙성 과정을 통해 이 커피를 만들어냅니다.'+
+            '\n올해의 에이지드 수마트라는 깊은 숲속의 촉촉한 나무 향, 솔잎과 흙냄새 그리고 고소함과 쌉쌀함이 어우러지는 피니시가 매력적입니다.',
+            links: 'aged'
+        },
+        {
+            id: 3,
+            coffee_k_name: '하와이 카우',
+            coffee_e_name: 'Hawaii Ka’u',
+            image: `${hawail}`,
+            origin: '아시아/태평양',
+            tasting: '아몬드의 고소함과 크리미하고 부드러운 누가의 달콤함',
+            with: '아몬드, 누가',
+            processing:'수세식 가공',
+            body: '보통',
+            acidity:'보통',
+            coffee_note:'카우는 하와이 빅아일랜드의 최남단에 위치한 지역입니다. 하와이의 수확 시기는 일반적으로 낮은 고도에서 8월에 시작해 높은 고도에서 6월에 끝납니다.'+
+            '\n기후 변화로 인해 카우의 수확이 예년보다 빨라졌습니다. 카우 커피는 빅아일랜드의 서쪽 지역에서 재배되고 오랫동안 많은 사랑을 받아 온 코나 커피의 그늘에 가려져 있었습니다.'+
+            '\n카우 지역의 커피는 1894년부터 재배되기 시작했지만 사탕수수 농장이었던 땅을 커피 농장으로 전환하는 데 어려움을 겪었습니다.'+
+            '\n90년대 후반 사탕수 산업이 붕괴된 후 커피 재배에 재투자하기 시작한 농가가 점점 더 늘어나기 시작했습니다. 코나와 카우는 가까운 거리에 위치해 있지만 커피 재배 방식은 완전히 다릅니다.'+
+            '\n코나 커피는 첨단 인프라를 갖춘 대규모 농장에서 생산하지만, 카우 커피는 소규모 자영농이 재배합니다.',
+            links: 'hawail'
+        },
+        {
+            id: 4,
+            coffee_k_name: '크리스마스',
+            coffee_e_name: 'Christmas',
+            image: `${christmas}`,
+            origin: '아시아/태평양(인도네시아) & 라틴 아메리카(코스타리카)',
+            tasting: '따뜻하고 포근한 삼나무향, 설탕에 졸인 생강과 버터스카치의 달콤함',
+            with: '버터스카치',
+            processing:'수세식 가공',
+            body: '보통',
+            acidity:'보통',
+            coffee_note:'포근한 삼나무향과 다채로운 스파이스, 감칠맛이 매력적인 크리스마스 리저브 블렌드는 행복하고 즐거운 크리스마스의 느낌을 가득 담고 있습니다.'+
+            '\n크리스마스 시즌을 앞두고 신선한 커피 샘플이 도착하면, 우리는 크리스마스 블렌드에 어울리는 가장 완벽한 재료들을 찾아냅니다.'+
+            '\n블렌딩은 매년 조금씩 달라지지만, 우리가 사랑하는 크리스마스의 강렬하고 생생한 풍미 프로필은 언제나 똑같습니다.'+
+            '\n올 해는 산미와 달콤함이 조화로운 코스타리카 하시엔다 알사시아, 강렬하고 묵직한 숙성 수마트라와 수마트라 아체가 블렌딩되어 풍부한 삼나무의 향, 다채로운 스파이스의 감칠맛, 버터스카치의 달콤함이 매력적인 크리스마스 커피가 완성되었습니다.',
+            links: 'christmas'
+        },
+        {
+            id: 5,
+            coffee_k_name: '볼리비아 솔 데 라 마냐나',
+            coffee_e_name: 'Bolivia Sol de la Manana',
+            image: `${bolivia}`,
+            origin: '라틴아메리카(볼리비아)',
+            tasting: '구운 견과류와 보리를 닮은 고소함, 스모키한 번트 카라멜 피니쉬의 커피',
+            with: '구운 견과류, 번트 카라멜',
+            processing:'수세식 가공',
+            body: '보통',
+            acidity:'낮음',
+            coffee_note: '로드리게즈 농장의 솔 데 라 마냐나 프로그램을 통해 재배된 이 커피는 볼리비아 스페셜티 커피를 대표하는 희망의 상징입니다. 페드로 로드리게즈는 지난 30년 동안 볼리비아 커피를 세계에 선보이기 위해 많은 노력을 기울여 왔습니다.'+
+            '\n블렌딩은 매년 조금씩 달라지지만, 우리가 사랑하는 크리스마스의 강렬하고 생생한 풍미 프로필은 언제나 똑같습니다.'+
+            '\n2014년에 페드로는 농부들에게 세심한 농사 관리법을 가르치고 뛰어난 품질의 커피를 생산하면서 경제적 안정을 도모하는 솔 데 라 마냐나("아침 햇살") 프로그램을 시작했습니다.'+
+            '\n현재 100명의 농부들이 이 프로그램에 참여하여 지역 사회의 더 나은 미래를 위해 노력하고 있습니다. 부담 없이 즐길 수 있고 균형 잡힌 부드러운 맛을 선사하는 이 커피는 어떤 추출 방법과도 잘 어울립니다.',
+            links: 'bolivia'
+        },
+        {
+            id: 6,
+            coffee_k_name: '잠비아 이사냐 에스테이트',
+            coffee_e_name: 'Zambia Isanya Estate',
+            image: `${zambia}`,
+            origin: '아프리카(잠비아)',
+            tasting: '톡 쏘는 스타프루트 향에 카다몬과 베이킹 초콜릿 향이 가미된 커피 ',
+            with: '밀크 초콜릿, 시트러스, 카라멜',
+            processing:'수세식 가공',
+            body: '보통',
+            acidity:'보통',
+            coffee_note: '많은 커피 애호가들이 아프리카 커피로 케냐와 에티오피아 원두를 떠올리지만 잠비아 커피에도 아프리카 지역만의 독특한 풍미가 살아 있습니다.'+
+            '\n아프리카의 작은 나라인 잠비아는 인상적인 떼루아를 품고 있으며, 산악 지대가 많고 운송 인프라가 낙후된 내륙 국가라는 단점을 극복하여 이러한 진귀한 원두를 세상에 내놓고 있습니다.'+
+            '\n카드 디자인에는 내륙에서 수확된 커피가 트럭과 기차로 여러 국가를 통과하여 항구까지 운송되는 험난한 여정이 담겨 있습니다.'+
+            '\n이 길고 험난한 여정은 카드 전체에 뻗어 있는 지형으로 묘사되어 있습니다. 화려한 배경 색상은 산뜻하면서도 풍미가 가득한 스타프루트 향과 잠비아의 아름다운 풍경을 표현합니다.',
+            links: 'zambia'
+        },
+        {
+            id: 7,
+            coffee_k_name: '르완다 쇼리',
+            coffee_e_name: 'Rwanda Sholi',
+            image: `${rwanda}`,
+            origin: '아프리카(르완다)',
+            tasting: '산뜻한 감귤류, 다크 초콜릿 향, 벌집꿀의 달콤함',
+            with: '시트러스, 다크 초콜릿, 베리',
+            processing:'수세식 가공',
+            body: '보통',
+            acidity:'보통',
+            coffee_note: '이 커피는 환경 친화적인 커피 재배 방법과 공동체에 초점을 맞춰 여성들이 설립하고 운영하는 여성 협동조합에서 재배, 가공된 커피입니다.'+
+            '\n르완다 중부의 무항가 지역에 사는 여성 주민 30명이 지난 2008년에 설립한 Abateraninkunga(의미 : ’상호 부조’) Ba Sholi 협동조합은 “르완다 최고의 커피 생산자가 되어 조합원과 지역사회의 경제적, 사회적 발전을 힘차게 뒷받침하는 것”을 목표로 삼고 있습니다.'+
+            '\n조합의 지속적인 성장을 꾀하기 위해 남성 조합원의 가입을 받기 시작하여 현재는 332명의 조합원으로 구성되어 있으며, 이 중 207명이 여성입니다. 이 조합은 2015년 공정무역 인증을 받았습니다.'+
+            '\n조합원들은 공정무역의 이점을 발판 삼아 적극적으로 지역사회 발전 문제에 대처하는 한편 이 구역의 빈곤 퇴치에 앞장서 왔습니다.'+
+            '\n2014년과 2015년에 르완다 COE(Cup of Excellence) 상도 수상한 바 있습니다.',
+            links: 'rwanda'
+        },
+        {
+            id: 8,
+            coffee_k_name: '에콰도르 로아',
+            coffee_e_name: 'Ecuador Loja',
+            image: `${ecuador}`,
+            origin: '라틴아메리카(에콰도르)',
+            tasting: '싱그러운 허브의 은은한 달콤함과 카카오닙스의 쌉쌀한 피니쉬',
+            with: '시트러스, 캐러멜, 다크 초콜릿',
+            processing:'수세식 가공',
+            body: '보통',
+            acidity:'보통',
+            coffee_note: '적도 바로 아래에 위치한 에콰도르 로하 지역은 다양한 동식물이 공존할 뿐만 아니라 영양이 풍부한 화산토양, 건기와 우기가 뚜렷한 열대 기후까지 커피 재배를 위한 완벽한 환경을 갖추고 있습니다.'+
+            '\n에콰도르 로하의 엽서 디자인은 이러한 환경을 표현할 뿐만 아니라 이 커피가 가진 독특한 매력을 그려내고 있습니다.'+
+            '\n들판에 핀 야생화를 닮은 커피의 아로마, 싱그러운 허브에서 느껴지는 은은한 산미와 달콤한 풍미, 야생화와 들풀속에 숨어있는 재규어를 연상시키는 카카오닙스의 쌉쌀한 피니쉬까지.'+
+            '무더운 여름, 아이스 커피로도 더할 나위 없는 매력을 가진 에콰도르 로하를 만나보세요.',
+            links: 'ecuador'
+        }
+    ];
+    return (
+        <>
+        {items.map((item,index) => (<Item item={item} key={index} />))}
+        </>
+    )
+}
+
+export default CoffeeInfo;

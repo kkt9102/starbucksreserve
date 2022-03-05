@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 //img
 import panama from '../../resources/img/coffee_list/Panama Boquete.jpg';
@@ -13,7 +13,9 @@ import ecuador from '../../resources/img/coffee_list/Ecuador Loja.jpg';
 import miniLogo from '../../resources/img/coffee_list_logo.svg';
 
 const Item = ({item}) => {
-    const url = `${item.links}`
+    
+    // const url = `/CoffeeInfo`;
+    const url = `${item.links}`;
     return (
         <li className="coffee_item">
             {/* <Link to={url} key={item.id}> */}
@@ -21,7 +23,8 @@ const Item = ({item}) => {
                 pathname: `${url}`,
                 state: {
                     k_name: `${item.coffee_k_name}`,
-                    e_name: `${item.coffee_e_name}`
+                    e_name: `${item.coffee_e_name}`,
+                    links: `${item.links}`
                 }
             }} key={item.id}>
                 <div className="img_box">

@@ -1,14 +1,18 @@
 @media screen and (max-width:320px) {
     /* common */
+    .section .section_tit img {height: 1.3rem;}
 
     /* header */
 
 
     /* section_01 */
-
+    #section_1 {height: 100vh;}
+    #section_1 .cont_1 .main_logo {max-width: 50%; margin-top:0; margin-bottom:3rem;}
+    #section_1 .cont_1 .sub_txt {font-size:2rem;}
+    #section_1 .cont_1 .sub_tit {font-size:2.4rem;}
 
     /* section_02 */
-
+    #section_2 .cont_1 .sub_tit {margin-bottom:2rem; line-height: 1.2;}
 
     /* section_03 */
     

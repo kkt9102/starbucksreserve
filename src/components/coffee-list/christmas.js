@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import ScrollToTop from "../../utils/scrollTop";
+import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
 import RFooter from '../include/reserve_footer';
 
@@ -17,6 +19,7 @@ const Christmas = ({match}) => {
     console.log(username);
     return (
         <>
+            <ScrollToTop/>
             {/* <SHeader/> */}
 
             <div className="sub_header">
@@ -48,7 +51,7 @@ const Christmas = ({match}) => {
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
-                                <span>원산지 : </span>
+                                <span className="bullet">원산지 : </span>
                                 <span>아시아/태평양(인도네시아) &amp; 라틴 아메리카(코스타리카)</span>
                             </div>
                             <ul className="info_box">
@@ -81,8 +84,16 @@ const Christmas = ({match}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="cont_2">
+                    <div className="cont_2 flex flex_jc_sb">
+                        <div className="extra_select">
+                            <div className="sub_tit bullet">스타벅스가 추천드리는 추출방식</div>
+                            <ul className="flex">
+                                {ExtrantionList.type().props.children[1]}
+                                {ExtrantionList.type().props.children[4]}
+                            </ul>
+                        </div>
                         <div className="txt_box">
+                            <div className="sub_tit bullet">커피 스토리</div>
                             <ul>
                                 <li>포근한 삼나무향과 다채로운 스파이스, 감칠맛이 매력적인 크리스마스 리저브 블렌드는 행복하고 즐거운 크리스마스의 느낌을 가득 담고 있습니다.</li>
                                 <li> 크리스마스 시즌을 앞두고 신선한 커피 샘플이 도착하면, 우리는 크리스마스 블렌드에 어울리는 가장 완벽한 재료들을 찾아냅니다.</li>

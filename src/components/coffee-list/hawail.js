@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import ScrollToTop from "../../utils/scrollTop";
+import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
 import RFooter from '../include/reserve_footer';
 
@@ -17,6 +19,7 @@ const Hawail = ({match}) => {
     console.log(username);
     return (
         <>
+            <ScrollToTop/>
             {/* <SHeader/> */}
 
             <div className="sub_header">
@@ -48,7 +51,7 @@ const Hawail = ({match}) => {
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
-                                <span>원산지 : </span>
+                                <span className="bullet">원산지 : </span>
                                 <span>아시아/태평양</span>
                             </div>
                             <ul className="info_box">
@@ -81,8 +84,16 @@ const Hawail = ({match}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="cont_2">
+                    <div className="cont_2 flex flex_jc_sb">
+                        <div className="extra_select">
+                            <div className="sub_tit bullet">스타벅스가 추천드리는 추출방식</div>
+                            <ul className="flex">
+                                {ExtrantionList.type().props.children[0]}
+                                {ExtrantionList.type().props.children[1]}
+                            </ul>
+                        </div>
                         <div className="txt_box">
+                            <div className="sub_tit bullet">커피 스토리</div>
                             <ul>
                                 <li>카우는 하와이 빅아일랜드의 최남단에 위치한 지역입니다. 하와이의 수확 시기는 일반적으로 낮은 고도에서 8월에 시작해 높은 고도에서 6월에 끝납니다.</li>
                                 <li>기후 변화로 인해 카우의 수확이 예년보다 빨라졌습니다. 카우 커피는 빅아일랜드의 서쪽 지역에서 재배되고 오랫동안 많은 사랑을 받아 온 코나 커피의 그늘에 가려져 있었습니다.</li>

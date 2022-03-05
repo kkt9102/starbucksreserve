@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import ScrollToTop from "../../utils/scrollTop";
+import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
 import RFooter from '../include/reserve_footer';
 
@@ -17,6 +19,7 @@ const Rwanda = ({match}) => {
     console.log(username);
     return (
         <>
+            <ScrollToTop/>
             {/* <SHeader/> */}
 
             <div className="sub_header">
@@ -48,7 +51,7 @@ const Rwanda = ({match}) => {
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
-                                <span>원산지 : </span>
+                                <span className="bullet">원산지 : </span>
                                 <span>아프리카(르완다)</span>
                             </div>
                             <ul className="info_box">
@@ -81,8 +84,16 @@ const Rwanda = ({match}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="cont_2">
+                    <div className="cont_2 flex flex_jc_sb">
+                        <div className="extra_select">
+                            <div className="sub_tit bullet">스타벅스가 추천드리는 추출방식</div>
+                            <ul className="flex">
+                                {ExtrantionList.type().props.children[0]}
+                                {ExtrantionList.type().props.children[1]}
+                            </ul>
+                        </div>
                         <div className="txt_box">
+                            <div className="sub_tit bullet">커피 스토리</div>
                             <ul>
                                 <li>이 커피는 환경 친화적인 커피 재배 방법과 공동체에 초점을 맞춰 여성들이 설립하고 운영하는 여성 협동조합에서 재배, 가공된 커피입니다.</li>
                                 <li>르완다 중부의 무항가 지역에 사는 여성 주민 30명이 지난 2008년에 설립한 Abateraninkunga(의미 : ’상호 부조’) Ba Sholi 협동조합은 “르완다 최고의 커피 생산자가 되어 조합원과 지역사회의 경제적, 사회적 발전을 힘차게 뒷받침하는 것”을 목표로 삼고 있습니다.</li>

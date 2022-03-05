@@ -1,4 +1,4 @@
-@media screen and (max-width:550) {
+@media screen and (max-width:550px) {
     /* common */
 
     /* header */
@@ -18,6 +18,31 @@
 
     /* section_05 */
 
-    
+
     /* footer */
+
+
+    /* sub_header */
+    .sub_header .coffee_name .k_name {font-size:3rem; font-weight: bold; word-break: keep-all; text-align: center;}
+        
+    /* sub_section */
+    .sub_section .cont_1 {flex-direction: column;}
+    .sub_section .cont_1 .img_box {margin-bottom:3rem;}
+    .sub_section .cont_2 {padding-top:3rem;}
+    .sub_section .cont_2 {flex-direction: unset; flex-wrap: wrap;}
+
+    .sub_section .cont_2 .extra_select ul {flex-wrap: wrap; margin-top:0;}
+    .sub_section .cont_2 .extra_select ul li {flex-basis:100%; max-width: 100%; margin-top:2rem;}
+    .sub_section .cont_2 .extra_select ul li:first-child {margin-right:0;}
+    .sub_section .cont_2 .extra_select ul li::after {display: none;}
+    .sub_section .cont_2 .extra_select ul li .img_box {flex-basis:30%; text-align: center;}
+    .sub_section .cont_2 .extra_select ul li .txt_box {flex-basis:60%;}
+    .sub_section .cont_2 .extra_select ul li > div {width: 100%; padding:0.5rem;}
+    .sub_section .cont_2 .extra_select ul li > div > div {flex-wrap: nowrap;}
+
+    .sub_section .cont_2 .extra_select,.sub_section .cont_2 .txt_box {flex-basis: 90%; max-width: 90%;  margin:0 auto;}
+    .sub_section .cont_2 .extra_select .sub_tit {display: block; max-width: 100%; margin-left:1rem; align-self: flex-start;}
+    .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit { margin-bottom:0; text-align: center; font-size:2.4rem; font-weight: 700;}
+    .sub_section .cont_2 .txt_box {margin-top:2rem;}
+    .sub_section .cont_2 .txt_box .sub_tit {margin-bottom:1.5rem;}
 }

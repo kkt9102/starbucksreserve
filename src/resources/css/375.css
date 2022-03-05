@@ -1,5 +1,6 @@
 @media screen and (max-width:375px) {
     /* common */
+    .section {height: 100%;}
 
     /* header */
 

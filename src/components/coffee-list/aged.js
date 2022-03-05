@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import ScrollToTop from "../../utils/scrollTop";
+import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
 import RFooter from '../include/reserve_footer';
 
@@ -12,11 +14,11 @@ import RFooter from '../include/reserve_footer';
 // img
 import aged from '../../resources/img/coffee_list/Aged Sumatra.jpg';
 
-const Aged = ({match}) => {
-    const username = useLocation();
-    console.log(username);
+const Aged = () => {
+
     return (
         <>
+            <ScrollToTop/>
             {/* <SHeader/> */}
 
             <div className="sub_header">
@@ -48,7 +50,7 @@ const Aged = ({match}) => {
                         </div>
                         <div className="coffee_info">
                             <div className="coffee_origin">
-                                <span>원산지 : </span>
+                                <span className="bullet">원산지 : </span>
                                 <span>아시아/태평양(인도네시아)</span>
                             </div>
                             <ul className="info_box">
@@ -81,8 +83,16 @@ const Aged = ({match}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="cont_2">
+                    <div className="cont_2 flex flex_jc_sb">
+                        <div className="extra_select">
+                            <div className="sub_tit bullet">스타벅스가 추천드리는 추출방식</div>
+                            <ul className="flex">
+                                {ExtrantionList.type().props.children[0]}
+                                {ExtrantionList.type().props.children[2]}
+                            </ul>
+                        </div>
                         <div className="txt_box">
+                            <div className="sub_tit bullet">커피 스토리</div>
                             <ul>
                                 <li>에이지드 커피의 시작은 오랜 커피 역사 속에서 찾아볼 수 있습니다. 오래전, 인도네시아 섬에서 수확한 커피를 싣고 유럽으로 향하던 무역선 안에서 커피 생두는 오랜 항해 기간 동안 풍미가 달라졌습니다. </li>
                                 <li>독특한 삼나무 향과 흙 내음이 매력적인 수마트라 커피는 무역선이 유럽에 다다를 때쯤 더욱 강렬하고 이국적인 풍미로 변해있었습니다.</li>
