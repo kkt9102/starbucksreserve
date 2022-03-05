@@ -3,7 +3,7 @@
     .section .section_tit img {height: 1.3rem;}
 
     /* header */
-
+    .top_menu ul li a {font-size:1rem;}
 
     /* section_01 */
     #section_1 {height: 100vh;}

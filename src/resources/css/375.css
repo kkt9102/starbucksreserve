@@ -3,7 +3,7 @@
     .section {height: 100%;}
 
     /* header */
-
+    .top_menu ul li a {font-size:1.3rem;}
 
     /* section_01 */
     #section_1 .cont_1 .main_logo {max-width: 60%;}
