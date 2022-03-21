@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
+import Slide from 'react-slick';
 
 //img
 import panama from '../../resources/img/coffee_list/Panama Boquete.jpg';
@@ -14,8 +15,48 @@ import miniLogo from '../../resources/img/coffee_list_logo.svg';
 
 const Item = ({item}) => {
     
+    const PrevArrow = (props) => {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: 'block', left: 103 +'%', width: 10, height: 10, fontSize: 15 }}
+            onClick={onClick}
+            />
+          );
+        }
+        const NextArrow = (props) => {
+          const { className, style, onClick } = props;
+          return (
+            <div
+              className={className}
+              style={{ ...style, display: 'block', top:5, right: -4.7 + '%', width: 10, height: 10, fontSize: 15 }}
+              onClick={onClick}
+                  />
+                );
+              }
+  
+      const settings = {
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          vertical: false,
+          centerMode: true,
+          centerPadding: 40,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        //   prevArrow: <PrevArrow/>,
+        //   nextArrow: <NextArrow/>
+      };
+
+    const PageWidth = document.documentElement.scrollWidth;
+
+
     // const url = `/CoffeeInfo`;
     const url = `${item.links}`;
+    // if (PageWidth > 768) {
     return (
         <li className="coffee_item">
             {/* <Link to={url} key={item.id}> */}
@@ -39,8 +80,17 @@ const Item = ({item}) => {
             </Link>
         </li>
     );
- }
-  
+//  } 
+//  else {
+//     return (
+//         <>
+//             <Slide {...settings}>
+
+//             </Slide>
+//         </>
+//     );
+//  }
+}
  const CoffeeList = () => {
     const items = [
         {

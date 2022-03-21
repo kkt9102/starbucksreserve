@@ -5,13 +5,14 @@
 
 
     /* section_01 */
-
+    #section_1 .cont_1 .main_logo {max-width:60%; margin-top:30%;}
 
     /* section_02 */
 
 
     /* section_03 */
-    
+    #section_3 .extraction_list ul li .txt_box .sub_tit {font-size:1.6rem;}
+    #section_3 .extraction_list ul li .txt_box .sub_txt {font-size:1.1rem;}
 
     /* section_04 */
 

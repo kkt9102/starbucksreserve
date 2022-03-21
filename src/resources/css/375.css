@@ -21,10 +21,15 @@
     #section_3 .extraction_list ul li .txt_box .sub_txt {display: flex; flex-basis:80%;}
 
     /* section_04 */
-
+    #section_4 .coffee_item .img_box {border:0.1rem solid #976d3f;}
+    #section_4 .coffee_item .img_box > .coffee_target::before {bottom:-75%;}
+    #section_4 .coffee_item .img_box > .coffee_target::after {left:-7.5rem; bottom:5rem;}
+    #section_4 .coffee_item .img_box .logo img {width: 2.5rem; height: 3.1rem;}
 
     /* section_05 */
-
+    #section_5 {height:100%;}
+    #section_5 .map_box {margin-bottom:2.5rem;}
+    #map {height: 600px !important;}
     
     /* footer */
 }

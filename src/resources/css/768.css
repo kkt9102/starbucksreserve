@@ -26,15 +26,24 @@
         #section_3 .extraction_list ul li {max-width:20%; flex-basis: calc(100%/5); margin:0.5rem;}
         #section_3 .extraction_list ul li:nth-child(2n + 2) {top:20rem;}
         #section_3 .extraction_list ul li > div {padding:0.5rem 0.5rem 2rem 0.5rem;}
-        #section_3 .extraction_list ul li .txt_box .sub_tit {font-size: 1.5rem; margin-bottom:0.5rem;}
+        #section_3 .extraction_list ul li .txt_box .sub_tit {font-size: 1.8rem; margin-bottom:0.5rem;}
         #section_3 .extraction_list ul li .txt_box .sub_txt {font-size: 1.2rem;}
 
         /* section_04 */
-        #section_4 {min-width:100%;}
-        #section_4 .cont_1 > ul {justify-content: center;}
-        #section_4 .coffee_item {flex-basis:80%; height: auto; text-align: center;}
+        #section_4 {min-width:100%; overflow: hidden;}
+        #section_4 .cont_1 > ul {justify-content: flex-start;}
+        #section_4 .cont_1 > ul > li:nth-child(2n+2) {margin-left:3%;}
+        #section_4 .coffee_item {flex-basis:45%; height: auto; text-align: center;}
+        #section_4 .cont_1 ul li {margin-bottom:6rem;}
         #section_4 .coffee_item .img_box > img {width: 80%;}
-    
+        /* #section_4 .coffee_item .img_box .logo,
+        #section_4 .coffee_item .img_box > .coffee_target::before,
+        #section_4 .coffee_item .img_box > .coffee_target::after {display: none;}
+        #section_4 .coffee_item .img_box > .coffee_target,
+        #section_4 .coffee_item .img_box .coffee_name {position:relative;}
+        #section_4 .coffee_item .img_box > .coffee_target {height: auto;}
+        #section_4 .coffee_item .img_box .coffee_name {font-size:2rem;} */
+
         /* section_05 */
     
 
@@ -42,6 +51,9 @@
         #reserve_footer .con {padding-top:2rem;}
         #reserve_footer .con .footer_menu_1 ul {flex-wrap: wrap;}
         #reserve_footer .con .footer_menu_1 ul li {display: flex; justify-content: center; flex-basis:calc(100%/3); height: 3rem;}
+
+        /* sub_section */
+        .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {font-size:1.8rem;}
 }
 
 /* iPad Mini */
@@ -72,6 +84,9 @@
 
 /* Galaxy Fold */
 @media screen and (max-width:513px) and (height:717px) {
+        /* common */
+        .section .section_tit img {height:2.2rem;}
+
         /* section_03 */
         #section_3 .extraction_list ul {flex-wrap: wrap;}
         #section_3 .extraction_list ul li {flex-basis:100%; max-width: 100%; margin-top:2rem;}
@@ -81,6 +96,19 @@
         #section_3 .extraction_list ul li .txt_box {flex-basis:60%;}
         #section_3 .extraction_list ul li > div {width: 100%; padding:0.5rem;}
         #section_3 .extraction_list ul li > div > div {flex-wrap: nowrap;}
+
+        /* section_04 */
+        #section_4 .cont_1 ul li {flex-basis:100%;}
+        #section_4 .coffee_item .img_box {height: 15rem; border:0.2rem solid #976d3f; overflow:hidden;}
+        #section_4 .coffee_item .img_box > img {width: 80%; transform: translateY(15%) scale(3);}
+        #section_4 .cont_1 > ul > li:nth-child(2n+2) {margin-left:0;}
+        /* #section_4 .coffee_item .img_box > .coffee_target::before {width:0; height:0; border-top:10rem solid #222222; border-left:10rem solid rgba(0,0,0,0); border-right:10rem solid rgba(0,0,0,0); border-bottom:10rem solid rgba(0,0,0,0);} */
+        #section_4 .coffee_item .img_box > .coffee_target::before {width: 100%;}
+        #section_4 .coffee_item .img_box > .coffee_target::after {width: 22rem;}
+
+        /* section_05 */
+        #section_5 {height:100%;}
+        #section_5 .map_box {margin-bottom:2rem;}
 
         /* footer */
         #reserve_footer .con .footer_menu_1 {max-width: 90%; margin:0 auto;}
@@ -116,4 +144,8 @@
         .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {text-align: center;}
         .sub_section .cont_2 .txt_box {margin-top:2rem;}
         .sub_section .cont_2 .txt_box .sub_tit {margin-bottom:1.5rem;}
+
+
+        /* test */
+        #section_4 .coffee_item_mo {width: 500px; height: 500px;}
 }

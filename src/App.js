@@ -33,7 +33,7 @@ const App = ({item}) => {
   
   return (
     <>
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Index/>}/>
         {/* <Route path="/CoffeeInfo" element={<CoffeeInfo/>}/> */}

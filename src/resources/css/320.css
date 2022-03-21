@@ -12,16 +12,23 @@
     #section_1 .cont_1 .sub_tit {font-size:2.4rem;}
 
     /* section_02 */
-    #section_2 .cont_1 .sub_tit {margin-bottom:2rem; line-height: 1.2;}
+    #section_2 {height:100%;}
+    #section_2 .cont_1 .sub_txt {font-size:1.5rem;}
+    #section_2 .cont_1 .sub_tit {margin-bottom:2rem; font-size:2rem; line-height: 1.2;}
+    #section_2 .cont_2 ul li {margin-bottom:0.8rem; font-size:1.4rem;}
+    #section_2 .cont_3 ul li {font-size:1.3rem;}
 
     /* section_03 */
-    
+    #section_3 {height:100%;}
+    #section_3 .extraction_list ul li .txt_box .sub_tit {font-size:1.8rem;}
 
     /* section_04 */
-
+    #section_4 .coffee_item .img_box {height: 8rem;}
 
     /* section_05 */
-
+    #section_5 {height:100%;}
+    #section_5 .map_box {margin-bottom:2rem;}
+    #map {height:500px !important;}
     
     /* footer */
 }

@@ -8,6 +8,7 @@ import '../../resources/css/768.css';
 import '../../resources/css/550.css';
 import '../../resources/css/450.css';
 import '../../resources/css/420.css';
+import '../../resources/css/390.css';
 import '../../resources/css/375.css';
 import '../../resources/css/320.css';
 import '../../resources/css/280.css';
