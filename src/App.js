@@ -11,6 +11,7 @@ import Zambia from './components/coffee-list/zambia';
 import Rwanda from './components/coffee-list/rwanda';
 import Ecuador from './components/coffee-list/ecuador';
 
+import SubTest from './components/coffee-list/subTest';
 
 const App = ({item}) => {
   // const element = useRoutes([
@@ -29,7 +30,6 @@ const App = ({item}) => {
   //   // Not found routes work as you'd expect
   //   { path: '*', element: <NotFound /> }
   // ]);
-
   
   return (
     <>
@@ -46,7 +46,7 @@ const App = ({item}) => {
         <Route path="/Zambia" element={<Zambia/>}/>
         <Route path="/rwanda" element={<Rwanda/>}/>
         <Route path="/Ecuador" element={<Ecuador/>}/>
-
+        {/* <Route path="/subTest/:Panama" element={<SubTest/>}/> */}
       </Routes>
     </BrowserRouter>
     </>

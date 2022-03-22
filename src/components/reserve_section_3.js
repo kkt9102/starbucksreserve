@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
+
 import '../resources/css/style.css';
 import ExtrantionList from "./extraction";
+
+import Modal from "./popup";
 
 import S_3_tit from "../resources/img/section_3_tit.png";
 
 const ReserveSC3 = () => {
+    const [PopupOpen,setPopupOpen] = useState(false);
+
+    const openPop = () => {
+        setPopupOpen(true);
+    }
+
+    const closePop = () => {
+        setPopupOpen(false);
+    }
+
+    console.log(useLocation(1));
     return(
         <>
         <section id="section_3" className="section re_sc_3">
@@ -14,11 +29,14 @@ const ReserveSC3 = () => {
                 </div>
                 <div className="cont_1">
                     <nav className="extraction_list extra_list">
-                        <ul className="flex flex_jc_sb">
+                        <ul className="flex flex_jc_sb" onClick={openPop}>
                             <ExtrantionList/>
                         </ul>
                     </nav>    
                 </div>
+                <Modal open={PopupOpen} close={closePop}>
+                    
+                </Modal>
             </div>
         </section>
         </>

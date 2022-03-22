@@ -100,6 +100,16 @@
 #reserve_footer .con .address div {font-size:1.3rem; margin:0 0.5rem;}
 #reserve_footer .con .copyright {font-size:1.2rem; font-weight: 300;}
 
+
+/* popup */
+.extra_popup {width:60%; height:70%; top:10%; left:20%; background:#222222; z-index:9999 !important; opacity:0; visibility:hidden; border:1px solid #976d3f;}
+.extra_popup.openModal {opacity:1; visibility: visible;}
+
+.extra_popup .close_btn {position:absolute; width:3rem; height:3rem; right:1rem; top:1rem; cursor:pointer;}
+.extra_popup .close_btn > div {position:absolute; width:100%; height: 0.3rem; top:calc(50% - 0.3rem); background:#976d3f;}
+.extra_popup .close_btn > div:first-child {transform:rotate(45deg);}
+.extra_popup .close_btn > div:last-child {transform:rotate(-45deg);}
+
 /* sub_header */
 .sub_header, .sub_header * {background:#222222;}
 .sub_header .coffee_name {position:relative; padding-top:6rem; padding-bottom: 6rem;}

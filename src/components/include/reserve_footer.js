@@ -31,7 +31,8 @@ function RFooter() {
                     </nav>
                     <div className="address flex">
                         <div className="comp_num">사업자등록번호 : 201-81-21515</div>
-                        <div className="comp_ceo">주식회사 에스씨케이컴퍼니 대표이사 : 송 데이비드 호섭</div>
+                        <div className="comp_comp">주식회사 에스씨케이컴퍼니</div>
+                        <div className="comp_ceo"> 대표이사 : 송 데이비드 호섭</div>
                         <div className="comp_tel">TEL : 1522-3232</div>
                         <div className="prvt_responsive">개인정보 책임자 : 하익성</div>
                     </div>

@@ -21,4 +21,10 @@
 
     
     /* footer */
+    #reserve_footer .con .address div {margin-top:0.3rem;}
+
+    /* sub_section */
+    .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {font-size:1.6rem;}
+    .sub_section .cont_1 .coffee_info .coffee_origin span {font-size:1.7rem;}
+    .sub_section .cont_2 .extra_select ul li .txt_box .sub_txt {height:4rem; font-size:1.1rem; line-height: 1.2;}
 }
