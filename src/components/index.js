@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import $ from 'jquery';
 
@@ -10,14 +10,27 @@ import ReserveSC4 from './reserve_section_4';
 import ReserveSC5 from './reserve_section_5';
 import RFooter from './include/reserve_footer';
 
+import ExtrantionList from './extraction';
+import Modal from './popup';
+
 $(document).ready(function(){
     alert('해당 페이지는 개인포트폴리오용으로 제작되었습니다.');
 })
 
-const Index = () => {
+const Index = (item) => {
+    const [PopupOpen,setPopupOpen] = useState(false);
+
+    const openPop = () => {
+        setPopupOpen(true);
+    }
+
+    const closePop = () => {
+        setPopupOpen(false);
+    }
 
     return (
         <>
+            <Modal open={PopupOpen} close={closePop} title={`${item.name}`} KoTitle={`${item.popupKoName}`} photo={`${item.popupImg}`} txt={`${item.popupTxt}`}/>
             <RHeader/>
             <ReserveSC1/>
             <ReserveSC2/>

@@ -8,7 +8,7 @@ import Modal from "./popup";
 
 import S_3_tit from "../resources/img/section_3_tit.png";
 
-const ReserveSC3 = () => {
+const ReserveSC3 = (props) => {
     const [PopupOpen,setPopupOpen] = useState(false);
 
     const openPop = () => {
@@ -19,7 +19,8 @@ const ReserveSC3 = () => {
         setPopupOpen(false);
     }
 
-    console.log(useLocation(1));
+
+    console.log();
     return(
         <>
         <section id="section_3" className="section re_sc_3">
@@ -29,14 +30,11 @@ const ReserveSC3 = () => {
                 </div>
                 <div className="cont_1">
                     <nav className="extraction_list extra_list">
-                        <ul className="flex flex_jc_sb" onClick={openPop}>
+                        <ul className="flex flex_jc_sb">
                             <ExtrantionList/>
                         </ul>
                     </nav>    
-                </div>
-                <Modal open={PopupOpen} close={closePop}>
-                    
-                </Modal>
+                </div>                
             </div>
         </section>
         </>
