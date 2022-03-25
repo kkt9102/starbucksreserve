@@ -93,7 +93,7 @@ export const Item = ({item}) => {
                 </div>
             </div>
         </li>
-        {/* <Modal open={PopupOpen} close={closePop} title={`${item.name}`} KoTitle={`${item.popupKoName}`} photo={`${item.popupImg}`} txt={`${item.popupTxt}`}/> */}
+        <Modal open={PopupOpen} close={closePop} title={`${item.name}`} KoTitle={`${item.popupKoName}`} photo={`${item.popupImg}`} txt={`${item.popupTxt}`}/>
         </>
     );
 }
