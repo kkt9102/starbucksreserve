@@ -23,11 +23,17 @@
     
         /* section_03 */
         #section_3::after {height: 25rem; opacity: 0.1;}
-        #section_3 .extraction_list ul li {max-width:20%; flex-basis: calc(100%/5); margin:0.5rem;}
-        #section_3 .extraction_list ul li:nth-child(2n + 2) {top:20rem;}
-        #section_3 .extraction_list ul li > div {padding:0.5rem 0.5rem 2rem 0.5rem;}
-        #section_3 .extraction_list ul li .txt_box .sub_tit {font-size: 1.8rem; margin-bottom:0.5rem;}
-        #section_3 .extraction_list ul li .txt_box .sub_txt {font-size: 1.2rem;}
+        /* #section_3 .extraction_list ul li:not(div) {max-width:20%; flex-basis: calc(100%/5); margin:0.5rem;} */
+        #section_3 .extraction_list ul {flex-wrap:wrap;}
+        #section_3 .extraction_list ul li:not(.extra_popup) {max-width:100%; flex-basis: 100%; margin:0.5rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup)::after {display:none;}
+        #section_3 .extraction_list ul li:not(.extra_popup):nth-child(2n + 2) {top:0rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) > .border_b {flex-basis:100%; padding:0.5rem 4rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) > .border_b > div {justify-content: space-between;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:100%;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_tit {font-size: 1.8rem; margin-bottom:0.5rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {font-size: 1.2rem;}
+        
 
         /* section_04 */
         #section_4 {min-width:100%; overflow: hidden;}
@@ -45,7 +51,7 @@
         #section_4 .coffee_item .img_box .coffee_name {font-size:2rem;} */
 
         /* section_05 */
-    
+        /* #section_5 .map_box {width:80% !important;} */
 
         /* footer */
         #reserve_footer .con {padding-top:2rem;}
@@ -54,6 +60,28 @@
 
         /* sub_section */
         .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {font-size:1.8rem;}
+}
+/* Galaxt tab S4 */
+@media screen and (max-width:712px) and (height:1138px) {
+        /* common */
+        .section .section_tit img {height: 3rem;}
+
+        /* section_01 */
+        #section_1 .cont_1 .main_logo {max-width: 30rem; margin-top:20%;}
+
+        /* section_03 */
+        #section_3 .extraction_list ul li:not(.extra_popup) {margin-bottom:2rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .img_box {max-height: 9rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) img {height: 9rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:80%;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_tit {margin-top:0; font-size:2.5rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {font-size:1.7rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) > .border_b {padding:1rem 2rem;}
+        #section_3 .extraction_list ul li:not(.extra_popup) > .border_b > div {flex-wrap:nowrap;}
+        
+        /* #section_3 .extraction_list ul {flex-wrap:nowrap;}
+        #section_3 .extraction_list ul li:not(.extra_popup) {max-width: 20%; flex-basis: calc(100%/5);}
+        #section_3 .extraction_list ul li:not(.extra_popup) > .border_b {padding:0.5rem;} */
 }
 
 /* iPad Mini */
@@ -83,9 +111,30 @@
 }
 
 /* Galaxy Fold */
-@media screen and (max-width:513px) and (height:717px) {
+@media screen and (max-width:717px) and (height:512px) {
+        /* common */
+
+        /* section_03 */
+        #section_3 {height:100vh;}
+        #section_3 .extraction_list ul {flex-wrap: wrap;}
+        #section_3 .extraction_list ul li:not(.extra_popup) {flex-basis:45%; max-width: 45%;}
+        #section_3 .extraction_list ul li:not(.extra_popup) > .border_b > div {flex-wrap: nowrap;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:100%;}
+
+        /* section_05 */
+        #map {height: 35rem !important;}
+
+}
+@media screen and (max-width:512px) and (height:717px) {
         /* common */
         .section .section_tit img {height:2.2rem;}
+
+        /* section_01 */
+        #section_1 .cont_1 .main_logo {max-width: 30rem;}
+        #section_1 .cont_1 .sub_tit {font-size:2.7rem;}
+
+        /* section_02 */
+        #section_2 .cont_1 .sub_tit {font-size:2.1rem;}
 
         /* section_03 */
         #section_3 .extraction_list ul {flex-wrap: wrap;}

@@ -11,8 +11,10 @@
 
 
     /* section_03 */
-    #section_3 .extraction_list ul li .txt_box .sub_tit {font-size:1.6rem;}
-    #section_3 .extraction_list ul li .txt_box .sub_txt {font-size:1.1rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) > .border_b {padding:0.5rem 1rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) img {height:5rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_tit {margin-bottom:0.5rem; font-size:1.4rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {flex-basis:100%; font-size:1.1rem; line-height: 1.3rem;}
 
     /* section_04 */
 

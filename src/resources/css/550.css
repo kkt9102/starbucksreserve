@@ -13,6 +13,8 @@
 
     /* section_03 */
     #section_3 {height:100vh;}
+    #section_3 .extraction_list ul li:not(.extra_popup) {flex-basis:100%; max-width: 100%;}
+    #section_3 .extraction_list ul li:not(.extra_popup) > div {padding:0.5rem;}
 
     /* section_04 */
     #section_4 .cont_1 ul li {flex-basis:100%; margin-bottom:2rem;}

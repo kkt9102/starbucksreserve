@@ -13,11 +13,11 @@
 
     /* section_03 */
     #section_3::after {height: 30rem;}
-    #section_3 .extraction_list ul li {flex-basis:18%;}
-    #section_3 .extraction_list ul li > div {padding-bottom:2rem;}
-    #section_3 .extraction_list ul li img {height: 5rem;}
-    #section_3 .extraction_list ul li .txt_box .sub_tit {font-size:1.6rem;}
-    #section_3 .extraction_list ul li .txt_box .sub_txt {line-height: 1.2;}
+    #section_3 .extraction_list ul li:not(.extra_popup) {flex-basis:18%;}
+    #section_3 .extraction_list ul li:not(.extra_popup) > div {padding-bottom:2rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) img {height: 5rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_tit {font-size:1.6rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {line-height: 1.2;}
     
 
     /* section_04 */

@@ -13,10 +13,10 @@
 
     /* section_03 */
     #section_3 .extraction_list {margin-top:3rem;}
-    #section_3 .extraction_list ul li .img_box {max-height:6rem; margin-top:1rem;}
-    #section_3 .extraction_list ul li img {height: 6rem;}
-    #section_3 .extraction_list ul li .txt_box .sub_tit {margin-top:1rem; font-size:1.9rem;}
-    #section_3 .extraction_list ul li .txt_box .sub_txt {height:4rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .img_box {max-height:6rem; margin-top:1rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) img {height: 6rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_tit {margin-top:1rem; font-size:1.9rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {height:4rem;}
 
     /* section_04 */
     #section_4 .cont_1 {margin-top:4rem;}

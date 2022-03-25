@@ -5,13 +5,15 @@
 
 
     /* section_01 */
-
+    #section_1 .cont_1 .sub_tit {font-size:3.2rem;}
 
     /* section_02 */
 
 
     /* section_03 */
     #section_3::after {height: 15rem; background-position-x: 40%;}
+    #section_3 .extraction_list ul li:not(.extra_popup) {margin-top:1rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:70%; word-break: keep-all;}
 
     /* section_04 */
 
@@ -20,4 +22,59 @@
     #map {height: 670px !important;}
     
     /* footer */
+}
+
+/* iPhone 12 Pro */
+@media screen and (max-width:844px) and (height:390px) {
+    /* common */
+    .section .section_tit img {height: 2rem;}
+
+    /* header */
+
+    /* section_01 */
+    #section_1 .cont_1 .main_logo {max-width: 10rem; height:auto; margin-top:5%; margin-bottom:3rem;}
+    #section_1 .cont_1 .sub_txt {font-size:2rem;}
+    #section_1 .cont_1 .sub_tit {font-size:3rem;}
+
+    /* section_02 */
+    #section_2 {height: 100%;}
+    #section_2::after {height: 10rem; opacity:0.2;}
+    #section_2 .cont_1 .sub_tit {font-size:3rem;}
+    #section_2 .cont_2 ul li {justify-content:flex-start; margin-bottom:1rem; word-break: keep-all;}
+    #section_2 .cont_3 ul li {justify-content:flex-start; word-break: keep-all;}
+
+    /* section_03 */
+    /* #section_3 {height: 100%;} */
+    #section_3::after {height: 10rem; opacity:0.2;}
+    #section_3 .extraction_list ul li:not(.extra_popup) {max-width: 20%; flex-basis: 20%; padding:0.5rem;}
+    #section_3 .extraction_list ul > li:not(.extra_popup):nth-child(2n + 2) {top:0;}
+    #section_3 .extraction_list ul li:not(.extra_popup) > div {padding:0.5rem; padding-bottom: 2rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup)::after {width:80%; left:10%;}
+
+    /* section_04 */
+    #section_4 .coffee_item {flex-basis:18rem;}
+    #section_4 .coffee_item .img_box > img {width: 20rem;}
+
+    /* section_05 */
+    #map {height:23rem !important;}
+
+    /* footer */
+    /* #reserve_footer .con .footer_menu_1 ul {flex-wrap:wrap;} */
+    #reserve_footer .con .footer_menu_1 {max-width: 95%;}
+    #reserve_footer .con .footer_menu_1 ul li {font-size:1.1rem;}
+
+    /* sub_body */
+    /* .sub_section .cont_2 .extra_select {max-width: 90%; margin:0 auto;} */
+    .sub_section .cont_2 {flex-direction: row;}
+    .sub_section .cont_2 .extra_select {flex-basis:35%;}
+    .sub_section .cont_2 .extra_select ul {flex-wrap:wrap;}
+    .sub_section .cont_2 .extra_select ul li {flex-basis:100%; max-width: 100%;}
+    .sub_section .cont_2 .extra_select ul li::after {display: none;}
+    .sub_section .cont_2 .extra_select ul li:first-child {margin-right:0; margin-bottom:2rem;}
+    .sub_section .cont_2 .extra_select ul li .border_b {padding:0.5rem;}
+    .sub_section .cont_2 .extra_select ul li .border_b > div {flex-wrap:nowrap;}
+    .sub_section .cont_2 .extra_select ul li .img_box {flex-basis:30%; height: 5rem;}
+    .sub_section .cont_2 .txt_box {flex-basis:60%;}
+    .sub_section .cont_2 .txt_box ul li {font-size:1.5rem; word-break:keep-all;}
+    .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {margin-bottom:0rem;}
 }

@@ -32,3 +32,20 @@
     
     /* footer */
 }
+
+@media screen and (max-width:480px) and (height:320px) {
+    /* common */
+    .section .section_tit img {height:2rem;}
+
+    /* header */
+
+    /* section_01 */
+    #section_1 .cont_1 .main_logo {max-width: 8rem; margin-top:3%; margin-bottom:3rem;}
+    #section_1 .cont_1 .sub_txt {font-size:1.8rem;}
+    #section_1 .cont_1 .sub_tit {font-size:2.5rem;}
+
+    /* section_02 */
+    #section_2 {height: 100%;}
+    #section_2 .cont_1 .sub_tit {font-size:2rem;}
+    #section_2 .cont_2 ul li {margin-bottom:0.8rem;}
+}

@@ -12,6 +12,7 @@ const KaKaoMap=()=>{
       
     };
     const map = new kakao.maps.Map(container, options);
+    
 
     MapMark.forEach((reserve) => {
         // 커스텀 마커
@@ -19,15 +20,25 @@ const KaKaoMap=()=>{
             imageSize = new kakao.maps.Size(31,54);
       const reserveMaker = new kakao.maps.MarkerImage(imageSrc,imageSize);
         
-        // 인포윈도우
-      const storeContent = MapMark.content;
+
+      // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
+      const iwContent = reserve.content, // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+      iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+      const infowindow = new kakao.maps.InfoWindow({
+        content : iwContent,
+        removable : iwRemoveable,
+    });
       
-      new kakao.maps.Marker({
+      const custom_marker = new kakao.maps.Marker({
         map: map,
         position: new kakao.maps.LatLng(reserve.lat, reserve.lng),
         image: reserveMaker,
-        content: MapMark.content
-      });   
+      });
+
+      kakao.maps.event.addListener(custom_marker, 'click', function() {
+        infowindow.open(map, custom_marker);
+      });
   });
 }, 
 [])
