@@ -18,9 +18,7 @@ const ReserveSC3 = (props) => {
     const closePop = () => {
         setPopupOpen(false);
     }
-
-
-    console.log();
+    
     return(
         <>
         <section id="section_3" className="section re_sc_3">

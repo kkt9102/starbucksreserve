@@ -4,12 +4,14 @@ import { Link } from 'react-scroll';
 import Css from "./css";
 import '../../resources/css/style.css';
 
-function RHeader() {
+const RHeader = () => {
+    
     const {scrollY} = useScroll();
+
     return(
         <>
         <Css/>
-            <header className={`${scrollY < 100 ? "y_Top" : "y_move"} top_menu fixed`}>
+            <header id="header" className={`${scrollY < 100 ? "y_Top" : "y_move"} top_menu fixed`}>
                 <nav>
                     <ul className="flex flex_jc_sb">
                         <li className="flex flex_ai_c">

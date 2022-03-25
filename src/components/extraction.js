@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import $ from "jquery";
+import { useState } from "react";
 
 import Modal from "./popup";
 import '../resources/css/style.css';
@@ -64,36 +63,44 @@ export const items = [{
 
 export const Item = ({item}) => {
     const [PopupOpen,setPopupOpen] = useState(false);
+    const PageWidth = document.documentElement.scrollWidth;
 
     const openPop = () => {
         setPopupOpen(true);
+        if (PageWidth < 768) {
+            document.getElementById('header').style.zIndex = 0;
+        }
     }
 
     const closePop = () => {
         setPopupOpen(false);
+        if (PageWidth < 768) {
+            document.getElementById('header').style.zIndex = 10;
+        }
     }
 
     return (
         <>
-        <li id={item.name} onClick={() => {
-                openPop()
-                console.log(`${item.id}`)
-            }
-        }>
-            <div className="border_b">
-                <div className="flex flex_jc_c flex_wrap_wrap">
-                    
-                    <div className="img_box">
-                        <img src={item.icon} alt={item.name}></img>
-                    </div>
-                    <div className="txt_box flex flex_jc_c flex_wrap_wrap">
-                        <div className="sub_tit flex flex_jc_c">{item.name}</div>
-                        <div className="sub_txt">{item.txt}</div>
+            <li id={item.name} onClick={() => {
+                    console.log(`${item.id}`)
+                    closePop()
+                    openPop(`${item.id}`)
+                }
+            }>
+                <div className="border_b">
+                    <div className="flex flex_jc_c flex_wrap_wrap">
+                        
+                        <div className="img_box">
+                            <img src={item.icon} alt={item.name}></img>
+                        </div>
+                        <div className="txt_box flex flex_jc_c flex_wrap_wrap">
+                            <div className="sub_tit flex flex_jc_c">{item.name}</div>
+                            <div className="sub_txt">{item.txt}</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </li>
-        <Modal open={PopupOpen} close={closePop} title={`${item.name}`} KoTitle={`${item.popupKoName}`} photo={`${item.popupImg}`} txt={`${item.popupTxt}`}/>
+            </li>
+            <Modal open={PopupOpen} close={closePop} title={`${item.name}`} KoTitle={`${item.popupKoName}`} photo={`${item.popupImg}`} txt={`${item.popupTxt}`}/>
         </>
     );
 }

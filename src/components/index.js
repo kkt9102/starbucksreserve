@@ -13,24 +13,14 @@ import RFooter from './include/reserve_footer';
 import ExtrantionList from './extraction';
 import Modal from './popup';
 
-$(document).ready(function(){
-    alert('해당 페이지는 개인포트폴리오용으로 제작되었습니다.');
-})
+// $(document).ready(function(){
+//     alert('해당 페이지는 개인포트폴리오용으로 제작되었습니다.');
+// })
 
-const Index = (item) => {
-    const [PopupOpen,setPopupOpen] = useState(false);
-
-    const openPop = () => {
-        setPopupOpen(true);
-    }
-
-    const closePop = () => {
-        setPopupOpen(false);
-    }
-
+const Index = () => {
+    
     return (
         <>
-            <Modal open={PopupOpen} close={closePop} title={`${item.name}`} KoTitle={`${item.popupKoName}`} photo={`${item.popupImg}`} txt={`${item.popupTxt}`}/>
             <RHeader/>
             <ReserveSC1/>
             <ReserveSC2/>

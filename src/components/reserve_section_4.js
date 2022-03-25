@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
-import Slider from "react-slick";
 import '../resources/css/style.css';
 import CoffeeList from "./coffee-list/name";
 
@@ -8,42 +7,6 @@ import S_4_tit from "../resources/img/section_4_tit.png";
 
 const ReserveSC4 = () => {
     const location = useLocation();
-
-    const PrevArrow = (props) => {
-        const { className, style, onClick } = props;
-        return (
-          <div
-            className={className}
-            style={{ ...style, display: 'block', left: 103 +'%', width: 10, height: 10, fontSize: 15 }}
-            onClick={onClick}
-            />
-          );
-        }
-        const NextArrow = (props) => {
-          const { className, style, onClick } = props;
-          return (
-            <div
-              className={className}
-              style={{ ...style, display: 'block', top:5, right: -4.7 + '%', width: 10, height: 10, fontSize: 15 }}
-              onClick={onClick}
-                  />
-                );
-              }
-  
-      const settings = {
-          dots: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          vertical: false,
-          centerMode: true,
-          centerPadding: 40,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          prevArrow: <PrevArrow/>,
-          nextArrow: <NextArrow/>
-      };
 
     const PageWidth = document.documentElement.scrollWidth;
 
@@ -59,7 +22,6 @@ const ReserveSC4 = () => {
                         <div className="cont_1">
                             <ul className="flex flex_jc_sb flex_wrap_wrap">
                                 <CoffeeList/>
-                                {/* <div><Link to={`${location.search}`}>{location.pathName}</Link></div> */}
                             </ul>
                         </div>
                     </div>

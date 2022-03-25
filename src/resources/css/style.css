@@ -46,7 +46,6 @@
 #section_3 .extraction_list {margin-top:5rem;}
 #section_3 .extraction_list ul li:not(.extra_popup) {position:relative; display:flex; justify-content:center; flex-basis:15%; max-width:18rem; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;}
 #section_3 .extraction_list ul > li:not(.extra_popup):nth-of-type(2n + 2) {top:14rem;}
-/* #section_3 .extraction_list ul li * {transition: transform 0.1s;} */
 #section_3 .extraction_list ul li:not(.extra_popup) > div {position:relative; padding:1.5rem 1.5rem 3rem 1.5rem; transition: box-shadow 0.3s; transition-duration: 0.2s;}
 #section_3 .extraction_list ul li:not(.extra_popup) > div::after {content:'';}
 #section_3 .extraction_list ul li:not(.extra_popup) .img_box {max-height: 7rem; margin-top:1.8rem; margin-bottom:0.8rem;}
@@ -59,7 +58,7 @@
 #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {display:flex; align-items:center; height:4.5em; font-size:1.3rem; word-break:keep-all; text-align: center; line-height: 2rem;}
 
 /* section_04 */
-#section_4 {min-width:100vh;}
+#section_4 {min-width:100vh; z-index: 0;}
 #section_4 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}
 #section_4 .cont_1 {margin-top:8rem;}
 #section_4 .cont_1 ul li {margin-bottom:8rem;}
@@ -85,6 +84,7 @@
 #section_4 .coffee_item:hover .img_box .coffee_name {width:100%; height:100%; bottom:100%; right:50%; font-size:1.8rem; font-weight: 700; z-index: 2;}
 
 /* section_05 */
+#section_5 { z-index: 0;}
 #section_5 .map_box {margin-top:3rem; border:0.3rem solid #976d3f; border-radius: 0.2rem;}
 #section_5 .section_tit .sub_tit {flex-basis:100%; margin-top:1rem; font-size:1.2rem; font-weight: 300;}
 #section_5 .section_tit .sub_tit .marker_count {font-size:1.7rem; font-weight: 500;}
@@ -116,7 +116,7 @@
 
 /* popup */
 #section_3 .extraction_list ul li.extra_popup {position: fixed; z-index: 999;}
-.extra_popup {width:40%; height:60%; top:10%; left:30%; padding:3rem; background:#222222; z-index:9999 !important; opacity:0; visibility:hidden; border:1px solid #976d3f;}
+.extra_popup {position:absolute; width:40%; height:60%; top:10%; left:30%; padding:3rem; background:#222222; z-index:9999 !important; opacity:0; visibility:hidden; border:1px solid #976d3f;}
 .extra_popup.openModal {opacity:1; visibility: visible;}
 .extra_popup .close_btn {position:absolute; width:3rem; height:3rem; right:1rem; top:1rem; cursor:pointer;}
 .extra_popup .close_btn > div {position:absolute; width:100%; height: 0.3rem; top:calc(50% - 0.3rem); background:#976d3f;}

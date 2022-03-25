@@ -1,6 +1,5 @@
 @media screen and (max-width:768px) {
         /* common */
-        /* .section {min-width:100vh;} */
         .con {max-width: 90%;}
         .section .section_tit img {height: 2.5rem;}
 
@@ -23,7 +22,6 @@
     
         /* section_03 */
         #section_3::after {height: 25rem; opacity: 0.1;}
-        /* #section_3 .extraction_list ul li:not(div) {max-width:20%; flex-basis: calc(100%/5); margin:0.5rem;} */
         #section_3 .extraction_list ul {flex-wrap:wrap;}
         #section_3 .extraction_list ul li:not(.extra_popup) {max-width:100%; flex-basis: 100%; margin:0.5rem;}
         #section_3 .extraction_list ul li:not(.extra_popup)::after {display:none;}
@@ -34,7 +32,6 @@
         #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_tit {font-size: 1.8rem; margin-bottom:0.5rem;}
         #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {font-size: 1.2rem;}
         
-
         /* section_04 */
         #section_4 {min-width:100%; overflow: hidden;}
         #section_4 .cont_1 > ul {justify-content: flex-start;}
@@ -42,16 +39,8 @@
         #section_4 .coffee_item {flex-basis:45%; height: auto; text-align: center;}
         #section_4 .cont_1 ul li {margin-bottom:6rem;}
         #section_4 .coffee_item .img_box > img {width: 80%;}
-        /* #section_4 .coffee_item .img_box .logo,
-        #section_4 .coffee_item .img_box > .coffee_target::before,
-        #section_4 .coffee_item .img_box > .coffee_target::after {display: none;}
-        #section_4 .coffee_item .img_box > .coffee_target,
-        #section_4 .coffee_item .img_box .coffee_name {position:relative;}
-        #section_4 .coffee_item .img_box > .coffee_target {height: auto;}
-        #section_4 .coffee_item .img_box .coffee_name {font-size:2rem;} */
 
         /* section_05 */
-        /* #section_5 .map_box {width:80% !important;} */
 
         /* footer */
         #reserve_footer .con {padding-top:2rem;}
@@ -60,6 +49,11 @@
 
         /* sub_section */
         .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {font-size:1.8rem;}
+
+        /* extration_popup */
+        #section_3 .extraction_list ul li.extra_popup {width: 100%; height:100%; top:0%; left:0%;}
+        .extra_popup .popup_body .img_box {height: 20rem;}
+        .extra_popup .popup_body .img_box img {max-width: 100%;}
 }
 /* Galaxt tab S4 */
 @media screen and (max-width:712px) and (height:1138px) {
@@ -140,7 +134,7 @@
         #section_3 .extraction_list ul {flex-wrap: wrap;}
         #section_3 .extraction_list ul li {flex-basis:100%; max-width: 100%; margin-top:2rem;}
         #section_3 .extraction_list ul li::after {display: none;}
-        #section_3 .extraction_list ul li:nth-child(2n + 2) {top:0;}
+        #section_3 .extraction_list ul > li:not(.extra_popup):nth-of-type(2n + 2) {top:0;}
         #section_3 .extraction_list ul li .img_box {flex-basis:30%; text-align: center;}
         #section_3 .extraction_list ul li .txt_box {flex-basis:60%;}
         #section_3 .extraction_list ul li > div {width: 100%; padding:0.5rem;}
