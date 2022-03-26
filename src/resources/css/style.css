@@ -38,7 +38,7 @@
 #section_2 .cont_1 .sub_tit {font-size:3.6rem; line-height:3.4rem; font-weight: 600; letter-spacing: -0.2rem; margin-bottom: 5rem;}
 #section_2 .cont_2 ul li {flex-basis:100%; font-size:1.8rem; line-height: 1.8rem; font-weight:500; margin-bottom: 1.6rem;}
 #section_2 .cont_3 {margin-top:2rem;}
-#section_2 .cont_3 ul li {flex-basis: 100%; font-size:1.7rem; line-height:1.7rem; font-weight:300; margin-bottom:1rem; color:#dddddd;}
+#section_2 .cont_3 ul li {flex-basis: 100%; font-size:1.7rem; line-height:1.7rem; font-weight:300; margin-bottom:1rem; color:#efefef;}
 
 /* section_03 */
 #section_3::after {content:''; position: absolute; background:url(../img/section_back_img_3.png); background-position-Y:35%; width:100%; height:35rem; bottom:0; left:0; background-size: cover; opacity: 0.3; z-index: -1;}

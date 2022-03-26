@@ -57,3 +57,81 @@
     .sub_section .cont_2 > .txt_box {margin-top:2rem;}
     .sub_section .cont_2 .txt_box .sub_tit {margin-bottom:1.5rem;}
 }
+
+
+@media screen and (max-width:512px) and (height:717px) {
+    /* common */
+    .section .section_tit img {height:2.2rem;}
+
+    /* section_01 */
+    #section_1 .cont_1 .main_logo {max-width: 30rem;}
+    #section_1 .cont_1 .sub_tit {font-size:2.7rem;}
+
+    /* section_02 */
+    #section_2::after {height:20rem;}
+    #section_2 .cont_1 .sub_tit {font-size:2.1rem;}
+
+    /* section_03 */
+    #section_3 .extraction_list ul {flex-wrap: wrap;}
+    #section_3 .extraction_list ul li:not(.extra_popup) {flex-basis:100%; max-width: 100%; margin-top:2rem;}
+    #section_3 .extraction_list ul li::after {display: none;}
+    #section_3 .extraction_list ul > li:not(.extra_popup):nth-of-type(2n + 2) {top:0;}
+    #section_3 .extraction_list ul li .img_box {flex-basis:30%; text-align: center;}
+    #section_3 .extraction_list ul li .txt_box {flex-basis:60%;}
+    #section_3 .extraction_list ul li > div {width: 100%; padding:0.5rem;}
+    #section_3 .extraction_list ul li > div > div {flex-wrap: nowrap;}
+
+    /* section_04 */
+    #section_4 .cont_1 ul li {flex-basis:100%;}
+    #section_4 .coffee_item .img_box {height: 15rem; border:0.2rem solid #976d3f; overflow:hidden;}
+    #section_4 .coffee_item .img_box > img {width: 80%; transform: translateY(15%) scale(3);}
+    #section_4 .cont_1 > ul > li:nth-child(2n+2) {margin-left:0;}
+    #section_4 .coffee_item .img_box > .coffee_target::before {width: 100%;}
+    #section_4 .coffee_item .img_box > .coffee_target::after {width: 22rem;}
+
+    /* section_05 */
+    #section_5 {height:100%;}
+    #section_5 .map_box {margin-bottom:2rem;}
+
+    /* footer */
+    #reserve_footer .con .footer_menu_1 {max-width: 90%; margin:0 auto;}
+    #reserve_footer .con .footer_menu_1 ul {justify-content: flex-start;}
+    #reserve_footer .con .footer_menu_1 ul li {flex-basis:auto; height:2.8rem; margin:0 0.5rem; padding: 0 0.5rem; font-size:1.3rem;}
+    #reserve_footer .con .footer_menu_2 {margin-top:1rem;}
+    #reserve_footer .con .footer_menu_2 ul {align-items:center; flex-direction: column;}
+    #reserve_footer .con .footer_menu_2 ul li {width:80%; height:2.8rem; margin-top:1rem; font-size:1.3rem;}
+    #reserve_footer .con .address {flex-direction: column; max-width:90%; margin:1rem auto 1rem auto;}
+    #reserve_footer .con .address div {margin-top:0.8rem; font-size:1.2rem;}
+    #reserve_footer .con .copyright {font-size:1rem;}
+
+    /* sub_header */
+    .sub_header .coffee_name .k_name {font-weight: bold;}
+    
+    /* sub_section */
+    .sub_section .cont_1 {flex-direction: column;}
+    .sub_section .cont_1 .img_box {margin-bottom:3rem;}
+    .sub_section .cont_2 {padding-top:3rem;}
+    .sub_section .cont_2 {flex-direction: unset; flex-wrap: wrap;}
+
+    .sub_section .cont_2 .extra_select ul {flex-wrap: wrap; margin-top:0;}
+    .sub_section .cont_2 .extra_select ul li {flex-basis:100%; max-width: 100%; margin-top:2rem;}
+    .sub_section .cont_2 .extra_select ul li:first-child {margin-right:0;}
+    .sub_section .cont_2 .extra_select ul li::after {display: none;}
+    .sub_section .cont_2 .extra_select ul li .img_box {flex-basis:30%; text-align: center;}
+    .sub_section .cont_2 .extra_select ul li .txt_box {flex-basis:60%;}
+    .sub_section .cont_2 .extra_select ul li > div {width: 100%; padding:0.5rem;}
+    .sub_section .cont_2 .extra_select ul li > div > div {flex-wrap: nowrap;}
+
+    .sub_section .cont_2 .extra_select,.sub_section .cont_2 .txt_box {flex-basis: 90%; max-width: 90%;  margin:0 auto;}
+    .sub_section .cont_2 .extra_select .sub_tit {display: block; max-width: 100%; margin-left:1rem; align-self: flex-start;}
+    .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {text-align: center;}
+    .sub_section .cont_2 .txt_box {margin-top:2rem;}
+    .sub_section .cont_2 .txt_box .sub_tit {margin-bottom:1.5rem;}
+
+    /* extration_popup */
+    .extra_popup .popup_body .img_box {max-height:23rem; margin-bottom:3rem;}
+    .extra_popup .popup_body .img_box img {max-width: 120%; width:120%;}
+
+    /* test */
+    #section_4 .coffee_item_mo {width: 500px; height: 500px;}
+}

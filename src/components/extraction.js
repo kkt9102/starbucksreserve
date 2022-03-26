@@ -70,6 +70,8 @@ export const Item = ({item}) => {
         if (PageWidth < 768) {
             document.getElementById('header').style.zIndex = 0;
         }
+
+        console.log(EventTarget.id);
     }
 
     const closePop = () => {
@@ -82,7 +84,7 @@ export const Item = ({item}) => {
     return (
         <>
             <li id={item.name} onClick={() => {
-                    console.log(`${item.id}`)
+                    // console.log(`${item.id}`)
                     closePop()
                     openPop(`${item.id}`)
                 }

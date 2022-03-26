@@ -64,7 +64,6 @@
     #reserve_footer .con .footer_menu_1 ul li {font-size:1.1rem;}
 
     /* sub_body */
-    /* .sub_section .cont_2 .extra_select {max-width: 90%; margin:0 auto;} */
     .sub_section .cont_2 {flex-direction: row;}
     .sub_section .cont_2 .extra_select {flex-basis:35%;}
     .sub_section .cont_2 .extra_select ul {flex-wrap:wrap;}
@@ -77,4 +76,8 @@
     .sub_section .cont_2 .txt_box {flex-basis:60%;}
     .sub_section .cont_2 .txt_box ul li {font-size:1.5rem; word-break:keep-all;}
     .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {margin-bottom:0rem;}
+
+    /* extrantion_popup */
+    .extra_popup .popup_body .img_box {height:25rem;}
+    .extra_popup .popup_body .img_box img {max-width: 150%;}
 }
