@@ -117,7 +117,7 @@
 /* popup */
 #section_3 .extraction_list ul li.extra_popup {position: fixed; z-index: 999;}
 .extra_popup {position:absolute; width:40%; height:60%; top:10%; left:30%; padding:3rem; background:#222222; z-index:9999 !important; opacity:0; visibility:hidden; border:1px solid #976d3f;}
-.extra_popup.openModal {opacity:1; visibility: visible;}
+.extra_popup.openModal {position:fixed; opacity:1; visibility: visible;}
 .extra_popup .close_btn {position:absolute; width:3rem; height:3rem; right:1rem; top:1rem; cursor:pointer;}
 .extra_popup .close_btn > div {position:absolute; width:100%; height: 0.3rem; top:calc(50% - 0.3rem); background:#976d3f;}
 .extra_popup .close_btn > div:first-child {transform:rotate(45deg);}
@@ -161,19 +161,19 @@
 .sub_section .cont_2 {padding-top:5rem; padding-bottom:5rem; border-top:0.1rem solid #976d3f;}
 .sub_section .cont_2 .extra_select .sub_tit {font-size:2rem;}
 .sub_section .cont_2 .extra_select ul {margin-top:3rem;}
-.sub_section .cont_2 .extra_select ul li {position:relative; display:flex; justify-content:center; flex-basis:18rem; max-width:18rem; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;}
-.sub_section .cont_2 .extra_select ul li:first-child {margin-right:4rem;}
-.sub_section .cont_2 .extra_select ul li > div {position:relative; padding:1.5rem 1.5rem 3rem 1.5rem; transition: box-shadow 0.3s; transition-duration: 0.2s;}
-.sub_section .cont_2 .extra_select ul li > div::after {content:'';}
-.sub_section .cont_2 .extra_select ul li .img_box {flex-basis:100%; max-height: 7rem; margin-top:1.8rem; margin-bottom:0.8rem; text-align: center;}
-.sub_section .cont_2 .extra_select ul li:hover > div,
-.sub_section .cont_2 .extra_select ul li:active > div,
-.sub_section .cont_2 .extra_select ul li:focus  > div {box-shadow: -0.1rem -0.1rem 0.5rem #976d3f;}
-.sub_section .cont_2 .extra_select ul li::after {content:''; position: absolute; width:90%; height: 0.5rem; top:calc(50% - 1.4rem); left:5%; background: #976d3f;}
-.sub_section .cont_2 .extra_select ul li img {height:7rem;}
-.sub_section .cont_2 .extra_select ul li .txt_box .sub_tit {margin-bottom:1.5rem; flex-basis:100%; font-size:2.2rem; font-weight:500; letter-spacing:0.1rem; color:#976d3f; white-space: nowrap;}
-.sub_section .cont_2 .extra_select ul li .txt_box .sub_txt {display:flex; align-items:center; height:4.5em; font-size:1.3rem; word-break:keep-all; text-align: center; line-height: 2rem;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup) {position:relative; display:flex; justify-content:center; flex-basis:18rem; max-width:18rem; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup):first-child {margin-right:4rem;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup) > div {position:relative; padding:1.5rem 1.5rem 3rem 1.5rem; transition: box-shadow 0.3s; transition-duration: 0.2s;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup) > div::after {content:'';}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup) .img_box {flex-basis:100%; max-height: 7rem; margin-top:1.8rem; margin-bottom:0.8rem; text-align: center;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup):hover > div,
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup):active > div,
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup):focus  > div {box-shadow: -0.1rem -0.1rem 0.5rem #976d3f;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup)::after {content:''; position: absolute; width:90%; height: 0.5rem; top:calc(50% - 1.4rem); left:5%; background: #976d3f;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup) img {height:7rem;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup) .txt_box .sub_tit {margin-bottom:1.5rem; flex-basis:100%; font-size:2.2rem; font-weight:500; letter-spacing:0.1rem; color:#976d3f; white-space: nowrap;}
+.sub_section .cont_2 .extra_select ul li:not(.extra_popup) .txt_box .sub_txt {display:flex; align-items:center; height:4.5em; font-size:1.3rem; word-break:keep-all; text-align: center; line-height: 2rem;}
 .sub_section .cont_2 .txt_box {flex-basis:60%;}
 .sub_section .cont_2 .txt_box .sub_tit {margin-bottom:3rem; font-size:2rem;}
 .sub_section .cont_2 .txt_box ul {padding-right:2rem;}
-.sub_section .cont_2 .txt_box ul li {word-break: keep-all;}
+.sub_section .cont_2 .txt_box ul li:not(.extra_popup) {word-break: keep-all;}
