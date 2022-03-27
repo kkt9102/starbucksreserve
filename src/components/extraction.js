@@ -68,16 +68,20 @@ export const Item = ({item}) => {
     const openPop = () => {
         setPopupOpen(true);
         if (PageWidth < 768) {
-            document.getElementById('header').style.zIndex = 0;
+            if ( document.getElementById('header')) {
+                document.getElementById('header').style.zIndex = 0;
+            }
         }
 
-        console.log(EventTarget.id);
+        // console.log(EventTarget.id);
     }
 
     const closePop = () => {
         setPopupOpen(false);
         if (PageWidth < 768) {
+            if ( document.getElementById('header')) {
             document.getElementById('header').style.zIndex = 10;
+            }
         }
     }
 

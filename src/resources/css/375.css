@@ -37,7 +37,9 @@
     .sub_section .cont_2 .txt_box ul li {font-size:1.5rem;}
 
     /* extration_popup */
+    #section_3 .extraction_list ul .extra_popup, .sub_section .extra_popup {height: 75%; top:17.5%;}
     .extra_popup .popup_body .img_box img {max-width:150%; transform:translateX(-25%);}
+    .extra_popup .popup_body .extra_txt {font-size:1.5rem;}
 }
 
 @media screen and (max-width:667px) and (height:375px) {

@@ -31,6 +31,12 @@
     #map {height:500px !important;}
     
     /* footer */
+
+    /* extration_popup */
+    .extra_popup .popup_body .img_box {height:12rem;}
+    .extra_popup .popup_body .img_box img {max-width: 120%; transform:translateX(-10%);}
+    #section_3 .extraction_list ul .extra_popup, .sub_section .extra_popup {width:100%; height:100%; top:0; left:0; padding:2rem; padding-top:3.5rem;}
+    .extra_popup .popup_header .popup_e_name {margin-bottom: 1rem;}
 }
 
 @media screen and (max-width:480px) and (height:320px) {

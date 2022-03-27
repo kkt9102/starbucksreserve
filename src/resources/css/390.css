@@ -20,6 +20,9 @@
 
     /* section_05 */
     #map {height: 670px !important;}
+        /* map_popup */
+    .store_popup {flex-wrap:wrap; max-width: 20rem; min-width: 20rem;}
+    .store_popup .left_item, .store_popup .right_item {flex-basis:100%;}
     
     /* footer */
 }

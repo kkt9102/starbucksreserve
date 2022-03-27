@@ -15,12 +15,13 @@
     #section_3 {height:100vh;}
     #section_3 .extraction_list ul li:not(.extra_popup) {flex-basis:100%; max-width: 100%;}
     #section_3 .extraction_list ul li:not(.extra_popup) > div {padding:0.5rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:80%;}
 
     /* section_04 */
     #section_4 .cont_1 ul li {flex-basis:100%; margin-bottom:2rem;}
     #section_4 .coffee_item .img_box {height: 12rem; border:0.2rem solid #976d3f; overflow:hidden;}
     #section_4 .coffee_item .img_box > img {width: 80%; transform: translateY(15%) scale(3);}
-    #section_4 .cont_1 > ul > li:nth-child(2n+2) {margin-left:0;}
+    #section_4 .cont_1 > ul > li:nth-child(2n+2), #section_4 .cont_1 > ul > li {margin-left:0;}
     /* #section_4 .coffee_item .img_box > .coffee_target::before {width:0; height:0; border-top:10rem solid #222222; border-left:10rem solid rgba(0,0,0,0); border-right:10rem solid rgba(0,0,0,0); border-bottom:10rem solid rgba(0,0,0,0);} */
     #section_4 .coffee_item .img_box > .coffee_target::before {width: 100%;}
     #section_4 .coffee_item .img_box > .coffee_target::after {width: 22rem;}
@@ -31,7 +32,7 @@
     #map {height: 650px !important;}
 
     /* footer */
-
+    #reserve_footer .con .footer_menu_1 ul li {flex-basis:calc(100%/2);}
 
     /* sub_header */
     .sub_header .coffee_name .k_name {font-size:3rem; font-weight: bold; word-break: keep-all; text-align: center;}
@@ -39,19 +40,20 @@
     /* sub_section */
     .sub_section .cont_1 {flex-direction: column;}
     .sub_section .cont_1 .img_box {margin-bottom:3rem;}
+    .sub_section .cont_1 > .coffee_info {margin-left:0;}
     .sub_section .cont_2 {padding-top:3rem;}
     .sub_section .cont_2 {flex-direction: unset; flex-wrap: wrap;}
 
     .sub_section .cont_2 .extra_select ul {flex-wrap: wrap; margin-top:0;}
     .sub_section .cont_2 .extra_select ul li {flex-basis:100%; max-width: 100%; margin-top:2rem;}
-    .sub_section .cont_2 .extra_select ul li:first-child {margin-right:0;}
+    .sub_section .cont_2 .extra_select ul li:not(.extra_popup):first-child {margin-right:0; margin-bottom:1rem;}
     .sub_section .cont_2 .extra_select ul li::after {display: none;}
     .sub_section .cont_2 .extra_select ul li .img_box {flex-basis:30%; max-height: 5rem; text-align: center;}
     .sub_section .cont_2 .extra_select ul li .txt_box {flex-basis:60%;}
     .sub_section .cont_2 .extra_select ul li > div {width: 100%; padding:0.5rem;}
     .sub_section .cont_2 .extra_select ul li > div > div {flex-wrap: nowrap;}
 
-    .sub_section .cont_2 .extra_select,.sub_section .cont_2 .txt_box {flex-basis: 90%; max-width: 90%;  margin:0 auto;}
+    .sub_section .cont_2 .extra_select,.sub_section .cont_2 .txt_box {flex-basis: 100%; max-width: 100%;  margin:0 auto;}
     .sub_section .cont_2 .extra_select .sub_tit {display: block; max-width: 100%; margin-left:1rem; align-self: flex-start;}
     .sub_section .cont_2 .extra_select ul li .txt_box .sub_tit { margin-bottom:0; text-align: center; font-weight: 700;}
     .sub_section .cont_2 > .txt_box {margin-top:2rem;}
@@ -92,6 +94,12 @@
     /* section_05 */
     #section_5 {height:100%;}
     #section_5 .map_box {margin-bottom:2rem;}
+            /* map_popup */
+    .store_popup {flex-wrap:wrap; max-width: 25rem;}
+    .store_popup .left_item , .store_popup .right_item {max-width: 25rem;}
+    .store_popup .left_item .store_name,.store_popup .right_item .store_time_title {font-size:1.5rem;}
+    .store_popup .left_item .store_location,.store_popup .right_item > div:not(:first-child) {font-size:1.2rem;}
+    .store_popup .left_item .store_img {width:16rem; height: 9.2rem;}
 
     /* footer */
     #reserve_footer .con .footer_menu_1 {max-width: 90%; margin:0 auto;}
@@ -113,9 +121,10 @@
     .sub_section .cont_2 {padding-top:3rem;}
     .sub_section .cont_2 {flex-direction: unset; flex-wrap: wrap;}
 
+    
     .sub_section .cont_2 .extra_select ul {flex-wrap: wrap; margin-top:0;}
     .sub_section .cont_2 .extra_select ul li {flex-basis:100%; max-width: 100%; margin-top:2rem;}
-    .sub_section .cont_2 .extra_select ul li:first-child {margin-right:0;}
+    .sub_section .cont_2 .extra_select ul li:first-child {margin-right:0; margin-bottom: 1rem !important;}
     .sub_section .cont_2 .extra_select ul li::after {display: none;}
     .sub_section .cont_2 .extra_select ul li .img_box {flex-basis:30%; text-align: center;}
     .sub_section .cont_2 .extra_select ul li .txt_box {flex-basis:60%;}

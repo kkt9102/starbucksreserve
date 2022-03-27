@@ -115,7 +115,7 @@
 
 
 /* popup */
-#section_3 .extraction_list ul li.extra_popup {position: fixed; z-index: 999;}
+#section_3 .extraction_list ul ol.extra_popup {position: fixed; z-index: 999;}
 .extra_popup {position:absolute; width:40%; height:60%; top:10%; left:30%; padding:3rem; background:#222222; z-index:9999 !important; opacity:0; visibility:hidden; border:1px solid #976d3f;}
 .extra_popup.openModal {position:fixed; opacity:1; visibility: visible;}
 .extra_popup .close_btn {position:absolute; width:3rem; height:3rem; right:1rem; top:1rem; cursor:pointer;}

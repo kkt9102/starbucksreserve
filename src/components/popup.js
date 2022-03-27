@@ -10,7 +10,7 @@ const Modal = (props) => {
     const { open, close } = props;
 
     return(
-        <li className={`${open ? 'openModal extra_popup' : 'extra_popup'} fixed`}>
+        <ol className={`${open ? 'openModal extra_popup' : 'extra_popup'} fixed`}>
             <div className='popup_header flex flex_wrap_wrap'>
                 <div className='popup_e_name'>{props.title}</div>
                 <div className='popup_k_name'>{props.KoTitle}</div>
@@ -27,7 +27,7 @@ const Modal = (props) => {
                     {props.txt}
                 </div>
             </div>
-        </li>
+        </ol>
     )
 }
 
