@@ -29,14 +29,13 @@ const App = () => {
   //   // Not found routes work as you'd expect
   //   { path: '*', element: <NotFound /> }
   // ]);
-  
+
   return (
     <>
     <Loading/>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Index/>}/>
-
         <Route path="/Panama" element={<Panama/>}/>
         <Route path="/Aged" element={<Aged/>}/>
         <Route path="/hawail" element={<Hawail/>}/>
