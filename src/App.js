@@ -44,7 +44,7 @@ const App = () => {
   return (
     <>
     <Loading/>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/starbucksreserve">
       <Routes>
         <Route path="/" element={<Index/>}/>
         <Route path="/Panama" element={<Panama/>}/>
