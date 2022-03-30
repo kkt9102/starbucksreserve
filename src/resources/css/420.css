@@ -1,7 +1,33 @@
+@media screen and (max-width:425px) {
+    /* common */
+    .section .section_tit img {height:1.8rem;}
+
+    /* section_01 */
+    #section_1 .cont_1 .main_logo {max-width: 24rem; margin-top:35%;}
+    #section_1 .cont_1 .sub_txt {font-size:2rem;}
+    #section_1 .cont_1 .sub_tit {font-size: 3rem; word-break: keep-all; text-align: center;}
+
+    /* section_02 */
+    #section_2 {height: 100%; padding-bottom: 3rem;}
+    #section_2 .cont_1 .sub_tit {font-size:2.1rem; word-break: keep-all; text-align: center;}
+    #section_2 .cont_2 ul li,#section_2 .cont_3 ul li {word-break: keep-all;}
+
+    /* section_03 */
+    #section_3 {height: 100%; padding-bottom: 3rem;}
+    #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:75%;}
+
+    /* footer */
+    #reserve_footer .con .footer_menu_1 ul li a {font-size:1.4rem;}
+    #reserve_footer .con .footer_menu_2 ul {flex-wrap: wrap; padding:0 1rem;}
+    #reserve_footer .con .footer_menu_2 ul li {flex-basis: 100%;}
+    #reserve_footer .con .footer_menu_2 ul li:not(:last-child) {margin-bottom: 1.5rem;}
+    #reserve_footer .con .address {flex-wrap: wrap;}
+}
 @media screen and (max-width:420px) {
     /* common */
     #root {overflow-x: hidden;}
     .section .section_tit img {height:1.7rem;}
+    #scroll_top.scrollTop_mo.btms {bottom:8rem;}
 
     /* header */
 

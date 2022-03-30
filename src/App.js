@@ -43,6 +43,7 @@ const App = () => {
 
   return (
     <>
+    <div className='fixed'>{scrollPer}</div>
     <Loading/>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
@@ -58,8 +59,17 @@ const App = () => {
       </Routes>
     </BrowserRouter>
     {PageWidth > 768 ?  
-      <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 80 ? '' : 'btms'} fixed`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> : 
-      <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 80 ? '' : 'btms'} fixed scrollTop_mo`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div>
+      <div id="scroll_top" className={`${scrollPer < 33 ? 'hide' : 'show'} ${scrollPer < 95 ? '' : 'btms'} fixed`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> : 
+      (PageWidth > 550 ?
+        <div id="scroll_top" className={`${scrollPer < 35 ? 'hide' : 'show'} ${scrollPer < 90 ? '' : 'btms'} fixed scrollTop_mo`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> :
+        (PageHeight > 480 ?  
+          <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 80 ? '' : 'btms'} fixed scrollTop_mo`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> : 
+          (PageHeight > 375 ?
+            <div id="scroll_top" className={`${scrollPer < 35 ? 'hide' : 'show'} ${scrollPer < 85 ? '' : 'btms'} fixed scrollTop_mo`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> :
+            <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 90 ? '' : 'btms'} fixed scrollTop_mo`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> 
+          )
+        )
+      )
     }
     </>
   );

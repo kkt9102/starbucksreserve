@@ -29,7 +29,7 @@
         #section_3 .extraction_list ul li:not(.extra_popup):nth-of-type(2n + 2) {top:0rem;}
         #section_3 .extraction_list ul li:not(.extra_popup) > .border_b {flex-basis:100%; padding:0.5rem 4rem;}
         #section_3 .extraction_list ul li:not(.extra_popup) > .border_b > div {justify-content: space-between;}
-        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:100%;}
+        #section_3 .extraction_list ul li:not(.extra_popup) .txt_box {flex-basis:80%;}
         #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_tit {font-size: 1.8rem; margin-bottom:0.5rem;}
         #section_3 .extraction_list ul li:not(.extra_popup) .txt_box .sub_txt {font-size: 1.2rem;}
         
