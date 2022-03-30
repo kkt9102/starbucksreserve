@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import HistoryBack from "../include/sub_history_back";
 import ScrollToTop from "../../utils/scrollTop";
 import * as ExtrantionList from '../extraction';
 // import SHeader from "./sub_header";
@@ -24,6 +25,7 @@ const Ecuador = ({match}) => {
 
             <div className="sub_header">
                 <div className="coffee_name flex flex_jc_c flex_dir_c flex_ai_c">
+                    <HistoryBack/>
                     <span className="k_name">에콰도르 로하</span>
                     <span className="e_name">Ecuador Loja</span>  
                 </div>

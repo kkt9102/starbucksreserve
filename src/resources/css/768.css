@@ -2,6 +2,7 @@
         /* common */
         .con {max-width: 90%;}
         .section .section_tit img {height: 2.5rem;}
+        #scroll_top.scrollTop_mo.btms {bottom:26rem;}
 
         /* header */
         .top_menu {height: 3.5rem;}

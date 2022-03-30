@@ -1,4 +1,5 @@
 import React from "react";
+import $ from 'jquery';
 
 import RHeader from './include/reserve_header';
 import ReserveSC1 from './reserve_section_1';
@@ -8,14 +9,12 @@ import ReserveSC4 from './reserve_section_4';
 import ReserveSC5 from './reserve_section_5';
 import RFooter from './include/reserve_footer';
 
-import ExtrantionList from './extraction';
-import Modal from './popup';
-
 // $(document).ready(function(){
 //     alert('해당 페이지는 개인포트폴리오용으로 제작되었습니다.');
 // })
 
 const Index = () => {
+    
     
     return (
         <>

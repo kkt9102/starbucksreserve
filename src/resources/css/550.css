@@ -64,6 +64,7 @@
 @media screen and (max-width:512px) and (height:717px) {
     /* common */
     .section .section_tit img {height:2.2rem;}
+    #scroll_top.scrollTop_mo.btms {bottom:8rem;}
 
     /* section_01 */
     #section_1 .cont_1 .main_logo {max-width: 30rem;}

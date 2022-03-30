@@ -2,8 +2,6 @@ import React from 'react';
 
 import $ from 'jquery';
 
-import ExtrantionList from './extraction';
-
 import '../resources/css/common.css';
 import '../resources/css/style.css'; 
 

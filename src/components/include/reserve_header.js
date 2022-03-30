@@ -1,4 +1,4 @@
-import React,{useState, useEffect}  from "react";
+import React from "react";
 import { useScroll } from "../../utils/scrollMove";
 import { Link } from 'react-scroll';
 import Css from "./css";
@@ -15,19 +15,19 @@ const RHeader = () => {
                 <nav>
                     <ul className="flex flex_jc_sb">
                         <li className="flex flex_ai_c">
-                            <Link to="re_sc_1" spy={true} smooth={true} className="flex_ai_c">HOME</Link>
+                            <Link to="re_sc_1" spy={true} smooth={true} className="flex_ai_c" tabIndex="0" href="#!">HOME</Link>
                         </li>
                         <li className="flex flex_ai_c">
-                            <Link to="re_sc_2" spy={true} smooth={true} className="flex_ai_c">WHAT'S RESERVE</Link>
+                            <Link to="re_sc_2" spy={true} smooth={true} className="flex_ai_c" tabIndex="0" href="#!">WHAT'S RESERVE</Link>
                         </li>
                         <li className="flex flex_ai_c">
-                            <Link to="re_sc_3" spy={true} smooth={true} className="flex_ai_c">EXTRACTION</Link>
+                            <Link to="re_sc_3" spy={true} smooth={true} className="flex_ai_c" tabIndex="0" href="#!">EXTRACTION</Link>
                         </li>
                         <li className="flex flex_ai_c">
-                            <Link to="re_sc_4" spy={true} smooth={true} className="flex_ai_c">COFFEE</Link>
+                            <Link to="re_sc_4" spy={true} smooth={true} className="flex_ai_c" tabIndex="0" href="#!">COFFEE</Link>
                         </li>
                         <li className="flex flex_ai_c">
-                            <Link to="re_sc_5" spy={true} smooth={true} className="flex_ai_c">LOACTION</Link>
+                            <Link to="re_sc_5" spy={true} smooth={true} className="flex_ai_c" tabIndex="0" href="#!">LOACTION</Link>
                         </li>
                     </ul>
                 </nav>

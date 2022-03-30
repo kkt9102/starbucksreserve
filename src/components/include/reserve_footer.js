@@ -12,21 +12,43 @@ function RFooter() {
                 <div className="con">
                     <nav className="footer_menu_1">
                         <ul className="flex flex_jc_sb">
-                            <li className="flex flex_ai_c">개인정보처리방침</li>
-                            <li className="flex flex_ai_c">영상정보처리기기 운영관리 방침</li>
-                            <li className="flex flex_ai_c">홈페이지 이용약관</li>
-                            <li className="flex flex_ai_c">위치정보 이용약관</li>
-                            <li className="flex flex_ai_c">스타벅스 카드 이용약관</li>
-                            <li className="flex flex_ai_c">My DT Pass 서비스 이용약관</li>
-                            <li className="flex flex_ai_c">비회원 이용약관</li>
-                            <li className="flex flex_ai_c">윤리경영 핫라인</li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="개인정보처리방침 바로가기">개인정보처리방침</a>
+                            </li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="영상정보처리기기 운영관리 방침 바로가기">영상정보처리기기 운영관리 방침</a>
+                            </li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="홈페이지 이용약관 바로가기">홈페이지 이용약관</a>
+                            </li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="위치정보 이용약관 바로가기">위치정보 이용약관</a>
+                            </li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="스타벅스 카드 이용약관 바로가기">스타벅스 카드 이용약관</a>
+                            </li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="My DT Pass 서비스 이용약관 바로가기">My DT Pass 서비스 이용약관</a>
+                            </li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="비회원 이용약관 바로가기">비회원 이용약관</a>
+                            </li>
+                            <li className="flex flex_ai_c">
+                                <a href="#!" onClick={e => e.preventDefault()} title="윤리경영 핫라인 바로가기">윤리경영 핫라인</a>
+                            </li>
                         </ul>
                     </nav>
                     <nav className="footer_menu_2">
                         <ul className="flex flex_jc_sa">
-                            <li>찾아오시는 길</li>
-                            <li>신규입점제의</li>
-                            <li>사이트맵</li>
+                            <li>
+                                <a href="#!" onClick={e => e.preventDefault()} title="찾아오시는 길 바로가기">찾아오시는 길</a>
+                            </li>
+                            <li>
+                                <a href="#!" onClick={e => e.preventDefault()} title="신규입점제의 바로가기">신규입점제의</a>
+                            </li>
+                            <li>
+                                <a href="#!" onClick={e => e.preventDefault()} title="사이트맵 바로가기">사이트맵</a>
+                            </li>
                         </ul>
                     </nav>
                     <div className="address flex">

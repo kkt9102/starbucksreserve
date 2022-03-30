@@ -1,6 +1,7 @@
 import './resources/css/common.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import { useScroll } from './utils/scrollMove';
 import Loading from './components/include/loading';
 import Index from './components';
 import Panama from './components/coffee-list/panama';
@@ -30,6 +31,16 @@ const App = () => {
   //   { path: '*', element: <NotFound /> }
   // ]);
 
+  // 스크롤 상단이동
+  const setScrollTop = () => {
+    window.scrollTo(0,0);
+  }
+
+  const {scrollY} = useScroll();
+  const PageWidth = document.documentElement.scrollWidth;
+  const PageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPer = (scrollY/PageHeight) * 100;
+
   return (
     <>
     <Loading/>
@@ -46,6 +57,11 @@ const App = () => {
         <Route path="/Ecuador" element={<Ecuador/>}/>
       </Routes>
     </BrowserRouter>
+    {PageWidth > 768 ?  
+      <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 80 ? '' : 'btms'} fixed`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> : 
+      <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 80 ? '' : 'btms'} fixed scrollTop_mo`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div>
+    }
+    
     </>
   );
 }

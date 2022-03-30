@@ -1,5 +1,5 @@
 @import url('../font/NotoSansCJKkr.css');
-
+html {scroll-behavior: smooth;}
 body {overflow-y: hidden;}
 #root {background: #222222;}
 * {color:#ffffff; font-family: 'NotoKr'; letter-spacing: -0.05rem;}
@@ -9,6 +9,17 @@ body {overflow-y: hidden;}
 .border_b {border:0.2rem solid #976d3f; border-radius: 1rem;}
 .bullet {position:relative; margin-left:1rem;}
 .bullet::before {content:''; position: absolute; width:0.5rem; height:100%; top:0; left:-1rem; background: #976d3f;}
+#scroll_top {width:5rem; height:5rem; right:5rem; bottom:2rem; border-radius:50%; background:#976d3f; font-size:1.3rem; text-align:center; line-height:5rem; cursor:pointer; z-index: 9999 !important; transition: opacity 0.3s, bottom 0.3s ; opacity: 0;}
+#scroll_top.show {opacity: 1;}
+#scroll_top.hide {opacity: 0;}
+#scroll_top.btms {bottom:5rem;}
+#scroll_top.scrollTop_mo {right:2rem;}
+
+.history_back {top:10%; left:5.5%; background:none !important; z-index: 999;}
+.history_back svg {background:none !important; font-size:2.5rem;}
+.history_back:hover svg,
+.history_back:active svg,
+.history_back:focus svg {fill: #976d3f;}
 
 /* header */
 .top_menu {z-index: 10; height: 6rem; width: 100%;}
@@ -23,8 +34,18 @@ body {overflow-y: hidden;}
 .y_Top li {transition: color 0.3s;}
 .y_move li {color:#976d3f; font-weight: 500; transition: color 0.3s;}
 
-.loading {width:100%; height:100%; top:0; left:0; background: #222222; opacity: 0.8; z-index: 999999 !important;}
-
+.loading {width:100%; height:100%; top:0; left:0; background: rgba(23,23,23,0.8); z-index: 999999 !important;}
+.loading img {position:absolute; top:50%; left:calc(50% - 5rem); width: 10rem; z-index: inherit;}
+.loading img {animation-name: rotate; animation-duration: 3s; animation-delay: 1s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-direction:reverse;}
+.loading svg {position:absolute; top:30%; left:calc(50% - 5rem); width: 10rem; z-index: inherit; font-size:40rem; fill:#976d3f;}
+.loading svg {animation-name: rotate; animation-duration: 3s; animation-delay: 1s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-direction:reverse;}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
 /* section_01 */
 #section_1::after {content:''; position: absolute; background:url(../img/section_back_img_1.jpg); width: 100%; height: 100%; top:0; left:0; background-size:cover; opacity: 0.3; z-index: -1;}
 #section_1 .cont_1 {flex-wrap: wrap;}
