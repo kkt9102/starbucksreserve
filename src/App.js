@@ -1,5 +1,7 @@
 import './resources/css/common.css';
 import { BrowserRouter, Route, Routes, useParams} from "react-router-dom";
+
+import Loading from './components/include/loading';
 import Index from './components';
 import CoffeeInfo from './components/coffee-list/coffee';
 import Panama from './components/coffee-list/panama';
@@ -33,6 +35,7 @@ const App = ({item}) => {
   
   return (
     <>
+    <Loading/>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Index/>}/>

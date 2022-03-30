@@ -1,19 +1,26 @@
 import React from 'react';
 
+import $ from 'jquery';
+
 import ExtrantionList from './extraction';
 
 import '../resources/css/common.css';
 import '../resources/css/style.css'; 
 
-const Modal = (props) => {    
+$('.close_btn').click(function(){
+    $('.extra_popup').removeClass('.openModal');
+})
 
-    const { open, close } = props;
-
+const Modal = (popups) => {    
+    
+    const { open, close } = popups;
+    
+    
     return(
-        <ol className={`${open ? 'openModal extra_popup' : 'extra_popup'} fixed`}>
+        <ol className={`${open ? 'openModal extra_popup' : 'extra_popup'} fixed`} id={popups.PopId}>
             <div className='popup_header flex flex_wrap_wrap'>
-                <div className='popup_e_name'>{props.title}</div>
-                <div className='popup_k_name'>{props.KoTitle}</div>
+                <div className='popup_e_name'>{popups.title}</div>
+                <div className='popup_k_name'>{popups.KoTitle}</div>
                 <div className='close_btn relative' onClick={close}>
                     <div></div>
                     <div></div>
@@ -21,10 +28,10 @@ const Modal = (props) => {
             </div>
             <div className='popup_body flex flex_dir_c'>
                 <div className='img_box'>
-                    <img src={`${props.photo}`} alt=''></img>
+                    <img src={`${popups.photo}`} alt=''></img>
                 </div>
                 <div className='extra_txt'>
-                    {props.txt}
+                    {popups.txt}
                 </div>
             </div>
         </ol>

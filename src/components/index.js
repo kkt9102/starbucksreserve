@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-
-import $ from 'jquery';
+import React from "react";
 
 import RHeader from './include/reserve_header';
 import ReserveSC1 from './reserve_section_1';
