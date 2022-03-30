@@ -1,9 +1,8 @@
 import './resources/css/common.css';
-import { BrowserRouter, Route, Routes, useParams} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Loading from './components/include/loading';
 import Index from './components';
-import CoffeeInfo from './components/coffee-list/coffee';
 import Panama from './components/coffee-list/panama';
 import Aged from './components/coffee-list/aged';
 import Hawail from './components/coffee-list/hawail';
@@ -13,9 +12,7 @@ import Zambia from './components/coffee-list/zambia';
 import Rwanda from './components/coffee-list/rwanda';
 import Ecuador from './components/coffee-list/ecuador';
 
-import SubTest from './components/coffee-list/subTest';
-
-const App = ({item}) => {
+const App = () => {
   // const element = useRoutes([
   //   // These are the same as the props you provide to <Route>
   //   { path: '/', element: <Home /> },
@@ -39,7 +36,6 @@ const App = ({item}) => {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Index/>}/>
-        {/* <Route path="/CoffeeInfo" element={<CoffeeInfo/>}/> */}
 
         <Route path="/Panama" element={<Panama/>}/>
         <Route path="/Aged" element={<Aged/>}/>
@@ -49,7 +45,6 @@ const App = ({item}) => {
         <Route path="/Zambia" element={<Zambia/>}/>
         <Route path="/rwanda" element={<Rwanda/>}/>
         <Route path="/Ecuador" element={<Ecuador/>}/>
-        {/* <Route path="/subTest/:Panama" element={<SubTest/>}/> */}
       </Routes>
     </BrowserRouter>
     </>
