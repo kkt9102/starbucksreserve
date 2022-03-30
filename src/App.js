@@ -61,7 +61,6 @@ const App = () => {
       <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 80 ? '' : 'btms'} fixed`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div> : 
       <div id="scroll_top" className={`${scrollPer < 40 ? 'hide' : 'show'} ${scrollPer < 80 ? '' : 'btms'} fixed scrollTop_mo`} href="#!" onClick={setScrollTop} tabIndex="0">TOP</div>
     }
-    
     </>
   );
 }
