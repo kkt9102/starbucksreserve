@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/starbucksreserve/static/css/main.e605edeb.css",
-    "main.js": "/starbucksreserve/static/js/main.2613080c.js",
+    "main.css": "/starbucksreserve/static/css/main.35b509b1.css",
+    "main.js": "/starbucksreserve/static/js/main.e46f9a2c.js",
     "static/js/787.0459903e.chunk.js": "/starbucksreserve/static/js/787.0459903e.chunk.js",
     "static/media/NotoSansCJKkr-Bold.otf": "/starbucksreserve/static/media/NotoSansCJKkr-Bold.9b1db29fc2a12922bfa6.otf",
     "static/media/NotoSansCJKkr-Medium.otf": "/starbucksreserve/static/media/NotoSansCJKkr-Medium.a89c0e766c9f7264d04e.otf",
@@ -35,12 +35,12 @@
     "static/media/reserve_logo.svg": "/starbucksreserve/static/media/reserve_logo.5fdce4672292b373b59bf40ec69a8686.svg",
     "index.html": "/starbucksreserve/index.html",
     "static/media/coffee_list_logo.svg": "/starbucksreserve/static/media/coffee_list_logo.27b34581c4215639484f22d6b51b2f9b.svg",
-    "main.e605edeb.css.map": "/starbucksreserve/static/css/main.e605edeb.css.map",
-    "main.2613080c.js.map": "/starbucksreserve/static/js/main.2613080c.js.map",
+    "main.35b509b1.css.map": "/starbucksreserve/static/css/main.35b509b1.css.map",
+    "main.e46f9a2c.js.map": "/starbucksreserve/static/js/main.e46f9a2c.js.map",
     "787.0459903e.chunk.js.map": "/starbucksreserve/static/js/787.0459903e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e605edeb.css",
-    "static/js/main.2613080c.js"
+    "static/css/main.35b509b1.css",
+    "static/js/main.e46f9a2c.js"
   ]
 }
