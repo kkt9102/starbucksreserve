@@ -1,0 +1,6 @@
+@import './common.css';
+
+:root {
+  --default-color: #222222;
+  --point-color: #976d3f;
+}
