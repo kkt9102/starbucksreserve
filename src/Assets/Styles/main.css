@@ -1,1 +1,9 @@
-.section_view {height: 100vh;}
+.section_view {height: 100vh; background:var(--default-color);}
+.re_sc_0 > * {z-index: 2;}
+.re_sc_0::before {content:""; position: absolute; width: 100%; height: 100%; background:url('../Images/section_back_img_1.jpg') no-repeat; background-size: cover; opacity: 0.3; z-index: 1;}
+.re_sc_0 .main_logo {padding-top:10rem;}
+.re_sc_0 .main_logo img {margin-top:11.5rem;}
+.re_sc_0 .txt_box {margin:5rem auto 0 auto;}
+.re_sc_0 .txt_box > * {color:var(--point-color)}
+.re_sc_0 .txt_box .sub_txt {font-size:2.5rem; font-weight: 400;}
+.re_sc_0 .txt_box .main_txt {margin-top:2rem; font-size:4.5rem; font-weight: 600;}

@@ -11,3 +11,10 @@
   --point-color: #976d3f;
   --defalut-text: #ffffff;
 }
+
+html {scroll-behavior: smooth;}
+/* body {overflow-y: hidden;} */
+#root {background: #222222;}
+body::-webkit-scrollbar {width: 0.6rem;}
+body::-webkit-scrollbar-thumb {height: 30%; background: #976d3f; border-radius: 0.5rem;}
+body::-webkit-scrollbar-track {background:#222222;}
