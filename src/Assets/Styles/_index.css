@@ -1,6 +1,13 @@
 @import './common.css';
+@import './header.css';
+@import './main.css';
+@import './extractioncard.css';
 
+@import url('../Fonts/NotoSansCJKkr.css');
+
+* {font-family: 'NotoKr';}
 :root {
   --default-color: #222222;
   --point-color: #976d3f;
+  --defalut-text: #ffffff;
 }

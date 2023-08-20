@@ -1,9 +1,11 @@
 import {Suspense} from 'react';
 import Router from './Router';
 
+import Loading from './Components/Loading';
+
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading/>}>
       <Router/>
     </Suspense>
   );

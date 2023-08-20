@@ -4,9 +4,17 @@ import Header from "../Header/Header"
 import Footer from '../Footer/Footer';
 
 const Layout = () => {
+  const location = useLocation();
+
+  const subPage = location.pathname.includes('/coffee-products');
+
   return(
     <>
-      <Header/>
+      {subPage ?
+        ''
+        :
+        <Header/>
+      }
         <Outlet/>
       <Footer/>
     </>
