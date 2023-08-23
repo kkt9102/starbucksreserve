@@ -7,3 +7,11 @@
 .re_sc_0 .txt_box > * {color:var(--point-color)}
 .re_sc_0 .txt_box .sub_txt {font-size:2.5rem; font-weight: 400;}
 .re_sc_0 .txt_box .main_txt {margin-top:2rem; font-size:4.5rem; font-weight: 600;}
+
+/* re_sc_1 */
+.re_sc_1 .page_title {padding-top: 8rem;}
+.re_sc_1 .txt_box > * {color:var(--defalut-text);}
+.re_sc_1 .txt_box .sub_txt {font-size: 2.5rem; font-weight: 400;}
+.re_sc_1 .txt_box .sub_tit {font-size: 3.6rem; font-weight: 600;}
+.re_sc_1 .txt_box .cont_1 ol li {font-size:1.8rem;}
+.re_sc_1 .txt_box .cont_2 ol li {font-size:1.7rem;}
