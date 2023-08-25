@@ -2,7 +2,7 @@ import section_tit from "../../../Assets/Images/section_2_tit.png";
 
 const WhatsReserve = () => {
   return(
-    <div className="section_view re_sc_1">
+    <div className="section_view re_sc_1 relative">
       <div className="page_title">
         <div className="img_box">
           <img src={section_tit} alt="" />

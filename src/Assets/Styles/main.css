@@ -11,7 +11,14 @@
 /* re_sc_1 */
 .re_sc_1 .page_title {padding-top: 8rem;}
 .re_sc_1 .txt_box > * {color:var(--defalut-text);}
-.re_sc_1 .txt_box .sub_txt {font-size: 2.5rem; font-weight: 400;}
-.re_sc_1 .txt_box .sub_tit {font-size: 3.6rem; font-weight: 600;}
-.re_sc_1 .txt_box .cont_1 ol li {font-size:1.8rem;}
-.re_sc_1 .txt_box .cont_2 ol li {font-size:1.7rem;}
+.re_sc_1 .txt_box .sub_txt {margin-top:4rem; font-size: 2.5rem; font-weight: 400;}
+.re_sc_1 .txt_box .sub_tit {margin-top:1rem; font-size: 3.6rem; font-weight: 600;}
+.re_sc_1 .txt_box ol li {text-align:center;}
+.re_sc_1 .txt_box .cont_1 {margin-top:2rem;}
+.re_sc_1 .txt_box .cont_2 {margin-top:2rem;}
+.re_sc_1 .txt_box .cont_1 ol li {font-size:1.8rem; font-weight:500; line-height:3rem;}
+.re_sc_1 .txt_box .cont_2 ol li {font-size:1.7rem; line-height:2.5rem;}
+.re_sc_1::after {content:''; position:absolute; width:100%; height:35%; bottom:0; left:0; background:url('../Images/section_back_img_2.png'); background-size:cover; opacity:0.3;}
+
+/* re_sc_2 */
+.re_sc_2 .page_title {padding-top: 8rem;}
