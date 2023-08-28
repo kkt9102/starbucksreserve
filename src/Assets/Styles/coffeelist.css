@@ -1,0 +1,5 @@
+.coffee_list {max-width: 120rem; margin:0 auto;}
+.coffee_list ul li {flex-basis: calc(100%/4);}
+.coffee_list ul li::before {content:''; position: absolute; width: 100%; height: 100%; top:0; left:0; background: rgba(0,0,0,0); transition: background 0.3s;}
+.coffee_list ul li:hover::before {background: rgba(0,0,0,0.5);}
+.coffee_list ul li .img_box {max-width: 28rem;}
