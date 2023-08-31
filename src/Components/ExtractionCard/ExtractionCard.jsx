@@ -44,7 +44,7 @@ const ExtractionCard = () => {
   return(
     <ul className='flex flex_jc_sb'>
       {ExtraList.map((card) =>
-        <li key={card.name} className='relative flex flex_jc_c'>
+        <li key={card.name} className='relative flex flex_jc_c cursor_p'>
           <div className='card_top '>
             <div className='img_box'>
               <img src={card.img} alt="" />

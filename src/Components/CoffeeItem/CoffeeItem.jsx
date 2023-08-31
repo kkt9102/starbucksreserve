@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
+import small_logo from '../../Assets/Images/coffee_list_logo.svg';
+
 import Panama from '../../Assets/Images/coffee_list/Panama Boquete.jpg';
 import Aged from '../../Assets/Images/coffee_list/Aged Sumatra.jpg';
 import Hawaii from '../../Assets/Images/coffee_list/Hawaii Ka’u.jpg';
@@ -57,10 +59,16 @@ const CoffeeItem = () => {
   return(
     <ul className='flex flex_jc_sb flex_wrap_wrap'>
       {CoffeeCard.map((coffee) =>
-        <li key={coffee.name} className='relative' onClick={() =>navigate(`${coffee.url}`)}>
+        <li key={coffee.name} className='relative cursor_p' onClick={() =>navigate(`${coffee.url}`)}>
           <div>
-            <div className='img_box'>
+            <div className='img_box relative'>
               <img src={coffee.img} alt={coffee.name} />
+              <div className="coffee_target absolute">
+                <div className='logo'>
+                  <img src={small_logo} alt="" />
+                </div>
+                <div className='coffee_name absolute'>{coffee.name}</div>
+              </div>
             </div>
             {/* <div>{coffee.name}</div> */}
           </div>
