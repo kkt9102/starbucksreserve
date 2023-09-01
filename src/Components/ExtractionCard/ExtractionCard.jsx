@@ -3,6 +3,7 @@ import blackeagle_icon from '../../Assets/Images/black_eagle_icon.png';
 import pourover_icon from '../../Assets/Images/poc_icon.png';
 import chemex_icon from '../../Assets/Images/chemex_icon.png';
 import coldbrew_icon from '../../Assets/Images/cold_brew_icon.png';
+import { useState } from 'react';
 
 const ExtraList = [
   {
@@ -41,10 +42,14 @@ const ExtraList = [
 ]
 
 const ExtractionCard = () => {
+  const [modal,setModal] = useState();
+  const handleModalPopupOpen = (e) => {
+    console.log(e)
+  };
   return(
     <ul className='flex flex_jc_sb'>
       {ExtraList.map((card) =>
-        <li key={card.name} className='relative flex flex_jc_c cursor_p'>
+        <li key={card.name} className='relative flex flex_jc_c cursor_p' onClick={(e)=> handleModalPopupOpen(e)}>
           <div className='card_top '>
             <div className='img_box'>
               <img src={card.img} alt="" />
