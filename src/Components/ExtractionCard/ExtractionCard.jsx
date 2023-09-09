@@ -1,13 +1,18 @@
+import { useState } from 'react';
+import { useRecoilState } from 'recoil';
+
+import { extractionState } from '../../State/modalState';
+
 import colver_icon from '../../Assets/Images/clover_icon.png';
 import blackeagle_icon from '../../Assets/Images/black_eagle_icon.png';
 import pourover_icon from '../../Assets/Images/poc_icon.png';
 import chemex_icon from '../../Assets/Images/chemex_icon.png';
 import coldbrew_icon from '../../Assets/Images/cold_brew_icon.png';
-import { useState } from 'react';
+
 
 const ExtraList = [
   {
-    name: 'COLVER',
+    name: 'CLOVER',
     img: colver_icon,
     txt: `깊은 풍미에 진하고 \n`
     +`강한 맛을 원하면`
@@ -42,14 +47,15 @@ const ExtraList = [
 ]
 
 const ExtractionCard = () => {
-  const [modal,setModal] = useState();
-  const handleModalPopupOpen = (e) => {
-    console.log(e)
+  // const [modal,setModal] = useState(-1);
+  const [modal,setModal] = useRecoilState(extractionState)
+  const handleModalPopupOpen = (index) => {
+    setModal(index === modal ? -1 : index)
   };
   return(
     <ul className='flex flex_jc_sb'>
-      {ExtraList.map((card) =>
-        <li key={card.name} className='relative flex flex_jc_c cursor_p' onClick={(e)=> handleModalPopupOpen(e)}>
+      {ExtraList.map((card, index) =>
+        <li key={card.name} className={`relative flex flex_jc_c cursor_p ${index === modal ? "active" : ""}`} onClick={()=> handleModalPopupOpen(index)}>
           <div className='card_top '>
             <div className='img_box'>
               <img src={card.img} alt="" />
