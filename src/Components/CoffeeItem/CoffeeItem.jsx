@@ -60,6 +60,7 @@ const CoffeeItem = () => {
     <ul className='flex flex_jc_sb flex_wrap_wrap'>
       {CoffeeCard.map((coffee) =>
         <li key={coffee.name} className='relative cursor_p' onClick={() =>navigate(`${coffee.url}`)}>
+          <div className='effect_name absolute'>{coffee.name}</div>
           <div>
             <div className='img_box relative'>
               <img src={coffee.img} alt={coffee.name} />

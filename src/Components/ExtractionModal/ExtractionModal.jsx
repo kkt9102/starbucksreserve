@@ -52,7 +52,7 @@ const ExtractionModal = ({index, close}) => {
           <p className='en_name'>{result[0]?.en_name}</p>
           <p className='ko_name'>{result[0]?.ko_name}</p>
         </div>
-        <div className='close_btn relative' onClick={close}>
+        <div className='close_btn relative cursor_p' onClick={close}>
           <div className='absolute'></div>
           <div className='absolute'></div>
         </div>
