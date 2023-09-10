@@ -59,7 +59,7 @@ const ExtractionModal = ({index, close}) => {
       </div>
       <div className='modal_content'>
         <div className='img_box'>
-          <img src={result[0].img} alt={result[0]?.ko_name}/>
+          <img src={result[0].img} alt={result[0]?.ko_name} loading='lazy'/>
         </div>
         <div className='content_txt'>
           {result[0].txt}

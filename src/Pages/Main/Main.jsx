@@ -17,7 +17,16 @@ const Main = () => {
   };
   return(
     <>
-    {extraModal !== -1 ? <ExtractionModal index={extraModal} close={handleCloseModal}/> : null}
+      {
+        extraModal !== -1 ? 
+        <>
+          <div className='modal_bg'>
+            <ExtractionModal index={extraModal} close={handleCloseModal}/>
+          </div>
+        </> 
+        : 
+        null
+      }
       <Home/>
       <WhatsReserve/>
       <Extraction/>

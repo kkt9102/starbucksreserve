@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import small_logo from '../../Assets/Images/coffee_list_logo.svg';
 
@@ -15,17 +15,17 @@ const CoffeeCard = [
   {
     name: '파나마 보케테',
     img: Panama,
-    url: 'panama_boquete'
+    url: 'panama-boquete'
   },
   {
     name: '에이지드 수마트라',
     img: Aged,
-    url: 'aged_sumatra'
+    url: 'aged-sumatra'
   },
   {
     name: '하와이 카우',
     img: Hawaii,
-    url: 'hawaii_kau'
+    url: 'hawaii-kau'
   },
   {
     name: '크리스마스',
@@ -35,22 +35,22 @@ const CoffeeCard = [
   {
     name: '볼리비아 솔 데 라 마냐',
     img: Bolivia,
-    url: 'bolivia_sol_de_la_manana'
+    url: 'bolivia-sol-de-la-manana'
   },
   {
     name: '잠비아 이사냐 에스테이',
     img: Zambia,
-    url: 'zambia_isanya_estate'
+    url: 'zambia-isanya-estate'
   },
   {
     name: '르완다 쇼리',
     img: Rwanda,
-    url: 'rwanda_sholi'
+    url: 'rwanda-sholi'
   },
   {
     name: '에콰도르 로하',
     img: Ecuador,
-    url: 'ecuador_loja'
+    url: 'ecuador-loja'
   },
 ]
 
@@ -59,7 +59,7 @@ const CoffeeItem = () => {
   return(
     <ul className='flex flex_jc_sb flex_wrap_wrap'>
       {CoffeeCard.map((coffee) =>
-        <li key={coffee.name} className='relative cursor_p' onClick={() =>navigate(`${coffee.url}`)}>
+        <li key={coffee.name} className='relative cursor_p' onClick={() =>navigate(`coffee-products/${coffee.url}`)}>
           <div className='effect_name absolute'>{coffee.name}</div>
           <div>
             <div className='img_box relative'>
@@ -71,7 +71,6 @@ const CoffeeItem = () => {
                 <div className='coffee_name absolute'>{coffee.name}</div>
               </div>
             </div>
-            {/* <div>{coffee.name}</div> */}
           </div>
         </li>
       )}

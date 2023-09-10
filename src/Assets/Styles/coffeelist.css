@@ -1,19 +1,19 @@
 .coffee_list {max-width: 120rem; margin:8rem auto 0 auto;}
-.coffee_list ul li {flex-basis: calc(90%/4); margin-bottom: 5rem; overflow: hidden;}
-.coffee_list ul li .effect_name {width:60%; top:40%; left:20%; font-size:1.8rem; font-weight:600; color:var(--point-color); text-align:center; word-break:keep-all; transition: all 0.3s;}
+.coffee_list ul li {flex-basis: calc(90%/4); height:28rem; margin-bottom: 5rem; overflow: hidden;}
+.coffee_list ul li .effect_name {width:60%; top:40%; left:20%; font-size:1.8rem; font-weight:600; color:var(--defalut-text); text-align:center; word-break:keep-all; text-shadow:1px 0 var(--point-color), 0 1px var(--point-color), -1px 0 var(--point-color),0 -1px var(--point-color);transition: all 0.3s;}
 .coffee_list ul li::before {content:''; position: absolute; width: 100%; height: 100%; top:0; left:0; background: rgba(0,0,0,0); transition: background 0.3s;}
-.coffee_list ul li .img_box {max-width: 28rem; height:23rem; overflow: hidden; text-align: left;}
+.coffee_list ul li .img_box {max-width: 28rem; height:28rem; overflow: hidden; text-align: left;}
 .coffee_list ul li .img_box > img {width: 21.6rem; transition: transform 0.3s;}
 .coffee_list ul li .coffee_target {width: 10rem; height: 10rem; bottom: 0; right: 4rem; z-index: 1; transition: all 0.2s;}
-.coffee_list ul li .coffee_target::before {content:''; position: absolute; width: 18rem; height: 8rem; bottom:-15%; right:-70%; background: var(--default-color); border-top:2px solid var(--point-color); transform: rotate(-45deg); z-index: 0; transition: all 0.2s;}
-.coffee_list ul li .coffee_target .logo {position: absolute; top:25%; right:2%; z-index: 1;}
+.coffee_list ul li .coffee_target::before {content:''; position: absolute; width: 18rem; height: 10rem; bottom:10%; right:-70%; background: var(--default-color); border-top:2px solid var(--point-color); transform: rotate(-45deg); z-index: 0; transition: width 0.2s;}
+.coffee_list ul li .coffee_target .logo {position: absolute; top:0%; right:2%; z-index: 1;}
 .coffee_list ul li .coffee_target .logo img {width: 2.7rem; height: 2.1rem;}
-.coffee_list ul li .coffee_target .coffee_name {width:65%; bottom:0.1rem; right:0; font-size:1.1rem; font-weight:300; color:var(--point-color); line-height: 1.3; text-align: center; word-break: keep-all;}
+.coffee_list ul li .coffee_target .coffee_name {width:65%; bottom:3rem; right:0; font-size:1.1rem; font-weight:300; color:var(--point-color); line-height: 1.3; text-align: center; word-break: keep-all;}
 /* HOVER EFFECT */
 .coffee_list ul li:hover {}
 .coffee_list ul li:hover::before {background: rgba(0,0,0,0.5); z-index: 2;}
 .coffee_list ul li:hover .effect_name {z-index: 6;}
-.coffee_list ul li:hover .img_box > img {transform: scale(1.8);}
-.coffee_list ul li:hover .coffee_target, .coffee_list ul li:hover .coffee_target::before {width: 0;}
+.coffee_list ul li:hover .img_box > img {transform: scale(1.5) translate(5%, 8.4%);}
+.coffee_list ul li:hover .coffee_target, .coffee_list ul li:hover .coffee_target::before {width: 0; background: none;}
 .coffee_list ul li:hover .coffee_target .coffee_name {font-size: 0;}
 .coffee_list ul li:hover .coffee_target .logo img {width: 0; height: 0;}

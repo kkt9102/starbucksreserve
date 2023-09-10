@@ -18,7 +18,7 @@ const Router = () => useRoutes([
         element: <Main/>
       },
       {
-        path: 'coffee-products',
+        path: 'coffee-products/:coffee',
         element: <CoffeeProducts/>
       }
     ]
