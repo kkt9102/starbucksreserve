@@ -3,6 +3,7 @@
 @import './main.css';
 @import './extractioncard.css';
 @import './coffeelist.css';
+@import './coffeeinfo.css';
 
 @import url('../Fonts/NotoSansCJKkr.css');
 
@@ -10,7 +11,7 @@
 :root {
   --default-color: #222222;
   --point-color: #976d3f;
-  --defalut-text: #ffffff;
+  --default-text: #ffffff;
 }
 
 html {scroll-behavior: smooth;}

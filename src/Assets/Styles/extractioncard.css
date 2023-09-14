@@ -5,7 +5,7 @@
 .extra_card ul li .card_top .card_tit {padding-top:1rem; font-size:2.2rem; font-weight:400; color:var(--point-color); text-align: center; letter-spacing: 1px;}
 .extra_card ul li .card_top .card_tit::after {content:''; position:absolute; width: 90%; height: 0.5rem; top:40%; left:5%; background: var(--point-color);}
 .extra_card ul li .card_bottom {margin-top:3rem;}
-.extra_card ul li .card_bottom .sub_txt {font-size: 1.3rem; color:var(--defalut-text); text-align: center; white-space: pre;}
+.extra_card ul li .card_bottom .sub_txt {font-size: 1.3rem; color:var(--default-text); text-align: center; white-space: pre;}
 /* .extra_card ul li:nth-child(2n + 1) {} */
 .extra_card ul li:nth-child(2n + 2) {top:14rem;}
 
@@ -17,7 +17,7 @@
 .extra_modal .modal_header .close_btn > div:first-child {transform: rotate(45deg);}
 .extra_modal .modal_header .close_btn > div:last-child {transform: rotate(-45deg);}
 .extra_modal .modal_header .title_box .en_name {font-size:3rem; font-weight: 400; color:var(--point-color); letter-spacing: 1px;}
-.extra_modal .modal_header .title_box .ko_name {font-size:2rem; font-weight: 400; color:var(--defalut-text);}
+.extra_modal .modal_header .title_box .ko_name {font-size:2rem; font-weight: 400; color:var(--default-text);}
 .extra_modal .modal_content .img_box {margin-top:3rem;}
 .extra_modal .modal_content .img_box img {border-radius: 5px; border:2px solid var(--point-color); overflow: hidden;}
-.extra_modal .modal_content .content_txt {padding: 0 2rem; margin-top:3rem; font-weight:400; color:var(--defalut-text); word-break: keep-all; line-height: 1.6;}
+.extra_modal .modal_content .content_txt {padding: 0 2rem; margin-top:3rem; font-weight:400; color:var(--default-text); word-break: keep-all; line-height: 1.6;}

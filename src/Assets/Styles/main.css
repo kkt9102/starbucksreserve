@@ -10,7 +10,7 @@
 
 /* re_sc_1 */
 .re_sc_1 .page_title {padding-top: 8rem;}
-.re_sc_1 .txt_box > * {color:var(--defalut-text);}
+.re_sc_1 .txt_box > * {color:var(--default-text);}
 .re_sc_1 .txt_box .sub_txt {margin-top:4rem; font-size: 2.5rem; font-weight: 400;}
 .re_sc_1 .txt_box .sub_tit {margin-top:1rem; font-size: 3.6rem; font-weight: 600;}
 .re_sc_1 .txt_box ol li {text-align:center;}
@@ -26,4 +26,4 @@
 
 /* re_sc_3 */
 .re_sc_3 .page_title {padding-top: 8rem;}
-.re_sc_3 .sub_txt {font-size: 1.3rem; font-weight:300; color:var(--defalut-text)}
+.re_sc_3 .sub_txt {font-size: 1.3rem; font-weight:300; color:var(--default-text)}
