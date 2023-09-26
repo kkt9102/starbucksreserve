@@ -20,3 +20,6 @@ html {scroll-behavior: smooth;}
 body::-webkit-scrollbar {width: 0.6rem;}
 body::-webkit-scrollbar-thumb {height: 30%; background: #976d3f; border-radius: 0.5rem;}
 body::-webkit-scrollbar-track {background:#222222;}
+
+.deco_txt {position:relative; text-indent: 10px;}
+.deco_txt::before {content:''; position: absolute; width:5px; height: 100%; top:0; left:0; background: var(--point-color);}

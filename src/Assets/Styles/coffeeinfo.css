@@ -4,4 +4,16 @@
 .sub_header .ko_name {font-size: 3.8rem; font-weight: 500; color:var(--default-text);}
 .sub_header .en_name {font-size: 1.4rem; font-weight: 700; color:var(--point-color); letter-spacing: 1px;}
 
-.coffee_product {background: var(--default-color); min-height: 100vh;}
+.coffee_product { background: var(--default-color); min-height: 100vh;}
+.coffee_product .coffee_body {max-width:60%; padding-top:4rem; margin:0 auto;}
+.coffee_product .coffee_body .img_box {flex-basis: 55%;}
+.coffee_product .coffee_body .img_box img {border:2px solid var(--point-color)}
+.coffee_product .coffee_body .coffee_info {flex-basis: 38%; }
+.coffee_product .coffee_body .coffee_info * {color:var(--default-text)}
+.coffee_product .coffee_body .coffee_info .key_title {font-size:2.3rem; font-weight: 500;}
+.coffee_product .coffee_body .coffee_info .origin_location {font-size: 2.3rem;  font-weight: 600; letter-spacing: 1.3px;}
+.coffee_product .coffee_body .coffee_info .coffee_info_chart {border:1px solid var(--point-color)}
+.coffee_product .coffee_body .coffee_info .coffee_info_chart > div {padding:1.5rem;}
+.coffee_product .coffee_body .coffee_info .coffee_info_chart > div:not(:last-child) {border-bottom: 1px solid var(--point-color);}
+.coffee_product .coffee_body .coffee_info .coffee_info_chart .key {font-size:1.7rem; font-weight: 600;}
+.coffee_product .coffee_body .coffee_info .coffee_info_chart svg {width:2rem; height: 2rem;}
