@@ -46,27 +46,32 @@ const ExtraList = [
   },
 ]
 
-const ExtractionCard = () => {
+const ExtractionCard = ({extraList}) => {
   // const [modal,setModal] = useState(-1);
   const [modal,setModal] = useRecoilState(extractionState)
   const handleModalPopupOpen = (index) => {
     setModal(index === modal ? -1 : index)
   };
+  console.log('extraList',extraList)
   return(
     <ul className='flex flex_jc_sb'>
-      {ExtraList.map((card, index) =>
-        <li key={card.name} className={`relative flex flex_jc_c cursor_p ${index === modal ? "active" : ""}`} onClick={()=> handleModalPopupOpen(index)}>
-          <div className='card_top '>
-            <div className='img_box'>
-              <img src={card.img} alt="" />
+      {extraList !== undefined ?
+        ''
+      :
+        ExtraList.map((card, index) =>
+          <li key={card.name} className={`relative flex flex_jc_c cursor_p ${index === modal ? "active" : ""}`} onClick={()=> handleModalPopupOpen(index)}>
+            <div className='card_top '>
+              <div className='img_box'>
+                <img src={card.img} alt="" />
+              </div>
+              <div className='card_tit '>{card.name}</div>
+              <div className='card_bottom txt_box'>
+                <div className='sub_txt'>{card.txt}</div>
+              </div>
             </div>
-            <div className='card_tit '>{card.name}</div>
-            <div className='card_bottom txt_box'>
-              <div className='sub_txt'>{card.txt}</div>
-            </div>
-          </div>
-        </li>
-      )}
+          </li>
+      )
+    }
     </ul>
   )
 }
