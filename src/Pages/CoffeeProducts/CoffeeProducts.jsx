@@ -61,7 +61,10 @@ const CoffeeProducts = () => {
       </div>
       <div className='line'></div>
       <div className='coffee_footer flex flex_jc_sb'>
-        <ExtractionCard extraList={coffeeInfo[0].extraction} />
+        <div className='proposal_extra'>
+          <p className='section_tit deco_txt flex'>추천드리는 추출방식</p>
+          <ExtractionCard extraList={coffeeInfo[0].extraction} />
+        </div>
         <div className='coffee_story'>
           <p className='section_tit deco_txt flex'>커피 스토리</p>
           <div className='contents'>{coffeeInfo[0].coffee_story}</div>
