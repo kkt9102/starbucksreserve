@@ -22,4 +22,4 @@
 .coffee_product .coffee_footer {padding-top:0;}
 .coffee_product .coffee_footer .coffee_story {flex-basis: 60%;}
 .coffee_product .coffee_footer .proposal_extra .section_tit,.coffee_product .coffee_footer .coffee_story .section_tit {font-size: 2.3rem; color:var(--default-text);}
-.coffee_product .coffee_footer .coffee_story .contents {color:var(--default-text); word-break: keep-all;}
+.coffee_product .coffee_footer .coffee_story .contents {margin-top:3rem; color:var(--default-text); word-break: keep-all; line-height: 2.5rem;}

@@ -18,11 +18,11 @@ const Map = () => {
 
     const mapContainer = document.getElementById('map'),
       mapOption = {
-        // center: new window.kakao.maps.LatLng(userLat, userLng),
+        center: new window.kakao.maps.LatLng(userLat, userLng),
         level: 3,
       };
 
-    // const map = new window.kakao.maps.Map(mapContainer, mapOption);
+    const map = new window.kakao.maps.Map(mapContainer, mapOption);
 
     setMap(map);
 
@@ -30,7 +30,7 @@ const Map = () => {
 
   return(
     <>
-      <div id="map" ref={container} style={{ width: '100%', height: 'calc(100% - 4rem)' }}></div>
+      <div id="map" ref={container} style={{ width: '100%', height: '40rem' }}></div>
     </>
   )
 }
