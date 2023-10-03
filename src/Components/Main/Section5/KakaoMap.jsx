@@ -10,7 +10,9 @@ const KakaoMap = () => {
         <div className="img_box">
           <img src={section_tit} alt="" />
         </div>
-        <Map/>
+        <div className='map_frame'>
+          <Map/>
+        </div>
       </div>
     </div>
   )

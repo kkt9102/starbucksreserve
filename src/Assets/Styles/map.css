@@ -1,0 +1,9 @@
+.store_popup {flex-basis:35rem; width:35rem; padding:0.5rem; background: var(--default-color); border:2px solid var(--point-color);}
+.store_popup * {color: var(--default-text);}
+.store_popup .popclose_btn {flex-basis: 100%;}
+.store_popup .left_item {flex-basis: 65%;}
+.store_popup .left_item .store_name {font-size: 1.8rem; font-weight:700; color:var(--point-color);}
+.store_popup .left_item .store_location {font-size: 1.4rem;}
+.store_popup .right_item {flex-basis: 30%;}
+.store_popup .right_item .store_time_title {font-size: 1.4rem;}
+.store_popup .right_item div:not(.store_time_title) {font-size: 1.2rem;}

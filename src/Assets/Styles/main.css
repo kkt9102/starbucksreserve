@@ -27,3 +27,7 @@
 /* re_sc_3 */
 .re_sc_3 .page_title {padding-top: 8rem;}
 .re_sc_3 .sub_txt {font-size: 1.3rem; font-weight:300; color:var(--default-text)}
+
+/* re_sc_4 */
+.re_sc_4 .map_frame {width: 91%; margin:3rem auto 0 auto; border:2px solid var(--point-color);}
+.re_sc_4 #map {height: 80vh;}
