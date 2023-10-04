@@ -33,10 +33,12 @@ const Map = () => {
         position: new window.kakao.maps.LatLng(StoreList[i].lat, StoreList[i].lng),
         image: reserveMaker,
       });
-
+      const closePop = () => {
+        infowindow.setMap(null)
+      }
       const infowindow = new window.kakao.maps.CustomOverlay({
         content: `<div class="store_popup flex flex_jc_sb flex_wrap_wrap">
-                    <div class="popclose_btn">닫기</div>
+                    <div class="popclose_btn" onclick="closePop()">닫기</div>
                     <div class="left_item">
                       <div class="store_name">${StoreList[i].place_name}</div>
                       <div class="store_location">${StoreList[i].place_address}</div>
@@ -63,13 +65,15 @@ const Map = () => {
                     </div>
                   </div>`,
         position: new window.kakao.maps.LatLng(StoreList[i].lat, StoreList[i].lng),
+        clickable : true,
         zIndex: 1,
       });
-      const closeButton = infowindow.content.querySelector('.popclose_btn');
-      closeButton.addEventListener('click', () => {
-        // 해당 오버레이를 닫음
-        infowindow.setMap(null);
-      });
+      // const closeButton = infowindow.content.querySelector('.popclose_btn');
+      // closeButton.addEventListener('click', () => {
+      //   // 해당 오버레이를 닫음
+      //   infowindow.setMap(null);
+      // });
+      
       window.kakao.maps.event.addListener(marker, 'click', function () {
         infowindow.setMap(map);
       });
