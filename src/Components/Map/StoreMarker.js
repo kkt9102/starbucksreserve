@@ -834,7 +834,8 @@ export const StoreList = [
     ser:'07:00 ~ 11:00',
     sun:'07:00 ~ 11:00',
      lat: 37.199208, 
-     lng: 127.113042
+     lng: 127.113042,
+     title: `<div>aaaaaa</div>`
  },
  /* 양평 */
  {
