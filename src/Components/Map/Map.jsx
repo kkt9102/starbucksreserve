@@ -87,12 +87,41 @@ const Map = () => {
           image: reserveMaker,
       });
       const overlay = new window.kakao.maps.CustomOverlay({
-          yAnchor: 3,
-          position: marker.getPosition()
+        xAnchor: 0.5,
+        yAnchor: 1.3,
+          position: new window.kakao.maps.LatLng(data.lat, data.lng)
       });
       
       const content = document.createElement('div');
-      content.innerHTML =  data.content;
+      // content.innerHTML = `<div class="store_popup flex flex_jc_sb flex_wrap_wrap">${data.place_name}</div>`;
+      content.innerHTML = `
+      <div class="store_popup flex flex_jc_sb flex_wrap_wrap">
+        <div class="left_item">
+          <div class="store_name">${data.place_name}</div>
+          <div class="store_location">${data.place_address}</div>
+          <div class="store_info">
+            <div class="icon_box">
+              <div>매장 시설정보안내영역</div>
+            </div>
+          </div>
+          <div class="store_img img_box">
+            <div class="img_box">
+              <img src="" alt="해당 리저브매장 전경사진">
+            </div>
+          </div>
+        </div>
+        <div class="right_item">
+          <div class="store_time_title">운영시간</div>
+          <div class="mon">월 : ${data.mon}</div>
+          <div class="tou">화 : ${data.tou}</div>
+          <div class="wen">수 : ${data.wen}</div>
+          <div class="thu">목 : ${data.thu}</div>
+          <div class="fei">금 : ${data.fei}</div>
+          <div class="ser">토 : ${data.ser}</div>
+          <div class="sun">일 : ${data.sun}</div>
+        </div>
+      </div>
+      `
       content.style.cssText = 'background: white; border: 1px solid black';
       
       const closeBtn = document.createElement('button');
