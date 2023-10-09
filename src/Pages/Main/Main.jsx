@@ -31,7 +31,7 @@ const Main = () => {
       <WhatsReserve/>
       <Extraction/>
       <Coffee/>
-      <KakaoMap/>
+      {/* <KakaoMap/> */}
     </>
   )
 }

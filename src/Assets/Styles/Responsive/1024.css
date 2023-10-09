@@ -1,0 +1,10 @@
+@media screen and (max-width:1024px) {
+  .section_view {min-height: 100vh;}
+  /* re_sc_0 */
+  /* re_sc_1 */
+  /* re_sc_2 */
+  .re_sc_2 .extra_card {max-width: 80%;}
+  .re_sc_2 .extra_card ul li {max-width: 10rem;}
+  /* re_sc_3 */
+  /* re_sc_4 */
+}
