@@ -11,7 +11,9 @@
 .coffee_product .coffee_body .coffee_info {flex-basis: 38%; }
 .coffee_product .coffee_body .coffee_info * {color:var(--default-text)}
 .coffee_product .coffee_body .coffee_info .key_title {font-size:2.3rem; font-weight: 500;}
-.coffee_product .coffee_body .coffee_info .origin_location {font-size: 2.3rem;  font-weight: 600; letter-spacing: 1.3px;}
+.coffee_product .coffee_body .coffee_info .coffee_origin::before {height: 3.5rem;}
+.coffee_product .coffee_body .coffee_info .key_title {white-space: nowrap;}
+.coffee_product .coffee_body .coffee_info .origin_location {font-size: 2.3rem;  font-weight: 600; letter-spacing: 1.3px; word-break: keep-all;}
 .coffee_product .coffee_body .coffee_info .coffee_info_chart {margin-top:3rem; border:1px solid var(--point-color)}
 .coffee_product .coffee_body .coffee_info .coffee_info_chart > div {padding:1.5rem;}
 .coffee_product .coffee_body .coffee_info .coffee_info_chart > div:not(:last-child) {border-bottom: 1px solid var(--point-color);}

@@ -9,6 +9,7 @@
 @import url('../Fonts/NotoSansCJKkr.css');
 
 @import './Responsive/1024.css';
+@import './Responsive/550.css';
 * {font-family: 'NotoKr';}
 :root {
   --default-color: #222222;

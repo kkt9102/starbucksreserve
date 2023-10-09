@@ -124,8 +124,8 @@ const Map = () => {
       `
       content.style.cssText = 'background: white; border: 1px solid black';
       
-      const closeBtn = document.createElement('button');
-      closeBtn.innerHTML = '닫기';
+      const closeBtn = document.createElement('div');
+      closeBtn.innerHTML = '<div class="close_btn absolute"><div></div><div></div></div>';
       closeBtn.onclick = function () {
           overlay.setMap(null);
       };

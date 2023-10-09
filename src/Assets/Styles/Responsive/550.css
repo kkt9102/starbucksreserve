@@ -1,0 +1,17 @@
+@media screen and (max-width:550px) {
+    /* re_sc_0 */
+    /* re_sc_1 */
+    /* re_sc_2 */
+    .extra_card ul {flex-wrap: wrap;}
+    .extra_card ul li {flex-basis: 100%; max-width:100%;}
+    .extra_card ul li:nth-child(2n + 2) {top:unset;}
+    .extra_card ul li {display: flex; justify-content:space-around; align-items: center; padding: 1rem 0; margin-bottom: 1rem;}
+    .extra_card ul li .card_top {flex-basis: 40%;}
+    .extra_card ul li .card_bottom {flex-basis:60%;}
+    .extra_card ul li .card_bottom .card_tit {padding-top:0;}
+    .extra_card ul li .card_bottom .card_tit::after {content:none;}
+
+    /* re_sc_3 */
+    /* re_sc_4 */
+    /* coffee body */
+}

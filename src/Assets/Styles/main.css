@@ -1,4 +1,4 @@
-.section_view {height: 100vh; background:var(--default-color);}
+.section_view {min-height: 100vh; background:var(--default-color);}
 .re_sc_0 > * {z-index: 2;}
 .re_sc_0::before {content:""; position: absolute; width: 100%; height: 100%; background:url('../Images/section_back_img_1.jpg') no-repeat; background-size: cover; opacity: 0.3; z-index: 1;}
 .re_sc_0 .main_logo {padding-top:10rem;}

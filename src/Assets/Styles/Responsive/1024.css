@@ -3,8 +3,19 @@
   /* re_sc_0 */
   /* re_sc_1 */
   /* re_sc_2 */
-  .re_sc_2 .extra_card {max-width: 80%;}
-  .re_sc_2 .extra_card ul li {max-width: 10rem;}
+  .extra_card {max-width: 80%;}
+  .extra_card ul li {max-width: 15rem; padding:1.5rem 0;}
+  .extra_card ul li .card_top .img_box img {height: 6rem;}
+  .extra_card ul li .card_top .card_tit {padding-top:1.5rem; font-size: 1.8rem;}
+  .extra_card ul li .card_bottom {margin-top:2rem;}
   /* re_sc_3 */
+  .re_sc_3 .coffee_list ul {justify-content: space-around;}
+  .coffee_list ul li .coffee_target::before {bottom:0; right:-100%;}
+  .coffee_list ul li .coffee_target .logo {right:-15%;}
+  .coffee_list ul li .coffee_target .coffee_name {right: -15%;}
   /* re_sc_4 */
+
+  /* coffee body */
+  .coffee_product .coffee_body, .coffee_product .coffee_footer, .coffee_product .line {max-width: 80%;}
+  .coffee_product .line {width: 80%;}
 }

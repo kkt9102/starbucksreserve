@@ -64,11 +64,13 @@ const ExtractionCard = ({extraList}) => {
               <div className='img_box'>
                 <img src={card.img} alt="" />
               </div>
-              <div className='card_tit '>{card.name}</div>
-              <div className='card_bottom txt_box'>
-                <div className='sub_txt'>{card.txt}</div>
-              </div>
             </div>
+            <div className='card_bottom'>
+                <div className='card_tit '>{card.name}</div>
+                <div className='card_bottom txt_box'>
+                  <div className='sub_txt'>{card.txt}</div>
+                </div>
+              </div>
           </li>
       )
     }

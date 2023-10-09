@@ -1,4 +1,4 @@
-.store_popup {flex-basis:35rem; width:35rem; padding:0.5rem; background: var(--default-color); border:2px solid var(--point-color);}
+.store_popup {flex-basis:35rem; width:35rem; padding:0.5rem; padding-top:1rem; background: var(--default-color); border:2px solid var(--point-color);}
 .store_popup * {color: var(--default-text);}
 .store_popup .popclose_btn {flex-basis: 100%;}
 .store_popup .left_item {flex-basis: 65%;}
@@ -7,3 +7,8 @@
 .store_popup .right_item {flex-basis: 30%;}
 .store_popup .right_item .store_time_title {font-size: 1.4rem;}
 .store_popup .right_item div:not(.store_time_title) {font-size: 1.2rem;}
+.store_popup ~ div {position:absolute; width:2rem; height:2rem; top:0; right:0;}
+.store_popup ~ div .close_btn {width:inherit; height: inherit;}
+.store_popup ~ div .close_btn > div {position:absolute; width: 80%; height: 0.2rem; top:55%; background: var(--point-color); border-radius: 3px;}
+.store_popup ~ div .close_btn > div:first-child {transform: rotate(45deg);}
+.store_popup ~ div .close_btn > div:last-child {transform: rotate(-45deg);}
