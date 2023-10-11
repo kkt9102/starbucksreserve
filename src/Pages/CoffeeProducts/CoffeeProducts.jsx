@@ -14,9 +14,8 @@ const CoffeeProducts = () => {
   const { coffee } = useParams();
 
   const coffeeInfo = CoffeeInfo.coffee.filter((item) => item.url === coffee)
-  console.log(coffeeInfo);
+  console.log(coffeeInfo[0].extraction);
 
-  console.log(ExtractionCard)
   return(
     <div className='coffee_product'>
       <SubHeader ko_name={coffeeInfo[0].ko_name} en_name={coffeeInfo[0].en_name}/>
@@ -63,7 +62,7 @@ const CoffeeProducts = () => {
       <div className='coffee_footer flex flex_jc_sb'>
         <div className='proposal_extra'>
           <p className='section_tit deco_txt flex'>추천드리는 추출방식</p>
-          <ExtractionCard extraList={coffeeInfo[0].extraction} />
+          {/* <ExtractionCard /> */}
         </div>
         <div className='coffee_story'>
           <p className='section_tit deco_txt flex'>커피 스토리</p>
