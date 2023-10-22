@@ -1,0 +1,8 @@
+footer {border-top:1.5px solid var(--point-color)}
+footer .footer_nav {max-width: 80%; margin: 0 auto;}
+footer .footer_nav ul li a {display:flex; padding:0.5rem; font-size:1.6rem; font-weight:600; color:var(--point-color); transition: all 0.3s;}
+footer .footer_nav ul li a:hover {text-shadow: 1px 1px 1px var(--point-color)}
+
+footer .site_menu_box {max-width: 80%; margin: 3rem auto 0;}
+footer .site_menu_box ul li {padding:0.5rem 3rem; border-radius: 5px; border:2px solid #fff; color:var(--default-text); transition: all 0.3s;}
+footer .site_menu_box ul li:hover {border-color: var(--point-color); color:var(--point-color)}

@@ -1,5 +1,6 @@
 .sub_header {position: relative; width: 100%; height: 25rem;}
 .sub_header::after {content:''; position: absolute; width: 100%; height: 100%; top:0; left:0; background: url('../Images/sub_header.gif') no-repeat; background-size: cover; opacity: 0.3; z-index: 1;}
+.sub_header .history_back {width:4rem; height:4rem; top:1rem; left: 1rem; z-index: 5;}
 .sub_header .cont {position: relative; height: 100%; z-index: 2;}
 .sub_header .ko_name {font-size: 3.8rem; font-weight: 500; color:var(--default-text);}
 .sub_header .en_name {font-size: 1.4rem; font-weight: 700; color:var(--point-color); letter-spacing: 1px;}
@@ -22,6 +23,11 @@
 .coffee_product .coffee_body .coffee_info .coffee_info_chart svg.none_fill path {fill:none;}
 .coffee_product .line {flex-basis: 100%; max-width:60%; width: 60%; height: 1px; margin:3rem auto; background: var(--point-color);}
 .coffee_product .coffee_footer {padding-top:0;}
-.coffee_product .coffee_footer .coffee_story {flex-basis: 60%;}
+.coffee_product .coffee_footer .proposal_extra {flex-basis: 40%;}
+.coffee_product .coffee_footer .proposal_extra .extra_card.detail_view {display:flex; flex-basis:100%; margin:unset;}
+.coffee_product .coffee_footer .proposal_extra .extra_card.detail_view ul {margin-top:3rem;}
+.coffee_product .coffee_footer .proposal_extra .extra_card.detail_view ul li {flex-basis: 45%; max-height: 26.5rem;}
+.coffee_product .coffee_footer .coffee_story {flex-basis: 55%;}
 .coffee_product .coffee_footer .proposal_extra .section_tit,.coffee_product .coffee_footer .coffee_story .section_tit {font-size: 2.3rem; color:var(--default-text);}
 .coffee_product .coffee_footer .coffee_story .contents {margin-top:3rem; color:var(--default-text); word-break: keep-all; line-height: 2.5rem;}
+

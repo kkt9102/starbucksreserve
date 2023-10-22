@@ -3,9 +3,9 @@ import { useLocation, useParams } from 'react-router-dom';
 import SubHeader from '../../Components/SubHeader';
 import Footer from '../../Components/Footer';
 import ExtractionCard from '../../Components/ExtractionCard/ExtractionCard';
-import * as ExtrantionList from '../../Components/ExtractionCard/ExtractionCard';
 
 import CoffeeInfo from '../../Data/CoffeeDetail.json';
+import CoffeeData from '../../Data/CoffeeExtraction.json';
 
 import { ReactComponent as StarScore } from '../../Assets/Images/Star_icon.svg';
 
@@ -14,7 +14,7 @@ const CoffeeProducts = () => {
   const { coffee } = useParams();
 
   const coffeeInfo = CoffeeInfo.coffee.filter((item) => item.url === coffee)
-  console.log(coffeeInfo[0].extraction);
+  const selectedItems = coffeeInfo[0].extraction.map(index => CoffeeData.ExtractionCard[index]);
 
   return(
     <div className='coffee_product'>
@@ -62,7 +62,9 @@ const CoffeeProducts = () => {
       <div className='coffee_footer flex flex_jc_sb'>
         <div className='proposal_extra'>
           <p className='section_tit deco_txt flex'>추천드리는 추출방식</p>
-          {/* <ExtractionCard /> */}
+          <div className='extra_card detail_view'>
+          <ExtractionCard detail={selectedItems}/>
+          </div>
         </div>
         <div className='coffee_story'>
           <p className='section_tit deco_txt flex'>커피 스토리</p>

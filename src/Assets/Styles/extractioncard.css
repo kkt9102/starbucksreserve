@@ -1,5 +1,5 @@
 .extra_card {max-width: 60%; margin:4rem auto 0 auto;}
-.extra_card ul li {flex-direction:column; max-width:18rem; width:18rem; padding:3rem 0; border-radius:10px; border:2px solid var(--point-color); transition: box-shadow 0.3s;}
+.extra_card ul li {flex-direction:column; max-width:18rem; width:18rem; padding:1.5rem 0; border-radius:10px; border:2px solid var(--point-color); transition: box-shadow 0.3s;}
 .extra_card ul li:hover {box-shadow: -0.1rem -0.1rem 0.5rem var(--point-color)}
 .extra_card ul li .card_top .img_box img {height: 7rem;}
 .extra_card ul li .card_bottom .card_tit {padding-top:1rem; font-size:2.2rem; font-weight:400; color:var(--point-color); text-align: center; letter-spacing: 1px;}
@@ -7,7 +7,7 @@
 .extra_card ul li .card_bottom {margin-top:3rem;}
 .extra_card ul li .card_bottom .sub_txt {font-size: 1.3rem; color:var(--default-text); text-align: center; white-space: pre;}
 /* .extra_card ul li:nth-child(2n + 1) {} */
-.extra_card ul li:nth-child(2n + 2) {top:14rem;}
+.extra_card:not(.detail_view) ul li:nth-child(2n + 2) {top:14rem;}
 
 /* EXTRACTION MODAL */
 .modal_bg {position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 11;}
