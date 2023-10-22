@@ -6,3 +6,8 @@ footer .footer_nav ul li a:hover {text-shadow: 1px 1px 1px var(--point-color)}
 footer .site_menu_box {max-width: 80%; margin: 3rem auto 0;}
 footer .site_menu_box ul li {padding:0.5rem 3rem; border-radius: 5px; border:2px solid #fff; color:var(--default-text); transition: all 0.3s;}
 footer .site_menu_box ul li:hover {border-color: var(--point-color); color:var(--point-color)}
+footer .company_info {margin-top:4rem;}
+footer .company_info * {font-size: 1.3rem; font-weight: 500; color:var(--default-text);}
+footer .company_info > div {display:flex; margin:0 1rem;}
+footer .company_info > div > * {letter-spacing: -0.2px;}
+footer .copyright {padding:1rem; font-size: 1.1rem; font-weight: 300; color:var(--default-text); letter-spacing: 0.5px;}

@@ -1,4 +1,5 @@
 import { useRecoilValue, useRecoilState } from 'recoil';
+import { useInView } from 'react-intersection-observer';
 
 import { extractionState } from '../../State/modalState';
 
@@ -10,6 +11,8 @@ import Coffee from '../../Components/Main/Section4';
 import KakaoMap from '../../Components/Main/Section5';
 
 const Main = () => {
+  const [ref, inView] = useInView();
+
   const [extraModal,setExtraModal] = useRecoilState(extractionState);
 
   const handleCloseModal = () => {
@@ -28,6 +31,7 @@ const Main = () => {
         null
       }
       <Home/>
+      <div ref={ref}></div>
       <WhatsReserve/>
       <Extraction/>
       <Coffee/>
