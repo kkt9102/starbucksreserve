@@ -1,3 +1,6 @@
 header {width: 100%; height: 4rem; z-index: 10;}
+header nav {transition: all 0.3s;}
+header nav.active {background:var(--default-color)}
 header nav ul {max-width: 80%; height:4rem; margin: 0 auto;}
-header nav ul li a {color:var(--default-text)}
+header nav ul li a {color:var(--default-text); transition:all 0.3s;}
+header nav.active ul li a {color:var(--point-color);}

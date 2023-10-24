@@ -1,4 +1,7 @@
 import { Link } from "react-scroll";
+import { useRecoilValue } from "recoil";
+
+import { scrollState } from "../../State/scrollState";
 
 const MenuItems = [
   {
@@ -19,9 +22,10 @@ const MenuItems = [
 ]
 
 const Header = () => {
+  const headerEffect = useRecoilValue(scrollState)
   return(
     <header className="fixed">
-      <nav>
+      <nav className={!headerEffect ? 'active' : ''}>
         <ul className='flex flex_jc_sb'>
           {MenuItems.map((item, index) =>
             <li key={index} className='flex flex_ai_c'>
