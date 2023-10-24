@@ -1,0 +1,26 @@
+@media screen and (max-width:786px) {
+  .section_view .page_title {max-width: 90%; margin:0 auto;}
+  /* re_sc_0 */
+  .re_sc_0 .txt_box .sub_txt {font-size: 2.2rem;}
+  .re_sc_0 .txt_box .main_txt {font-size: 4rem;}
+  /* re_sc_1 */
+  .re_sc_1 .txt_box .sub_txt {font-size: 2.2rem;}
+  .re_sc_1 .txt_box .sub_tit {font-size: 3rem;}
+  .re_sc_1 .txt_box .cont_1 ol li {font-size: 1.5rem;}
+  .re_sc_1 .txt_box .cont_2 ol li {font-size: 1.4rem;}
+  /* re_sc_2 */
+  .extra_card {max-width: 90%;}
+  .extra_card ul li {max-width: 13rem;}
+  .extra_card ul li .card_top .img_box img {height: 5rem;}
+  .extra_card ul li .card_bottom .card_tit {font-size: 1.8rem;}
+  .extra_card ul li .card_bottom .sub_txt {font-size: 1.2rem;}
+  .extra_modal {width: 80%; top:10%; left:10%;}
+  .extra_modal .modal_content .content_txt {font-size: 1.5rem;}
+  /* re_sc_3 */
+  .coffee_list ul li {flex-basis:calc(85%/4); height:25rem;}
+  .coffee_list ul li .coffee_target::before {bottom:20%; right: -125%;}
+  .coffee_list ul li .coffee_target .logo {right:-30%}
+  .coffee_list ul li .coffee_target .coffee_name {bottom:3rem; right: -35%; }
+  /* re_sc_4 */
+  /* coffee body */
+}
