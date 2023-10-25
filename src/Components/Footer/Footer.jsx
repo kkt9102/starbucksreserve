@@ -1,8 +1,11 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import FooterNav from '../../Data/FooterNavigation.json';
 
 const Footer = () => {
+  useEffect(() => {
+  },[])
   return(
     <footer>
       <nav className="footer_nav">

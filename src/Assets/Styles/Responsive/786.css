@@ -23,4 +23,13 @@
   .coffee_list ul li .coffee_target .coffee_name {bottom:3rem; right: -35%; }
   /* re_sc_4 */
   /* coffee body */
+  .coffee_product .coffee_body {flex-wrap: wrap;}
+  .coffee_product .coffee_body > * {flex-basis: 100% !important;}
+  .coffee_product .coffee_body .coffee_info {margin-top:4rem;}
+  .coffee_product .coffee_body .coffee_info .coffee_info_chart {margin-top:1rem;}
+  .coffee_product .coffee_body .coffee_info .coffee_info_chart > div {padding:1rem;}
+  /* footer */
+  footer .footer_nav {max-width: 90%;}
+  footer .footer_nav ul li a {font-size: 1rem;}
+  footer .site_menu_box ul li {font-size: 1.4rem;}
 }
