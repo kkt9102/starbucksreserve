@@ -33,7 +33,15 @@
     .coffee_list ul li .coffee_target::before {content:none;}
     /* re_sc_4 */
     .re_sc_4 .map_frame {width: 100%;}
+    .re_sc_4 #map {height: 90vh;}
     /* coffee body */
+    .coffee_product .coffee_footer {flex-wrap: wrap;}
+    .coffee_product .coffee_footer .proposal_extra, .coffee_product .coffee_footer .coffee_story {flex-basis: 100%;}
+    .coffee_product .coffee_footer .proposal_extra .extra_card.detail_view {max-width: 100%;}
+    .coffee_product .coffee_footer .proposal_extra .extra_card.detail_view ul {flex-basis: 100%; flex-wrap: wrap;}
+    .coffee_product .coffee_footer .proposal_extra .extra_card.detail_view ul li {flex-basis: 100%;}
+    .coffee_product .coffee_footer .coffee_story {margin-bottom: 3rem;}
+    .coffee_product .coffee_footer .coffee_story .contents {font-size: 1.5rem;}
     /* footer */
     footer .company_info {flex-wrap: wrap;}
     footer .company_info > div {flex-basis: 50%;}

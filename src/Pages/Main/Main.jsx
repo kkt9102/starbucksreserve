@@ -29,7 +29,6 @@ const Main = () => {
       setScroll(false)
     }
   },[inView])
-  console.log(scroll)
   return(
     <>
       {

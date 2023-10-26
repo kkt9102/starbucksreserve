@@ -1,7 +1,9 @@
 import { Outlet, useLocation } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
 
 import Header from "../Header/Header"
 import Footer from '../Footer/Footer';
+import MobileFooter from '../MobileFooter/MoblieFooter';
 
 const Layout = () => {
   const location = useLocation();
@@ -16,7 +18,12 @@ const Layout = () => {
         <Header/>
       }
         <Outlet/>
-      <Footer/>
+        {
+          isMobile ? 
+            <MobileFooter/>
+            :
+            <Footer/>
+        }
     </>
   )
 }
