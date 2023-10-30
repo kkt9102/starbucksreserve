@@ -35,15 +35,26 @@
     .re_sc_4 .map_frame {width: 100%;}
     .re_sc_4 #map {height: 90vh;}
     /* coffee body */
+    .sub_header {height: 18rem;}
     .coffee_product .coffee_footer {flex-wrap: wrap;}
+    .coffee_product .coffee_body .coffee_info .coffee_info_chart .key {font-size: 1.6rem;}
+    .coffee_product .coffee_body .coffee_info .coffee_info_chart .value {font-size: 1.4rem;}
     .coffee_product .coffee_footer .proposal_extra, .coffee_product .coffee_footer .coffee_story {flex-basis: 100%;}
+    .coffee_product .coffee_footer .proposal_extra {order:2; padding-bottom: 2rem;}
+    .coffee_product .coffee_footer .extra_card ul li .card_bottom .sub_txt {font-size: 1.3rem;}
+    .coffee_product .coffee_footer .extra_card ul li .card_top .img_box img {height: 7rem;}
+    .coffee_product .coffee_footer .coffee_story {order:1;}
     .coffee_product .coffee_footer .proposal_extra .extra_card.detail_view {max-width: 100%;}
     .coffee_product .coffee_footer .proposal_extra .extra_card.detail_view ul {flex-basis: 100%; flex-wrap: wrap;}
     .coffee_product .coffee_footer .proposal_extra .extra_card.detail_view ul li {flex-basis: 100%;}
     .coffee_product .coffee_footer .coffee_story {margin-bottom: 3rem;}
     .coffee_product .coffee_footer .coffee_story .contents {font-size: 1.5rem;}
     /* footer */
+    footer .footer_nav ul {flex-wrap: wrap;}
+    footer .footer_nav ul li {display:flex; flex-basis: 30%; justify-content: center;}
+    footer .site_menu_box {margin-top:1.5rem;}
     footer .company_info {flex-wrap: wrap;}
     footer .company_info > div {flex-basis: 50%;}
     footer .company_info * {font-size: 1.2rem;}
+    
 }

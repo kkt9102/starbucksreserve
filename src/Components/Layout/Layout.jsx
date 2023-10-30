@@ -18,12 +18,13 @@ const Layout = () => {
         <Header/>
       }
         <Outlet/>
-        {
+        {/* {
           isMobile ? 
             <MobileFooter/>
             :
             <Footer/>
-        }
+        } */}
+        <Footer/>
     </>
   )
 }

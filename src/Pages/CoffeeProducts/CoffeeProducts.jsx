@@ -71,7 +71,6 @@ const CoffeeProducts = () => {
           <div className='contents'>{coffeeInfo[0].coffee_story}</div>
         </div>
       </div>
-      <Footer/>
     </div>
   )
 }

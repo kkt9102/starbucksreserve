@@ -1,0 +1,15 @@
+@media screen and (max-width:480px) {
+  /* re_sc_0 */
+  /* re_sc_1 */
+  .re_sc_1::after {height: 25%;}
+  .re_sc_1 .txt_box .sub_tit {word-break: keep-all; text-align: center;}
+  .re_sc_1 .txt_box .cont_1,.re_sc_1 .txt_box .cont_2 {padding:0 1.5rem}
+  /* re_sc_2 */
+  /* re_sc_3 */
+  /* re_sc_4 */
+  /* coffee body */
+  /* footer */
+  footer .footer_nav ul li {flex-basis: 50%;}
+  footer .site_menu_box ul {flex-wrap: wrap;}
+  footer .site_menu_box ul li {flex-basis: 100%; margin-top:1rem;}
+}
