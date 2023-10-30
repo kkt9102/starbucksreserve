@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/starbucksreserve/static/css/main.65519f37.css",
+    "main.js": "/starbucksreserve/static/js/main.5188e81f.js",
+    "static/js/306.468fba29.chunk.js": "/starbucksreserve/static/js/306.468fba29.chunk.js",
+    "static/js/158.8950a1c9.chunk.js": "/starbucksreserve/static/js/158.8950a1c9.chunk.js",
+    "static/js/945.b80102c7.chunk.js": "/starbucksreserve/static/js/945.b80102c7.chunk.js",
+    "static/js/153.eb34be09.chunk.js": "/starbucksreserve/static/js/153.eb34be09.chunk.js",
+    "static/js/787.9943ce1a.chunk.js": "/starbucksreserve/static/js/787.9943ce1a.chunk.js",
+    "static/js/104.41bdaac9.chunk.js": "/starbucksreserve/static/js/104.41bdaac9.chunk.js",
+    "static/media/NotoSansCJKkr-Bold.otf": "/starbucksreserve/static/media/NotoSansCJKkr-Bold.9b1db29fc2a12922bfa6.otf",
+    "static/media/NotoSansCJKkr-Medium.otf": "/starbucksreserve/static/media/NotoSansCJKkr-Medium.a89c0e766c9f7264d04e.otf",
+    "static/media/NotoSansCJKkr-Regular.otf": "/starbucksreserve/static/media/NotoSansCJKkr-Regular.3e8a3d882f53a16eb7ff.otf",
+    "static/media/NotoSansCJKkr-DemiLight.otf": "/starbucksreserve/static/media/NotoSansCJKkr-DemiLight.0d80d7542462952de697.otf",
+    "static/media/NotoSansCJKkr-Light.otf": "/starbucksreserve/static/media/NotoSansCJKkr-Light.528e085c44a08c3b32ca.otf",
+    "static/media/sub_header.gif": "/starbucksreserve/static/media/sub_header.e7fe3cbefcea32f63fd0.gif",
+    "static/media/section_back_img_1.jpg": "/starbucksreserve/static/media/section_back_img_1.bfebb747d69f2be56250.jpg",
+    "static/media/section_back_img_2.png": "/starbucksreserve/static/media/section_back_img_2.d2d60d52669d79404cdc.png",
+    "static/media/section_back_img_3.png": "/starbucksreserve/static/media/section_back_img_3.f1fb9e444795e9db22f6.png",
+    "static/media/main_logo.png": "/starbucksreserve/static/media/main_logo.b03f6ca9b95478325cd3.png",
+    "static/media/NotoSansCJKkr-Bold.woff": "/starbucksreserve/static/media/NotoSansCJKkr-Bold.a82b7bddf37578c8440a.woff",
+    "static/media/NotoSansCJKkr-Medium.woff": "/starbucksreserve/static/media/NotoSansCJKkr-Medium.dd433e40c2d04b78907b.woff",
+    "static/media/NotoSansCJKkr-Regular.woff": "/starbucksreserve/static/media/NotoSansCJKkr-Regular.718a9743ec9b1e8e6402.woff",
+    "static/media/NotoSansCJKkr-DemiLight.woff": "/starbucksreserve/static/media/NotoSansCJKkr-DemiLight.4fe2f3f75f691d14da32.woff",
+    "static/media/NotoSansCJKkr-Light.woff": "/starbucksreserve/static/media/NotoSansCJKkr-Light.0493c835fc265d759660.woff",
+    "static/media/coffee_list_logo.svg": "/starbucksreserve/static/media/coffee_list_logo.27b34581c4215639484f22d6b51b2f9b.svg",
+    "index.html": "/starbucksreserve/index.html",
+    "static/media/Star_icon.svg": "/starbucksreserve/static/media/Star_icon.09afecab90b94830e8bc9e48c7af28a2.svg",
+    "static/media/BackIcon.svg": "/starbucksreserve/static/media/BackIcon.fea59e58f27f6c85b224678ceb0d42c6.svg",
+    "main.65519f37.css.map": "/starbucksreserve/static/css/main.65519f37.css.map",
+    "main.5188e81f.js.map": "/starbucksreserve/static/js/main.5188e81f.js.map",
+    "306.468fba29.chunk.js.map": "/starbucksreserve/static/js/306.468fba29.chunk.js.map",
+    "158.8950a1c9.chunk.js.map": "/starbucksreserve/static/js/158.8950a1c9.chunk.js.map",
+    "945.b80102c7.chunk.js.map": "/starbucksreserve/static/js/945.b80102c7.chunk.js.map",
+    "153.eb34be09.chunk.js.map": "/starbucksreserve/static/js/153.eb34be09.chunk.js.map",
+    "787.9943ce1a.chunk.js.map": "/starbucksreserve/static/js/787.9943ce1a.chunk.js.map",
+    "104.41bdaac9.chunk.js.map": "/starbucksreserve/static/js/104.41bdaac9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65519f37.css",
+    "static/js/main.5188e81f.js"
+  ]
+}
