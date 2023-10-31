@@ -1,10 +1,16 @@
+// MODULE
+import { useRecoilValue } from 'recoil';
+// RECOIL STATE
+import { hostNameState } from '../../State/commonState';
+// JSON
 import CoffeeData from '../../Data/CoffeeExtraction.json';
 
 
 const ExtractionModal = ({index, close}) => {
   // const result = ExrtactionContents.filter((modal) => modal.id === index)
   const result = CoffeeData.ExrtactionContents.filter((modal) => modal.id === index)
-  console.log(result)
+  const isLocal = useRecoilValue(hostNameState)
+  const pathUrl = result[0].img.replace('../../','');
   return(
     <div className="extra_modal fixed">
       <div className='modal_header flex flex_jc_sb'>
@@ -19,7 +25,11 @@ const ExtractionModal = ({index, close}) => {
       </div>
       <div className='modal_content'>
         <div className='img_box'>
-          <img src={result[0].img} alt={result[0]?.ko_name} loading='lazy'/>
+          <img src={isLocal ?
+            `/starbucksreserve/${pathUrl}`
+            :
+            `${process.env.REACT_APP_IMAGE_URL}${pathUrl}`
+            } alt={result[0]?.ko_name} loading='lazy'/>
         </div>
         <div className='content_txt'>
           {result[0].txt}

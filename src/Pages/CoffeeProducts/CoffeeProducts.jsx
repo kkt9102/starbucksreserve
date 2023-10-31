@@ -1,27 +1,35 @@
-import { useLocation, useParams } from 'react-router-dom';
-
+// MODULE
+import { useParams } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
+// RECOIL STATE
+import { hostNameState } from '../../State/commonState';
+// COMPONENT
 import SubHeader from '../../Components/SubHeader';
-import Footer from '../../Components/Footer';
 import ExtractionCard from '../../Components/ExtractionCard/ExtractionCard';
-
+// JSON
 import CoffeeInfo from '../../Data/CoffeeDetail.json';
 import CoffeeData from '../../Data/CoffeeExtraction.json';
-
+// IMAGE
 import { ReactComponent as StarScore } from '../../Assets/Images/Star_icon.svg';
 
 
 const CoffeeProducts = () => {
+  const isLocal = useRecoilValue(hostNameState)
   const { coffee } = useParams();
 
   const coffeeInfo = CoffeeInfo.coffee.filter((item) => item.url === coffee)
   const selectedItems = coffeeInfo[0].extraction.map(index => CoffeeData.ExtractionCard[index]);
-
+  const pathUrl = coffeeInfo[0].img.replace('../../','');
   return(
     <div className='coffee_product'>
       <SubHeader ko_name={coffeeInfo[0].ko_name} en_name={coffeeInfo[0].en_name}/>
       <div className='coffee_body flex flex_jc_sb'>
         <div className='img_box'>
-          <img src={`${coffeeInfo[0].img}`} alt={coffeeInfo[0].ko_name}/>
+          <img src={isLocal ?
+            `/starbucksreserve/${pathUrl}`
+            :
+            `${process.env.REACT_APP_IMAGE_URL}${pathUrl}`
+            } alt={coffeeInfo[0].ko_name}/>
         </div>
         <div className='coffee_info'>
           <div className='coffee_origin deco_txt flex'>
