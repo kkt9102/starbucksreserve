@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/starbucksreserve/static/css/main.d54552d3.css",
+    "main.css": "/starbucksreserve/static/css/main.d78d0ade.css",
     "main.js": "/starbucksreserve/static/js/main.90810a3c.js",
     "static/js/69.d2ea2845.chunk.js": "/starbucksreserve/static/js/69.d2ea2845.chunk.js",
     "static/js/383.96d617d6.chunk.js": "/starbucksreserve/static/js/383.96d617d6.chunk.js",
@@ -29,7 +29,7 @@
     "static/media/BackIcon.svg": "/starbucksreserve/static/media/BackIcon.86d77d63a87ab1d127549d5a24364ca9.svg"
   },
   "entrypoints": [
-    "static/css/main.d54552d3.css",
+    "static/css/main.d78d0ade.css",
     "static/js/main.90810a3c.js"
   ]
 }
